@@ -5,18 +5,18 @@
   "dragDropEnabled": false,
   "notificationTimer": 8,
   "maximumNotificationCount": 3,
-  "area": {   
+  "area": {
     "header": {
       "id": "dw-header",
       "widgets": {
         "comp1": {
           "comp": "agentx-zendesk-desktop",
-           "script":"https://s3.us-east-2.amazonaws.com/kad.zendesk.desktop/dist/index.js",
-           "properties": {
-            "outDialEp": "$STORE.agent.outDialEp", 
-            "agentDN":"$STORE.agent.dnNumber",
-            "hostName":"https://s3.us-east-2.amazonaws.com/kad.zendesk.desktop/dist"
-            }
+          "script": "https://s3.us-east-2.amazonaws.com/kad.zendesk.desktop/dist/index.js",
+          "properties": {
+            "outDialEp": "$STORE.agent.outDialEp",
+            "agentDN": "$STORE.agent.dnNumber",
+            "hostName": "https://s3.us-east-2.amazonaws.com/kad.zendesk.desktop/dist"
+          }
         }
       },
       "layout": {
@@ -59,7 +59,10 @@
           "children": [
             {
               "comp": "span",
-              "attributes": { "class": "tab-header-content", "style": "align-items: center; display: flex;" },
+              "attributes": {
+                "class": "tab-header-content",
+                "style": "align-items: center; display: flex;"
+              },
               "children": [
                 {
                   "comp": "img",
@@ -90,7 +93,10 @@
                 "ani": "$STORE.agentContact.taskSelected.ani",
                 "isDarkMode": "$STORE.app.darkMode"
               },
-              "wrapper": { "title": "Experience Journey", "maximizeAreaName": "app-maximize-area" }
+              "wrapper": {
+                "title": "Experience Journey",
+                "maximizeAreaName": "app-maximize-area"
+              }
             }
           ],
           "visibility": "WXM_JOURNEY"

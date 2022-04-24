@@ -5,18 +5,18 @@
   "dragDropEnabled": false,
   "notificationTimer": 8,
   "maximumNotificationCount": 3,
-  "area": {   
+  "area": {
     "header": {
       "id": "dw-header",
       "widgets": {
         "comp1": {
           "comp": "agentx-salesforce-desktop",
-           "script":"https://dw4r593nghmue.cloudfront.net/dist/index.js",
-           "properties": {
-            "outDialEp": "$STORE.agent.outDialEp", 
-            "agentDN":"<OutDialANIValue >",
-            "hostName":"https://dw4r593nghmue.cloudfront.net"
-            }
+          "script": "https://dw4r593nghmue.cloudfront.net/dist/index.js",
+          "properties": {
+            "outDialEp": "$STORE.agent.outDialEp",
+            "agentDN": "<OutDialANIValue >",
+            "hostName": "https://dw4r593nghmue.cloudfront.net"
+          }
         }
       },
       "layout": {
