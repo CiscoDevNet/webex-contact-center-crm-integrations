@@ -1,0 +1,20 @@
+"headless": {
+  "id": "dw-headless",
+  "widgets": {
+	"comp1": {
+	  "comp": "agentx-msdynamics-desktop",
+	  "script": "https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/index.js",
+	  "properties": {
+		"outDialEp": "$STORE.agent.outDialEp",
+		"outDialAni": "<OutDialAniValue>",
+		"desktopWidth": "500",
+		"crmLibPath": "https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/msdynamics-agent-desktop.js",
+		"hostName": "<hostNameOfMSDynamics>"
+	  }
+	}
+  },
+  "layout": {
+	"areas": [["comp1"]],
+	"size": { "cols": [1], "rows": [1] }
+  }
+}
