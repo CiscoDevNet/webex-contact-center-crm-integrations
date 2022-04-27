@@ -6,11 +6,8 @@ This repository contains Desktop Layouts for the Zendesk Agent Desktop integrati
 
 Desktop Layouts versions below:
 
-| #   | File name                      | Desktop version | comment         | reviewed by         |
-| --- | ------------------------------ | --------------- | --------------- | ------------------- |
-| 1   | Zendesk_Desktop.json           | 0.0.2           | - header        |                     |
-| 2   | Zendesk_Desktop_v1.1.json      | 0.0.2           | - headless      |                     |
-| 3   | Zendesk_Desktop_0.0.6_v1.json  | 0.0.6           | + complete file |                     |
-
-
-
+| #   | File name                     | Desktop version | Comment         | Reviewed By |
+| --- | ----------------------------- | --------------- | --------------- | ----------- |
+| 1   | Zendesk_Desktop.json          | 0.0.2           | - header        |             |
+| 2   | Zendesk_Desktop_v1.1.json     | 0.0.2           | - headless      |             |
+| 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file |             |
