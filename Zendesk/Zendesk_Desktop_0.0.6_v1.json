@@ -1,13 +1,15 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.6",
   "appTitle": "Webex Contact Center",
   "logo": "",
   "dragDropEnabled": false,
   "notificationTimer": 8,
   "maximumNotificationCount": 3,
+  "browserNotificationTimer": 8,
+  "wxmConfigured": false,
   "area": {
-    "header": {
-      "id": "dw-header",
+    "headless": {
+      "id": "dw-headless",
       "widgets": {
         "comp1": {
           "comp": "agentx-zendesk-desktop",
@@ -21,80 +23,84 @@
       },
       "layout": {
         "areas": [["comp1"]],
-        "size": { "cols": [1], "rows": [1] }
-      }
-    },
-    "headless": {
-      "id": "dw-headless",
-      "widgets": {
-        "comp1": { "comp": "div" }
-      },
-      "layout": {
-        "areas": [["comp1"]],
-        "size": { "cols": [1], "rows": [1] }
+        "size": {
+          "cols": [1],
+          "rows": [1]
+        }
       }
     },
     "panel": {
       "comp": "md-tabs",
-      "attributes": { "class": "widget-tabs" },
+      "attributes": {
+        "class": "widget-tabs"
+      },
       "children": [
         {
           "comp": "md-tab",
-          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "attributes": {
+            "slot": "tab",
+            "class": "widget-pane-tab"
+          },
           "children": [
-            { "comp": "md-icon", "attributes": { "name": "transcript_16" } },
-            { "comp": "span", "textContent": "IVR Transcript" }
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "IVR_TRANSCRIPT_TAB"
+              }
+            }
           ],
           "visibility": "IVR_TRANSCRIPT"
         },
         {
           "comp": "md-tab-panel",
-          "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "#IVR_TRANSCRIPT" }],
+          "attributes": {
+            "slot": "panel",
+            "class": "widget-pane"
+          },
+          "children": [
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "IVR_TRANSCRIPT"
+              }
+            }
+          ],
           "visibility": "IVR_TRANSCRIPT"
         },
         {
           "comp": "md-tab",
-          "attributes": { "slot": "tab" },
+          "attributes": {
+            "slot": "tab"
+          },
           "children": [
             {
-              "comp": "span",
+              "comp": "slot",
               "attributes": {
-                "class": "tab-header-content",
-                "style": "align-items: center; display: flex;"
-              },
-              "children": [
-                {
-                  "comp": "img",
-                  "attributes": {
-                    "src": "/app/images/wxm.bcd45cc3.svg",
-                    "width": 16,
-                    "height": 16,
-                    "style": "margin-right: 0.5rem;"
-                  }
-                },
-                { "comp": "span", "textContent": "Experience Journey" }
-              ]
+                "name": "WXM_JOURNEY_TAB"
+              }
             }
           ],
           "visibility": "WXM_JOURNEY"
         },
         {
           "comp": "md-tab-panel",
-          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "attributes": {
+            "slot": "panel",
+            "class": "widget-pane"
+          },
           "children": [
             {
               "comp": "agentx-wc-cloudcherry-widget",
               "properties": {
                 "userModel": "$STORE.app.userModel",
-                "spaceId": "5f9244550b184e6e44114ed9-ccdemo07pyadmin",
-                "metricsId": "kq43q6ku07hzv764-ccdemo07py",
+                "spaceId": "",
+                "metricsId": "",
                 "teamId": "$STORE.agent.teamName",
                 "ani": "$STORE.agentContact.taskSelected.ani",
                 "isDarkMode": "$STORE.app.darkMode"
               },
               "wrapper": {
-                "title": "Experience Journey",
+                "title": "Customer Experience Journey",
                 "maximizeAreaName": "app-maximize-area"
               }
             }
@@ -103,30 +109,64 @@
         },
         {
           "comp": "md-tab",
-          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "attributes": {
+            "slot": "tab",
+            "class": "widget-pane-tab"
+          },
           "children": [
-            { "comp": "md-icon", "attributes": { "name": "icon-recents_16" } },
-            { "comp": "span", "textContent": "Contact History" }
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "CONTACT_HISTORY_TAB"
+              }
+            }
           ]
         },
         {
           "comp": "md-tab-panel",
-          "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "#CONTACT_HISTORY" }]
+          "attributes": {
+            "slot": "panel",
+            "class": "widget-pane"
+          },
+          "children": [
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "CONTACT_HISTORY"
+              }
+            }
+          ]
         },
         {
           "comp": "md-tab",
-          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "attributes": {
+            "slot": "tab",
+            "class": "widget-pane-tab"
+          },
           "children": [
-            { "comp": "md-icon", "attributes": { "name": "pop-out_16" } },
-            { "comp": "span", "textContent": "Screen Pop" }
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "SCREEN_POP_TAB"
+              }
+            }
           ],
           "visibility": "SCREEN_POP"
         },
         {
           "comp": "md-tab-panel",
-          "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "#SCREEN_POP" }],
+          "attributes": {
+            "slot": "panel",
+            "class": "widget-pane"
+          },
+          "children": [
+            {
+              "comp": "slot",
+              "attributes": {
+                "name": "SCREEN_POP"
+              }
+            }
+          ],
           "visibility": "SCREEN_POP"
         }
       ]
@@ -134,7 +174,7 @@
     "navigation": [
       {
         "nav": {
-          "label": "WebEx Experience Manager Metrics",
+          "label": "Customer Experience Analytics",
           "icon": "/app/images/wxm.bcd45cc3.svg",
           "iconType": "other",
           "navigateTo": "wxm-metrics",
@@ -150,9 +190,10 @@
               },
               "properties": {
                 "userModel": "$STORE.app.userModel",
-                "spaceId": "$STORE.app.wxmUserParams.spaceId",
-                "metricsId": "$STORE.app.wxmUserParams.metricId",
-                "teamId": "$STORE.agent.teamName"
+                "spaceId": "",
+                "metricsId": "",
+                "teamId": "$STORE.agent.teamName",
+                "isDarkMode": "$STORE.app.darkMode"
               }
             }
           },
