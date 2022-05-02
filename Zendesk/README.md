@@ -11,3 +11,4 @@ Desktop Layouts versions below:
 | 1   | Zendesk_Desktop.json          | 0.0.2           | - header        |             |
 | 2   | Zendesk_Desktop_v1.1.json     | 0.0.2           | - headless      |             |
 | 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file |             |
+| 4   | Zendesk_Desktop_0.0.6_v2.json | 0.0.6           | + complete file |             |
