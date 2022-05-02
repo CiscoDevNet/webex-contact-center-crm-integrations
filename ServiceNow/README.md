@@ -6,8 +6,8 @@ This repository contains Desktop Layouts for the ServiceNow Agent Desktop integr
 
 Desktop Layouts versions below:
 
-| #   | File name                        | Desktop version | Comment         | Reviewed By |
-| --- | -------------------------------- | --------------- | --------------- | ----------- |
-| 1   | ServiceNow_Desktop.json          | 0.0.1           | - header        |             |
-| 2   | ServiceNow_Desktop_v1.1.json     | 0.0.1           | - headless      |             |
-| 3   | ServiceNow_Desktop_0.0.6_v1.json | 0.0.6           | + complete file |             |
+| #   | File name                        | Desktop version | Comment         | 
+| --- | -------------------------------- | --------------- | --------------- | 
+| 1   | ServiceNow_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | 
+| 2   | servicenow-update-set.xml        | V1              | + remove file |      
+| 2   | servicenow-update-setV3.xml      | V3              | + only used on dev instance  | 
