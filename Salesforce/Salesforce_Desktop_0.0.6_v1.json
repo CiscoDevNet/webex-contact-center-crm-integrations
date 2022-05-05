@@ -12,12 +12,13 @@
       "id": "dw-headless",
       "widgets": {
         "comp1": {
-          "comp": "agentx-salesforce-desktop",
-          "script": "https://dw4r593nghmue.cloudfront.net/dist/index.js",
-          "properties": {
-            "outDialEp": "$STORE.agent.outDialEp",
-            "agentDN": "<OutDialANIValue >",
-            "hostName": "https://dw4r593nghmue.cloudfront.net"
+          "comp": "agentx-custom-desktop",
+          "script":"https://dw4r593nghmue.cloudfront.net/v5/dist/index.js",
+           "attributes": {
+           "outDialAni":"<OutDialAniValue>",
+           "crmLibPath":"https://dw4r593nghmue.cloudfront.net/v5/webexcc_salesforce_desktop.min.js",
+           "openctiLibPath":"https://dw4r593nghmue.cloudfront.net/v5/lib/opencti_v48.js",
+           "nameOfOpenCtiFileName" : "opencti_v48.js"
           }
         }
       },
