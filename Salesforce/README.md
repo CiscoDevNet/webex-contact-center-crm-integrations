@@ -14,7 +14,11 @@ CTI Adapter Url for different data centers:
 |  3  | https://desktop.wxcc-eu2.cisco.com     | EU              |
 |  4  | https://desktop.wxcc-anz1.cisco.com    | APJC            |
 
-Desktop Layouts versions below:
+## Change Log
+
+The following change log shows the version updates to the files and what changes and enhacements were included:
+
+(Please use the latest Desktop Layout JSON in the folder)
 
 | #   | File name                        | Desktop version | Comment         | Reviewed By |
 | --- | -------------------------------- | --------------- | --------------- | ----------- |
