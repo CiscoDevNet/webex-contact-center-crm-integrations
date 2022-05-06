@@ -2,7 +2,17 @@
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This repository contains Desktop Layouts for the Salesforce Agent Desktop integration inside of the CRM console.
+This repository contains Desktop Layouts and call center definition file for the Salesforce Agent Desktop integration inside of the CRM console.
+The CTI adapter url for the call center definition file will vary based on different regions of Webex contact center production data centers. By default the CTI adapter url points to US1 data center. The CTI adapter url for different data centers are listed below:
+
+CTI Adapter Url for different data centers:
+
+| #   | CTI Adapter Url                        | Data Center     | 
+| --- | ---------------------------------------| --------------- |
+|  1  | https://desktop.wxcc-us1.cisco.com     | North America   |
+|  2  | https://desktop.wxcc-eu1.cisco.com     | UK              |
+|  3  | https://desktop.wxcc-eu2.cisco.com     | EU              |
+|  4  | https://desktop.wxcc-anz1.cisco.com    | APJC            |
 
 Desktop Layouts versions below:
 

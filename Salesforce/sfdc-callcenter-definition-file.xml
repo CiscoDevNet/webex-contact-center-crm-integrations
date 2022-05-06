@@ -1,0 +1,26 @@
+<callCenter>
+    <section sortOrder="0" name="reqGeneralInfo" label="Cisco Webex Contact Center Desktop Information">
+     <item sortOrder="0"   name="reqInternalName" label="InternalName">WebexCCAgentDesktopV20220220</item>
+     <item sortOrder="1"   name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(Feb 2022)</item>
+     <item sortOrder="2" name="reqAdapterUrl" label="CTI Adapter URL">https://desktop.wxcc-us1.cisco.com/</item>
+     <item sortOrder="3" name="reqUseApi" label="Use CTI API">true</item>
+     <item sortOrder="4" name="reqSoftphoneHeight" label="Softphone Height">550</item>
+     <item sortOrder="5" name="reqSoftphoneWidth" label="Softphone Width">500</item>
+     <item sortOrder="6" name="reqSalesforceCompatibilityMode" label="Salesforce Compatibility Mode">Lightning</item>
+    </section>
+     <section sortOrder="1" name="reqAdvanceScreenpopConfig" label="Advance Screenpop Configuration">
+     <item sortOrder="0" name="reqIsAdvancedScreenpopEnabled" label="Whether advanced screenpop enabled">false</item>
+     <item sortOrder="1" name="screenpopSearchParamCadName" label="Screenpop search parameter CAD variable name ">AccountNumber</item>
+    </section>
+    <section sortOrder="2" name="reqOutDialConfig" label="OutDial Configuration">
+       <item sortOrder="0" name="reqIsOuDialPhonumberPrefixTobeRemoved" label="Whether outdial phone number prefix to be removed">false</item>
+        <item sortOrder="1" name="reqPrefixStringTobeRemoved" label="Phone number prefix to be removed">+</item>
+    </section>
+    <section sortOrder="3" name="reqActivityRecordConfig" label="Call Activity Record Creation Configuration">
+      <item sortOrder="0" name="reqSalesforceNamespace" label="Salesforce Package Namespace">ciscocjs</item>
+      <item sortOrder="1" name="reqIsActivityAutoRefreshEnabled" label="Whether the activity record auto refresh enabled">false</item>
+      <item sortOrder="2" name="reqIsCadVariableUpdatedToActivity" label="Whether custom field needs to be updated in activity record">false</item>
+      <item sortOrder="3" name="CadSalesforceFieldMapping" label="WebexCC Salesforce field mapping">[]</item>
+      <item sortOrder="4" name="SubjectDateFormat" label="DateFormat used in Subject MM.dd.yyyy hh:mm a or dd.MM.yyyy hh:mm a">MM-dd-yyyy hh:mm a</item>
+    </section>
+ </callCenter>
