@@ -2,7 +2,9 @@
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This repository contains Desktop Layouts with embedded widgets that enable the Agent Desktop integration inside of the CRM console.
+This repository contains Desktop Layouts with embedded widgets that enable the integrated Agent Desktop inside of the CRM console.
+
+## Index
 
 To browse the layouts and review at the installation guides, use the index below:
 
