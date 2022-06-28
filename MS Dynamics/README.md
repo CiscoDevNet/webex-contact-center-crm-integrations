@@ -21,8 +21,9 @@ The following change log shows the version updates to the files and what changes
 
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | Date       | Filename                         | Desktop Version | Comments        |
-| --- | ---------- | -------------------------------- | --------------- | --------------- |
-| 1   | Jan 2022   | MSDynamics_Desktop.json          | 0.0.1           | - header        |
-| 2   | April 2022 | MSDynamics_Desktop_v1.1.json     | 0.0.2           | - headless      |
-| 3   | April 2022 | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | + complete file |
+| #   | File name                        | Desktop version | Comments                                                           |
+| --- | -------------------------------- | --------------- | ------------------------------------------------------------------ |
+| 1   | MSDynamics_Desktop.json          | 0.0.2           | - header                                                           |
+| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | - headless                                                         |
+| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | + complete file                                                    |
+| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | New feature added - Advanced Screenpop (CAD variable based search) |

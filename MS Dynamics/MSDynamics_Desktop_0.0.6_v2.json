@@ -1,28 +1,36 @@
 {
   "version": "0.0.6",
-  "appTitle": "Contact Center Desktop",
+  "appTitle": "Webex Contact Center Desktop",
   "logo": "",
   "dragDropEnabled": false,
   "notificationTimer": 8,
   "maximumNotificationCount": 3,
   "browserNotificationTimer": 8,
   "wxmConfigured": false,
-  "desktopChatApp": {
-    "webexConfigured": false
-  },
-  "headerActions": ["outdial"],
   "area": {
     "headless": {
       "id": "dw-headless",
+      "widgets": { "comp1": { "comp": "div" } },
+      "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
+    },
+    "header": {
+      "id": "dw-header",
       "widgets": {
         "comp1": {
-          "comp": "agentx-custom-desktop",
-           "script":"https://d1kecw3ui932.cloudfront.net/freshdesk/dist/index.js",
+          "comp": "agentx-msdynamics-desktop",
+           "script":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/index.js",
            "properties": {
+            "outDialEp":"$STORE.agent.outDialEp", 
             "outDialAni":"<OutDialAniValue>",
-            "crmLibPath":"https://d1kecw3ui932.cloudfront.net/freshdesk/webexcc_freshdesk_desktop.js"
+            "desktopWidth":"500",
+            "crmLibPath":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/msdynamics-agent-desktop.js",
+            "hostName":"https://orgc4d36c4b.crm9.dynamics.com/",
+            "isAdvancedScreenpopEnabled" : "true",
+            "cadVariableName" : "Customer_Name",
+            "crmEntityFieldName" : "firstname",
+            "crmEntityName" : "contact"
             }
-        }
+          } 
       },
       "layout": {
         "areas": [["comp1"]],
@@ -125,7 +133,9 @@
           "widgets": {
             "comp1": {
               "comp": "agentx-wc-cloudcherry-widget",
-              "attributes": { "metrics": true },
+              "attributes": {
+                "metrics": true
+              },
               "properties": {
                 "userModel": "$STORE.app.userModel",
                 "spaceId": "",
@@ -137,7 +147,10 @@
           },
           "layout": {
             "areas": [["comp1"]],
-            "size": { "cols": [1], "rows": [1] }
+            "size": {
+              "cols": [1],
+              "rows": [1]
+            }
           }
         },
         "visibility": "WXM_METRICS"
