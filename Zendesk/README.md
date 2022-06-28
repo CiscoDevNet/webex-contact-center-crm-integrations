@@ -10,5 +10,5 @@ Desktop Layouts versions below:
 | --- | ----------------------------- | --------------- | --------------- | ------------------------------------ |
 | 1   | Zendesk_Desktop.json          | 0.0.2           | - header        | First draft                          |
 | 2   | Zendesk_Desktop_v1.1.json     | 0.0.2           | - headless      | Advanced CAD variable based search   |
-| 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | Dynamic ticket field feature added   |
-| 4   | Zendesk_Desktop_0.0.6_v2.json | 0.0.6           | + complete file | Dynamic ticket subject feature added |
+| 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | Ticket - dynamic custom field added  |
+| 4   | Zendesk_Desktop_0.0.6_v2.json | 0.0.6           | + complete file | Ticket - dynamic subject field added |
