@@ -2,9 +2,12 @@
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This repository contains Desktop Layouts for the Zendesk Agent Desktop integration inside of the CRM console.
+This folder contains the latest Desktop Layout for the Zendesk integrated Agent Desktop inside of the CRM console.
 
-Desktop Layouts versions below:
+# Change Log :
+
+The following change log shows the version updates to the files, what changes and enhacements were included.
+(Please use the latest Desktop Layout JSON in the folder)
 
 | #   | File name                     | Desktop version | Comment         | Change Description                   |
 | --- | ----------------------------- | --------------- | --------------- | ------------------------------------ |
