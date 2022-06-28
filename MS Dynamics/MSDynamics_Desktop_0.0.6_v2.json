@@ -10,22 +10,17 @@
   "area": {
     "headless": {
       "id": "dw-headless",
-      "widgets": { "comp1": { "comp": "div" } },
-      "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
-    },
-    "header": {
-      "id": "dw-header",
       "widgets": {
         "comp1": {
           "comp": "agentx-msdynamics-desktop",
-           "script":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/index.js",
+           "script":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v2/dist/index.js",
            "properties": {
             "outDialEp":"$STORE.agent.outDialEp", 
             "outDialAni":"<OutDialAniValue>",
             "desktopWidth":"500",
-            "crmLibPath":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/dist/msdynamics-agent-desktop.js",
-            "hostName":"https://orgc4d36c4b.crm9.dynamics.com/",
-            "isAdvancedScreenpopEnabled" : "true",
+            "crmLibPath":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v2/dist/msdynamics-agent-desktop.min.js",
+            "hostName":"<HostNameOfMSDynamicsInstance>",
+            "isAdvancedScreenpopEnabled" : "false",
             "cadVariableName" : "Customer_Name",
             "crmEntityFieldName" : "firstname",
             "crmEntityName" : "contact"
