@@ -6,9 +6,9 @@ This repository contains Desktop Layouts for the Zendesk Agent Desktop integrati
 
 Desktop Layouts versions below:
 
-| #   | File name                     | Desktop version | Comment         | 
-| --- | ----------------------------- | --------------- | --------------- | 
-| 1   | Zendesk_Desktop.json          | 0.0.2           | - header        | 
-| 2   | Zendesk_Desktop_v1.1.json     | 0.0.2           | - headless      | 
-| 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | 
-| 4   | Zendesk_Desktop_0.0.6_v2.json | 0.0.6           | + complete file | 
+| #   | File name                     | Desktop version | Comment         | Change Description                   |
+| --- | ----------------------------- | --------------- | --------------- | ------------------------------------ |
+| 1   | Zendesk_Desktop.json          | 0.0.2           | - header        | First draft                          |
+| 2   | Zendesk_Desktop_v1.1.json     | 0.0.2           | - headless      | Advanced CAD variable based search   |
+| 3   | Zendesk_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | Dynamic ticket field feature added   |
+| 4   | Zendesk_Desktop_0.0.6_v2.json | 0.0.6           | + complete file | Dynamic ticket subject feature added |
