@@ -25,3 +25,4 @@ The following change log shows the version updates to the files and what changes
 | --- | ---------- | ------------------------------- | --------------- | ---------------                                                                          |
 | 1   | April 2022 | Freshdesk_Desktop_0.0.6_v1.json | 0.0.6           | + initial commit                                                                         |
 | 2   | June 2022  | Freshdesk_Desktop_0.0.6_v2.json | 0.0.6           | + Add headerActions[""] to the desktop layout so the action headers will be suppressed.  |
+| 3   | June  2022 | Freshdesk_Desktop_0.0.6_v1.json | 0.0.6           | - removed                                                                         |
