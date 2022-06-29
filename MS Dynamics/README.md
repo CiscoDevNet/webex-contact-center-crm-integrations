@@ -10,7 +10,7 @@ The following section describes the properties in the layout and their utility i
 
 Administrators are free to customize the layout based on the description and functionality below.
 
-| #   | Layout Property            | Description                                                                                                      | Functionality                                                                      |
+| #   | Layout Properties          | Description                                                                                                      | Functionality                                                                      |
 | --- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 1   | outdialAni                 | This property allows you to override the Outdial ANI specified, for click to dial                                | Optional. The default Outdial ANI set on the tenant or Agent Profile will be used. |
 | 2   | desktopWidth               | This property is used to set the desktop connector width.                                                        | Optional. Default desktop width will be considered.                                |
