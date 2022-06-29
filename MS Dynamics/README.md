@@ -2,7 +2,7 @@
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This folder contains Desktop Layouts for the MSDynamics integrated Agent Desktop inside of the CRM console.
+This folder contains the latest Desktop Layout for the MSDynamics integrated Agent Desktop inside of the CRM console.
 
 ## Desktop Layout Properties
 
@@ -37,9 +37,9 @@ The following change log shows the version updates to the files and what changes
 
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | File name                        | Desktop version | Comments                                                           |
-| --- | -------------------------------- | --------------- | ------------------------------------------------------------------ |
-| 1   | MSDynamics_Desktop.json          | 0.0.2           | - header                                                           |
-| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | - headless                                                         |
-| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | + complete file                                                    |
-| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | New feature added - Advanced Screenpop (CAD variable based search) |
+| #   | File name                        | Desktop version | Comments        | Change Description                                           |
+| --- | -------------------------------- | --------------- | --------------- | ------------------------------------------------------------ |
+| 1   | MSDynamics_Desktop.json          | 0.0.2           | - header        | First draft                                                  |
+| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | - headless      | Minor changes                                                |
+| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | Desktop (Product) update                                     |
+| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | headless        | New feature - Advanced Screenpop / CAD variable based search |
