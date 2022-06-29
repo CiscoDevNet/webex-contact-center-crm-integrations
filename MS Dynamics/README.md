@@ -10,15 +10,15 @@ The following section describes the properties in the layout and their utility i
 
 Administrators are free to customize the layout based on the description and functionality below.
 
-| #   | Layout Property            | Description                                                                                              | Functionality                                                                      |
-| --- | -------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| 1   | outdialAni                 | This property allows you to override the Outdial ANI specified, for click to dial                        | Optional. The default Outdial ANI set on the tenant or Agent Profile will be used. |
-| 2   | desktopWidth               | This property is used to set the desktop connector width.                                                | Optional. Default desktop width will be considered.                                |
-| 3   | hostName                   | Hostname of the MS Dynamics Instance (Example : "hostName":"https://org91c3bc64.crm.dynamics.com/")      | Mandatory field.                                                                   |
-| 4   | isAdvancedScreenpopEnabled | Flag to enable / disable advanced search (CAD variable based search)                                     | Value should be either true or false.                                              |
-| 5   | cadVariableName            | CAD variable name that has the value to be searched in CRM                                               | Mandatory field.                                                                   |
-| 6   | crmEntityFieldName         | Field name of the particular entity (crmEntityName) on MS Dynamics the records are to be searched within | Mandatory field.                                                                   |
-| 7   | crmEntityName              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                       | Mandatory field.                                                                   |
+| #   | Layout Property            | Description                                                                                                      | Functionality                                                                      |
+| --- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 1   | outdialAni                 | This property allows you to override the Outdial ANI specified, for click to dial                                | Optional. The default Outdial ANI set on the tenant or Agent Profile will be used. |
+| 2   | desktopWidth               | This property is used to set the desktop connector width.                                                        | Optional. Default desktop width will be considered.                                |
+| 3   | hostName                   | Hostname of the MS Dynamics Instance (Example : "hostName":"https://org91c3bc64.crm.dynamics.com/")              | Mandatory field.                                                                   |
+| 4   | isAdvancedScreenpopEnabled | Flag to enable / disable advanced search (CAD variable based search)                                             | The value should be either true or false.                                          |
+| 5   | cadVariableName            | CAD variable name that has the value to be searched in CRM                                                       | Mandatory field.                                                                   |
+| 6   | crmEntityFieldName         | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched | Mandatory field.                                                                   |
+| 7   | crmEntityName              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                               | Mandatory field.                                                                   |
 
 ## Desktop URLs per Datacenter
 
