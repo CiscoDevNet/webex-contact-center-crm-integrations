@@ -2,7 +2,7 @@
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This folder contains the latest Desktop Layout for the MSDynamics integrated Agent Desktop inside of the CRM console.
+This folder contains the latest Desktop Layout for MSDynamics integrated Agent Desktop inside of the CRM console.
 
 ## Desktop Layout Properties
 
@@ -10,15 +10,15 @@ The following section describes the properties in the layout and their utility i
 
 Administrators are free to customize the layout based on the description and functionality below.
 
-| #   | Layout Properties          | Description                                                                                                      | Functionality                                                                      |
-| --- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| 1   | outdialAni                 | This property allows you to override the Outdial ANI specified, for click to dial                                | Optional. The default Outdial ANI set on the tenant or Agent Profile will be used. |
-| 2   | desktopWidth               | This property is used to set the desktop connector width.                                                        | Optional. Default desktop width will be considered.                                |
-| 3   | hostName                   | Hostname of the MS Dynamics Instance (Example : "hostName":"https://org91c3bc64.crm.dynamics.com/")              | Mandatory field.                                                                   |
-| 4   | isAdvancedScreenpopEnabled | Flag to enable / disable advanced search (CAD variable based search)                                             | The value should be either true or false.                                          |
-| 5   | cadVariableName            | CAD variable name that has the value to be searched in CRM                                                       | Mandatory field.                                                                   |
-| 6   | crmEntityFieldName         | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched | Mandatory field.                                                                   |
-| 7   | crmEntityName              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                               | Mandatory field.                                                                   |
+| #   | Layout Properties          | Description                                                                                                      | Functionality                                                                            |
+| --- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1   | outdialAni                 | This property allows you to override the Outdial ANI specified, for click to dial                                | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used. |
+| 2   | desktopWidth               | This property is used to set the desktop connector width.                                                        | Optional field. Default desktop width will be considered.                                |
+| 3   | hostName                   | Hostname of the MS Dynamics Instance (Example : "hostName":"https://org91c3bc64.crm.dynamics.com/")              | Mandatory field.                                                                         |
+| 4   | isAdvancedScreenpopEnabled | Flag to enable / disable advanced search (CAD variable based search)                                             | Mandatory field. The value should be either true or false.                               |
+| 5   | cadVariableName            | CAD variable name whose value is to be searched in the CRM                                                       | Mandatory field for advanced search.                                                     |
+| 6   | crmEntityFieldName         | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched | Mandatory field for advanced search.                                                     |
+| 7   | crmEntityName              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                               | Mandatory field for advanced search.                                                     |
 
 ## Desktop URLs per Datacenter
 
@@ -37,9 +37,9 @@ The following change log shows the version updates to the files and what changes
 
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | File name                        | Desktop version | Comments        | Change Description                                           |
-| --- | -------------------------------- | --------------- | --------------- | ------------------------------------------------------------ |
-| 1   | MSDynamics_Desktop.json          | 0.0.2           | - header        | First draft                                                  |
-| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | - headless      | Minor changes                                                |
-| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | + complete file | Desktop (Product) update                                     |
-| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | headless        | New feature - Advanced Screenpop / CAD variable based search |
+| #   | File name                        | Desktop version | Change Description                                           |
+| --- | -------------------------------- | --------------- | ------------------------------------------------------------ |
+| 1   | MSDynamics_Desktop.json          | 0.0.2           | First draft                                                  |
+| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | Minor changes                                                |
+| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | Desktop (Product) update                                     |
+| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | New feature - Advanced Screenpop / CAD variable based search |
