@@ -37,9 +37,43 @@ The following change log shows the version updates to the files and what changes
 
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | File name                        | Desktop version | Change Description                                           |
-| --- | -------------------------------- | --------------- | ------------------------------------------------------------ |
-| 1   | MSDynamics_Desktop.json          | 0.0.2           | First draft                                                  |
-| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | Minor changes                                                |
-| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | Desktop (Product) update                                     |
-| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | New feature - Advanced Screenpop / CAD variable based search |
+| #   | File name                        | Desktop version | Change Description                                           | Change Date |
+| --- | -------------------------------- | --------------- | ------------------------------------------------------------ | ----------- |
+| 1   | MSDynamics_Desktop.json          | 0.0.2           | First draft                                                  | June 2021   |
+| 2   | MSDynamics_Desktop_v1.1.json     | 0.0.2           | Minor changes                                                | August 2021 |
+| 3   | MSDynamics_Desktop_0.0.6_v1.json | 0.0.6           | Desktop (Product) update                                     | April 2022  |
+| 4   | MSDynamics_Desktop_0.0.6_v2.json | 0.0.6           | New feature - Advanced Screenpop / CAD variable based search | June 2022   |
+
+## Feature Matrix
+
+This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
+
+| #   | Feature​                                                                                    | Standard Connector | Customization |
+| --- | ------------------------------------------------------------------------------------------- | ------------------ | ------------- |
+| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | &#10004            | -             |
+| 2   | Call Controls embedded in CRM application                                                   | &check;            | -             |
+| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | [x]                | -             |
+| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | [x]                |
+| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | [x]                |
+| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | [x]                | &#10004       |
+| 7   | Outbound Calling – Click to Call​                                                           | [x]                |
+| 8   | Outbound Support                                                                            | [x]                |
+| 9   | Automatic call (activity) logging in CRM application                                        | [x]                |
+| 10  | IVR Data populated within Salesforce (Caller Entered Digits captured as CAD variables)​     | [x]                |
+| 11  | Contact Center Reporting within the CRM​                                                    | [x]                |
+| 12  | Activity ownership transfer during Call Transfer​                                           | [x]                |
+| 13  | Screen-pop and activity logging retention during consult transfer/conference​               | [x]                |
+
+## Installation Guide
+
+The installation guide is available at **[help.webex.com](https://help.webex.com/en-us/article/aw26j2/Integrate-Webex-Contact-Center-with-Microsoft-Dynamics-365)**
+
+## Lab Guides
+
+Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)** that covers some of these integrations along with step by step instructions on the installation.
+
+## Support
+
+Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
+
+Participate in discussions OR ask for help on the [Cisco Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/5926-discussions-contact-center).
