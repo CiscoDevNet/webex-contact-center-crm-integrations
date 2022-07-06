@@ -1,8 +1,6 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - MSDynamics
+# Integrate Webex Contact Center with Microsoft Dynamics
 
-Welcome to the Webex Contact Center CRM Integrations Github repository!
-
-This folder contains the latest Desktop Layout for MSDynamics integrated Agent Desktop inside of the CRM console.
+This folder contains the latest Desktop Layout for the Microsoft Dynamics integrated Agent Desktop inside of the CRM.
 
 ## Desktop Layout Properties
 
@@ -50,8 +48,8 @@ This section outlines the features available in the standard connector as well a
 
 | #   | Feature​                                                                                    | Standard Connector | Customization |
 | --- | ------------------------------------------------------------------------------------------- | ------------------ | ------------- |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | &#10004            | -             |
-| 2   | Call Controls embedded in CRM application                                                   | &check;            | -             |
+| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | [x]            | -             |
+| 2   | Call Controls embedded in CRM application                                                   | [x]           | -             |
 | 3   | Screen-pop based on incoming call parameters (No Record Match)                              | [x]                | -             |
 | 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | [x]                |
 | 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | [x]                |
