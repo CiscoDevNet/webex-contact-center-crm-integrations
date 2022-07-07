@@ -33,19 +33,19 @@ This section outlines the features available in the standard connector as well a
 
 | #   | Feature​                                                                                    | Standard Connector | Customization |
 | --- | ------------------------------------------------------------------------------------------- | ------------------ | ------------- |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | &check;            | -             |
-| 2   | Call Controls embedded in CRM application                                                   | &check;            | -             |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | &check;            | -             |
-| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | &check;            | -             |
-| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | &check;            | -             |
-| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | &check;            | &check;       |
-| 7   | Outbound Calling – Click to Call​                                                           | &check;            | -             |
-| 8   | Outbound Support                                                                            | &check;            | -             |
-| 9   | Automatic call (activity) logging in CRM application                                        | &check;            | -             |
-| 10  | IVR Data populated within Salesforce (Caller Entered Digits captured as CAD variables)​     | &check;            | -             |
-| 11  | Contact Center Reporting within the CRM​                                                    | &check;            | -             |
-| 12  | Activity ownership transfer during Call Transfer​                                           | &check;            | -             |
-| 13  | Screen-pop and activity logging retention during consult transfer/conference​               | &check;            | -             |
+| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | ✔️                 | -             |
+| 2   | Call Controls embedded in CRM application                                                   | ✔️                 | -             |
+| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | ✔️                 | -             |
+| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | ✔️                 | -             |
+| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | ✔️                 | -             |
+| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | ✔️                 | ✔️            |
+| 7   | Outbound Calling – Click to Call​                                                           | ✔️                 | -             |
+| 8   | Outbound Support                                                                            | ✔️                 | -             |
+| 9   | Automatic call (activity) logging in CRM application                                        | ✔️                 | -             |
+| 10  | IVR Data populated within Salesforce (Caller Entered Digits captured as CAD variables)​     | ✔️                 | -             |
+| 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 | -             |
+| 12  | Activity ownership transfer during Call Transfer​                                           | ✔️                 | -             |
+| 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 | -             |
 
 ## Installation Guide
 
