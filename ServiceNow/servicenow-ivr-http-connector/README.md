@@ -4,12 +4,11 @@ The following section explains how to get started with the HTTP connector in Web
 
 Attached is the sample flow for **ServiceNow_HTTP_Connector.json** which shows you how a simple lookup can be performed. For detailed steps, refer to the video below.
 
-## [Watch Now: Configure ServiceNow HTTP Connector on Webex Contact Center Flow Designer]()
+## [Watch Now: Configure ServiceNow HTTP Connector on Webex Contact Center Flow Designer](https://app.vidcast.io/share/22e511b2-cb81-474d-a6c6-982214d0e473)
 
 ## Use Case
 
-- Customer calls into Webex Contact Center and is greeted to enter the Case ID.
-- Customer enters the Case ID.
+- Customer calls into Webex Contact Center and is greeted qhile an ANI lookup is performed on ServiceNow.
 - From Webex Contact Center, the ServiceNow Incident ID is looked up inside of the CRM and data is extracted.
 - Customer is greeted with a personalized IVR.
 - Customer is prioritized based on Incident severity.
