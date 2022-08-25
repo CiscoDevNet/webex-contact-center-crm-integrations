@@ -28,13 +28,24 @@ Attached is the sample flow for **ServiceNow_HTTP_Connector.json** which shows y
 - ServiceNow REST API: https://docs.servicenow.com/bundle/paris-application-development/page/integrate/inbound-rest/concept/c_RESTAPI.html
 - ServiceNow Table API: https://developer.servicenow.com/dev.do#!/reference/api/sandiego/rest/c_TableAPI
 
+## OAuth2 Settings - ServiceNow
+
+![Connector Settings](./images/connector1.png)
+
 ## Understanding the Sample Flow
 
 ### Section 1 : IVR lookup and Routing
 
 - This uses the ServiceNow IVR Lookup within the flow.
+- The script has 2 HTTP Lookup nodes inside the main flow.
+- The first lookup fetches the System ID of the User using the ANI.
+- The second lookup fetches the current active incident of this user using the Incident Table REST API Query.
+
+![Flow Diagram 1](./images/flow1.png)
 
 ### Section 2 : Posting Webex Contact Center call information to the incident
 
 - This section uses Event Flows to post information to the incident just when the agent answers the call, and when the agent ends the call.
 - This is just an example of what is possible on the ServiceNow Incident via the Flow Designer.
+
+![Flow Diagram 2](./images/flow2.png)
