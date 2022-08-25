@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "c310124c-9ab0-4961-b467-2dba60c36717",
+		"name": "ServiceNow API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "889186"
+	},
+	"item": [
+		{
+			"name": "GET User by Username",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-UserToken",
+						"value": "6a73494ac3a220100a09b0d651102074c210b7d09741bb3c6a52dde1a05eb0192623e0e8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{instance_id}}.service-now.com/api/now/table/sys_user?sysparm_limit=1&user_name=api_admin",
+					"protocol": "https",
+					"host": [
+						"{{instance_id}}",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"sys_user"
+					],
+					"query": [
+						{
+							"key": "sysparm_limit",
+							"value": "1"
+						},
+						{
+							"key": "user_name",
+							"value": "api_admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET User System ID by ANI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-UserToken",
+						"value": "6a73494ac3a220100a09b0d651102074c210b7d09741bb3c6a52dde1a05eb0192623e0e8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{instance_id}}.service-now.com/api/now/table/sys_user?sysparm_fields=sys_id&sysparm_limit=1&phone=(289) 442-1860",
+					"protocol": "https",
+					"host": [
+						"{{instance_id}}",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"sys_user"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id"
+						},
+						{
+							"key": "sysparm_limit",
+							"value": "1"
+						},
+						{
+							"key": "phone",
+							"value": "(289) 442-1860"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Incident fields",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-UserToken",
+						"value": "6a73494ac3a220100a09b0d651102074c210b7d09741bb3c6a52dde1a05eb0192623e0e8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{instance_id}}.service-now.com/api/now/table/incident",
+					"protocol": "https",
+					"host": [
+						"{{instance_id}}",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Incident by System ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-UserToken",
+						"value": "6a73494ac3a220100a09b0d651102074c210b7d09741bb3c6a52dde1a05eb0192623e0e8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{instance_id}}.service-now.com/api/now/table/incident?sysparm_limit=1&caller_id=d030fa4147a11110206993bd436d4322",
+					"protocol": "https",
+					"host": [
+						"{{instance_id}}",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident"
+					],
+					"query": [
+						{
+							"key": "sysparm_limit",
+							"value": "1"
+						},
+						{
+							"key": "caller_id",
+							"value": "d030fa4147a11110206993bd436d4322"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Incident by Incident ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-UserToken",
+						"value": "6a73494ac3a220100a09b0d651102074c210b7d09741bb3c6a52dde1a05eb0192623e0e8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"comments\":\"Still need to call customer - Got delayed\"}"
+				},
+				"url": {
+					"raw": "https://{{instance_id}}.service-now.com/incident.do?JSONv2&sysparm_action=update&sysparm_query=number=INC0010001",
+					"protocol": "https",
+					"host": [
+						"{{instance_id}}",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"incident.do"
+					],
+					"query": [
+						{
+							"key": "JSONv2",
+							"value": null
+						},
+						{
+							"key": "sysparm_action",
+							"value": "update"
+						},
+						{
+							"key": "sysparm_query",
+							"value": "number=INC0010001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessTokenUrl",
+				"value": "https://{{instance_id}}.service-now.com/oauth_token.do",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://dev97999.service-now.com/login.do",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "service_now_token",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
