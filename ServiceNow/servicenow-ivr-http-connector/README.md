@@ -23,8 +23,11 @@ Attached is the sample flow for **ServiceNow_HTTP_Connector.json** which shows y
 - Import the attached flow ServiceNow_HTTP_Connector.json inside flow designer.
 - Configure the WebexCC Flow along with the required details inside the flow.
 
-- **Optional:** To explore and understand what REST APIs are supported with ServiceNow, import the simplified Postman collection. These are the same APIs that will be used inside of WebexCC Flow Designer to interact with ServiceNow
-- **Docs:**
+**Optional** 
+To explore and understand what REST APIs are supported with ServiceNow, import the simplified Postman collection. These are the same APIs that will be used inside of WebexCC Flow Designer to interact with ServiceNow
+
+**ServiceNow REST API Docs**
+
 - ServiceNow REST API: https://docs.servicenow.com/bundle/paris-application-development/page/integrate/inbound-rest/concept/c_RESTAPI.html
 - ServiceNow Table API: https://developer.servicenow.com/dev.do#!/reference/api/sandiego/rest/c_TableAPI
 
