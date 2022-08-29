@@ -13,17 +13,19 @@
       "widgets": {
         "comp1": {
           "comp": "agentx-msdynamics-desktop",
-           "script":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v2/dist/index.js",
+           "script":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v3/dist/index.js",
            "properties": {
             "outDialEp":"$STORE.agent.outDialEp", 
             "outDialAni":"<OutDialAniValue>",
             "desktopWidth":"500",
-            "crmLibPath":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v2/dist/msdynamics-agent-desktop.min.js",
+            "crmLibPath":"https://s3.us-east-2.amazonaws.com/kad.msdynamics.desktop/v3/dist/msdynamics-agent-desktop.min.js",
             "hostName":"<HostNameOfMSDynamicsInstance>",
             "isAdvancedScreenpopEnabled" : "false",
             "cadVariableName" : "Customer_Name",
+            "crmEntityName" : "contact",
             "crmEntityFieldName" : "firstname",
-            "crmEntityName" : "contact"
+            "inboundANIPrefixToBeRemoved" : "false", 
+            "inboundANIPrefix" : "+1"  
             }
           } 
       },
