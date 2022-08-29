@@ -17,9 +17,7 @@ Administrators are free to customize the layout based on the description and fun
 | 5   | cadVariableName            | CAD variable name whose value is to be searched in the CRM                                                       | Mandatory field for advanced search.                                                                                                                                                                                                    |
 | 6   | crmEntityName              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                               | Mandatory field for advanced search.                                                                                                                                                                                                    |
 | 7   | crmEntityFieldName         | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched | Mandatory field for advanced search. Check [this](https://golive.anywhere365.io/platform_elements/webagent_for_dynamics365/scenarios/webagent_for_dynamcis365_cif_actions.html) for all the entity types and its associated field names |
-
 | 8 | inboundANIPrefixToBeRemoved | Flag to enable / disable removal of prefix from ANI for Inbound Calls. | Optional field. Default value will be false.|
-
 | 9 | inboundANIPrefix | Prefix to be removed from ANI for record match and screenpop in CRM for Inbound Calls. (Example : " "+1") | Mandatory field for prefix removal. |
 
 ## Desktop URLs per Datacenter
