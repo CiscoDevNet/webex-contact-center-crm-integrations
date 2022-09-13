@@ -21,11 +21,13 @@ The following change log shows the version updates to the files and what changes
 
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | Date       | Filename                         | Desktop Version | Change Description       | Change Date |
-| --- | ---------- | -------------------------------- | --------------- | ------------------------ | ----------- |
-| 1   | Jan 2022   | Salesforce_Desktop.json          | 0.0.2           | First draft              | June 2021   |
-| 2   | April 2022 | Salesforce_Desktop_v1.1.json     | 0.0.2           | Minor changes            | Sep 2021    |
-| 3   | April 2022 | Salesforce_Desktop_0.0.6_v1.json | 0.0.6           | Desktop (Product) update | April 2022  |
+| #   | Date       | Filename                             | Desktop Version | Change Description       | Change Date |
+| --- | ---------- | ------------------------------------ | --------------- | ------------------------ | ----------- |
+| 1   | Jan 2022   | Salesforce_Desktop.json              | 0.0.2           | First draft              | June 2021   |
+| 2   | April 2022 | Salesforce_Desktop_v1.1.json         | 0.0.2           | Minor changes            | Sep 2021    |
+| 3   | April 2022 | Salesforce_Desktop_0.0.6_v1.json     | 0.0.6           | Desktop (Product) update | April 2022  |
+| 4   | Sep   2022 | salesforce_desktop_0.0.6_v1.0.1.json | 0.0.6           | New feature sets         | Sept 2022   |
+
 
 ## Feature Matrix
 
@@ -46,6 +48,13 @@ This section outlines the features available in the standard connector as well a
 | 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 | 
 | 12  | Activity ownership transfer during Call Transfer​                                           | ✔️                 | 
 | 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 | 
+| 14  | On demand country code removal from inbound call ANI field                                 | ✔️                 | 
+| 15  | Custom screenpop settings for no record match screenpop search                             | ✔️                 | 
+| 16  | Recording of call live notes update to activity record                                     | ✔️                 | 
+| 17  | Dynamic activity record subject                                                            | ✔️                 | 
+| 18  | Case management                                                                            | ✔️                 | 
+| 19  | Omni state sync                                                                            | ✔️                 | 
+| 20  | SFDC actions widget                                                                        | ✔️                 | 
 
 ## Installation Guide
 
