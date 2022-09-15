@@ -1,0 +1,50 @@
+<callCenter>
+    <section  sortOrder="0" name="reqGeneralInfo" label="Cisco Webex Contact Center Desktop Information">
+        <item sortOrder="0" name="reqInternalName" label="InternalName">WebexCCAgentDesktopV202209017</item>
+        <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(September 2022)</item>
+        <item sortOrder="2" name="reqAdapterUrl" label="CTI Adapter URL">https://desktop.wxcc-us1.cisco.com/</item>
+        <item sortOrder="3" name="reqUseApi" label="Use CTI API">true</item>
+        <item sortOrder="4" name="reqSoftphoneHeight" label="Softphone Height">550</item>
+        <item sortOrder="5" name="reqSoftphoneWidth" label="Softphone Width">500</item>
+        <item sortOrder="6" name="reqSalesforceCompatibilityMode" label="Salesforce Compatibility Mode">Lightning</item>
+    </section>
+    <section sortOrder="1" name="reqAdvanceScreenpopConfig" label="Advanced Screenpop">
+        <item sortOrder="0" name="reqIsAdvancedScreenpopEnabled" label="Advanced Screenpop Enabled">false</item>
+        <item sortOrder="1" name="screenpopSearchParamCadName" label="CAD Variable Name ">cad_variable</item>
+        <item sortOrder="2" name="prefixStringTobeRemoved" label="Remove ANI Prefix Strings">+1,+91</item>
+    </section>
+    <section sortOrder="2" name="reqNoRecordMatchConfig" label="Screenpop Settings">
+        <item sortOrder="0" name="isNoRecordMatchScenarioEnabled" label="Enable Screenpop For No Matching Records">false</item>
+        <item sortOrder="1" name="nameOfCrmRecordObject" label="Salesforce object name">Contact</item>
+        <item sortOrder="2" name="sfdcObjetFieldCadVariableMappings1" label="Object Field Mappings">[{"wxccFieldName":"phoneNumber","sfdcFieldName":"Phone","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
+        <item sortOrder="3" name="sfdcObjectFieldConditionalMappings1" label="Object Conditional Mappings">[]</item>
+    </section>
+    <section sortOrder="3" name="reqActivityRecordConfig" label="Call Activity Record Creation">
+        <item sortOrder="0" name="reqSalesforceNamespace" label="Salesforce Package Namespace">ciscocjs</item>
+        <item sortOrder="1" name="reqIsActivityAutoRefreshEnabled" label="Auto Refresh Enabled">false</item>
+        <item sortOrder="2" name="reqIsCadVariableUpdatedToActivity" label="Custom Field Update Enabled">false</item>
+        <item sortOrder="3" name="CadSalesforceFieldMapping" label="Object Field Mapping">[]</item>
+        <item sortOrder="4" name="SubjectDateFormat" label="Date Format In Subject">MM-dd-yyyy hh:mm a</item>
+        <item sortOrder="5" name="ActivitySubjectTemplate" label="Subject Template">{direction} Call {activityDatetime}</item>
+        <item sortOrder="6" name="isCallNotesEnabled" label="Record Call Live Notes">false</item>
+        <item sortOrder="7" name="sfdcFieldForcallNotes" label="Live Call Notes Field Mapping">Description</item>
+        <item sortOrder="8" name="isActivityRecordCreationAtConnected" label="Create Activity Record at Connected State">false</item>
+    </section>
+    <section sortOrder="4" name="reqSFDCCaseConfig" label="Case Management">
+        <item sortOrder="0" name="isCaseCreationEnabledForInboundCalls" label="Auto Case Creation For Inbound Calls">false</item>
+        <item sortOrder="1" name="isCaseCreationEnabledForOutboundCalls" label="Auto Case Creation For Outbound calls">false</item>
+        <item sortOrder="2" name="isCreatedCaseObjectToBeOpenInEditMode" label="Open Case Object In Edit Mode">false</item>
+        <item sortOrder="3" name="sfdcCaseFieldCadVariableMappings1" label="Field Mappings">[{"wxccFieldName":"AccountId","sfdcFieldName":"AccountId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"},{"wxccFieldName":"ContactId","sfdcFieldName":"ContactId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
+        <item sortOrder="4" name="sfdcCaseFieldCadVariableMappings2" label="Object Field Mappings">[{"wxccFieldName":"phoneNumber","sfdcFieldName":"ContactPhone","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
+        <item sortOrder="5" name="sfdcCaseFieldConditionalMappings1" label="Object Conditional Mappings">[]</item>
+    </section>
+    <section sortOrder="5" name="reqOutDialConfig" label="Outdial Configuration">
+       <item sortOrder="0" name="reqPrefixStringTobeRemoved" label="Remove Phone Number Prefix Strings">+1</item>
+       <item sortOrder="1" name="reqIsOutDialAniToBeSet" label="Set Out Dial ANI">false</item>
+    </section>
+    <section sortOrder="6" name="reqOmniStateSyncConfig" label="Omnichannel State Sync Configuration">
+        <item sortOrder="0" name="isOmniStateSyncEnabled" label="Omnichannel state sync enabled">false</item>
+        <item sortOrder="1" name="defaultOmniStateForCall" label="Default idle code when on voice call">Not Ready</item>
+        <item sortOrder="2" name="defaultOmniStateForOmniChannel" label="Default idle code when on CRM omni channel">Not Ready</item>
+    </section>
+ </callCenter>
