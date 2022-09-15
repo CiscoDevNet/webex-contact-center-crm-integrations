@@ -4,6 +4,24 @@ Welcome to the Webex Contact Center CRM Integrations Github repository!
 
 This folder contains Desktop Layouts for the ServiceNow integrated Agent Desktop inside of the CRM console.
 
+## Desktop Layout Properties
+
+The following section describes the properties in the layout and their utility in turning on certain features.
+
+Administrators are free to customize the layout based on the description and functionality below.
+
+| #   | Layout Properties                       | Description                                                                       | Functionality                                                                                                                                                                                                                |
+| --- | --------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | outDialAni                              | This property allows you to override the Outdial ANI specified, for click to dial | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                                     |
+| 2   | screenpopCadName           | CAD variable name that has the value to be searched in CRM                        | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search.                                                                                                                         |
+| 3   | cadToCrmFieldMapping             | CAD variable name that can be stored in CRM logs. Ex: CadName1:SnowField1,CadName2:SnowField2   | Optional field.                                                                                                                                                                                         |
+| 4   | screenPopURL                      | servicenow end point load screenpop, it can run on SNOW instance. Ex:cti.do?sysparm_caller_phone=                                                                 | Mandatory field.                                                                                                                                                                                                              |
+| 5   | authBase64                 | your-base64-encoded-credentials for servicenow Rest API.                                                                | Mandatory field.                                                                                                                                                                                                              |
+| 6   | restAPI                    | Update your instance name with "&lt;your-instance&gt;"                                                      | Mandatory field. |
+| 7   | openCtiLibPath                    | Update your instance name with "&lt;your-instance&gt;"                                                       | Mandatory field. |
+| 8   | crmLibPath                          | No change is required                                                        | Mandatory field. |
+| 9   | aesPath                           | No change is required                                                        | Mandatory field. |
+
 ## Desktop URLs per Datacenter
 
 > Please note the Webex Contact Center Desktop URLs per Datacenter
