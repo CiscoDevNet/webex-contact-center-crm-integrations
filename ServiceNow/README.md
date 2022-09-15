@@ -25,3 +25,5 @@ The following change log shows the version updates to the file and what changes 
 | --- | ---------- | -------------------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
 | 1   | April 2022 | ServiceNow_Desktop_0.0.6_v1.json | 0.0.6   | + complete file                                                                                          |
 | 2   | April 2022 | servicenow-update-setV3.xml      | V3      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
+| 3   | Sep 2022 | ServiceNow_Desktop_0.0.6_v2.0.0.json |v2.0.0   | + complete file                                                                                          |
+| 4   | Sep 2022 |  webexcc-servicenow-update-setV4.xml | V4      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
