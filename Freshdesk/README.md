@@ -1,8 +1,8 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - Zendesk
+# Webex Contact Center CRM Integrations - Desktop Layouts - Freshdesk
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This folder contains the latest Desktop Layout for Zendesk integrated Agent Desktop inside of the CRM console.
+This folder contains the latest Desktop Layout for Freshdesk integrated Agent Desktop inside of the CRM console.
 
 ## Desktop Layout Properties
 
@@ -13,13 +13,7 @@ Administrators are free to customize the layout based on the description and fun
 | #   | Layout Properties                       | Description                                                                       | Functionality                                                                                                                                                                                                                |
 | --- | --------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | outdialAni                              | This property allows you to override the Outdial ANI specified, for click to dial | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                                     |
-| 2   | isCaseCreationForAllInboundCallsEnabled | Flag to enable / disable auto case creation for Inbound calls                     | Mandatory field. The value should be either true or false.                                                                                                                                                                   |
-| 3   | adavanceSearchCadVariableName           | CAD variable name that has the value to be searched in CRM                        | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search.                                                                                                                         |
-| 4   | adavanceSearchCrmObjectName             | CRM object name in Zendesk within which the CAD variable value will be searched   | Mandatory field for advanced search.                                                                                                                                                                                         |
-| 5   | ticketDynamicField                      | Ticket field name                                                                 | Optional field.                                                                                                                                                                                                              |
-| 6   | ticketDynamicFieldValue                 | Ticket field value                                                                | Optional field.                                                                                                                                                                                                              |
-| 7   | ticketDynamicSubject                    | Ticket dynamic Subject line                                                       | Mandatory field. Define your own subject line (static or dynamic). Call parameters can be used for making the subject line dynamic (Example : {direction} call at {activityDateTime} -> Inbound call at 06.29.2022 12:01 p ) |
-| 8   | dateTimeFormat                          | Preferred date time format                                                        | Optional field - Default value will be used (MM.dd.yyyy hh:mm a)                                                                                                                                                             |
+| 2   | crmLibPath                              | Do not change                                                                     | Mandatory field.                                                                                                                                                                                                             |
 
 ## Desktop URLs per Datacenter
 
