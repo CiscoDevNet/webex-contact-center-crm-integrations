@@ -1,8 +1,25 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - Freshdesk
+# Webex Contact Center CRM Integrations - Desktop Layouts - Zendesk
 
 Welcome to the Webex Contact Center CRM Integrations Github repository!
 
-This folder contains Desktop Layouts for the Freshdesk integrated Agent Desktop inside of the CRM console.
+This folder contains the latest Desktop Layout for Zendesk integrated Agent Desktop inside of the CRM console.
+
+## Desktop Layout Properties
+
+The following section describes the properties in the layout and their utility in turning on certain features.
+
+Administrators are free to customize the layout based on the description and functionality below.
+
+| #   | Layout Properties                       | Description                                                                       | Functionality                                                                                                                                                                                                                |
+| --- | --------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | outdialAni                              | This property allows you to override the Outdial ANI specified, for click to dial | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                                     |
+| 2   | isCaseCreationForAllInboundCallsEnabled | Flag to enable / disable auto case creation for Inbound calls                     | Mandatory field. The value should be either true or false.                                                                                                                                                                   |
+| 3   | adavanceSearchCadVariableName           | CAD variable name that has the value to be searched in CRM                        | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search.                                                                                                                         |
+| 4   | adavanceSearchCrmObjectName             | CRM object name in Zendesk within which the CAD variable value will be searched   | Mandatory field for advanced search.                                                                                                                                                                                         |
+| 5   | ticketDynamicField                      | Ticket field name                                                                 | Optional field.                                                                                                                                                                                                              |
+| 6   | ticketDynamicFieldValue                 | Ticket field value                                                                | Optional field.                                                                                                                                                                                                              |
+| 7   | ticketDynamicSubject                    | Ticket dynamic Subject line                                                       | Mandatory field. Define your own subject line (static or dynamic). Call parameters can be used for making the subject line dynamic (Example : {direction} call at {activityDateTime} -> Inbound call at 06.29.2022 12:01 p ) |
+| 8   | dateTimeFormat                          | Preferred date time format                                                        | Optional field - Default value will be used (MM.dd.yyyy hh:mm a)                                                                                                                                                             |
 
 ## Desktop URLs per Datacenter
 
@@ -15,7 +32,7 @@ This folder contains Desktop Layouts for the Freshdesk integrated Agent Desktop 
 | 3   | https://desktop.wxcc-eu2.cisco.com  | EU            |
 | 4   | https://desktop.wxcc-anz1.cisco.com | APJC          |
 
-## Change Log
+# Change Log :
 
 The following change log shows the version updates to the files and what changes and enhacements were included:
 
@@ -26,3 +43,33 @@ The following change log shows the version updates to the files and what changes
 | 1   | April 2022 | Freshdesk_Desktop_0.0.6_v1.json | 0.0.6           | + initial commit                                                                         |
 | 2   | June 2022  | Freshdesk_Desktop_0.0.6_v2.json | 0.0.6           | + Add headerActions[""] to the desktop layout so the action headers will be suppressed.  |
 | 3   | June  2022 | Freshdesk_Desktop_0.0.6_v1.json | 0.0.6           | - removed                                                                         |
+
+## Feature Matrix
+
+This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
+
+| #   | Feature​                                                                                    | Standard Connector |
+| --- | ------------------------------------------------------------------------------------------- | ------------------ |
+| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | ✔️                 |
+| 2   | Call Controls embedded in CRM application                                                   | ✔️                 |
+| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | ✔️                 |
+| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | ✔️                 |
+| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | ✔️                 |
+| 6   | Outbound Calling – Click to Call​                                                           | ✔️                 |
+| 7   | Outbound Support                                                                            | ✔️                 |
+| 8   | Automatic call (activity) logging in CRM application                                        | ✔️                 |
+| 9   | IVR Data populated within CRM (Caller Entered Digits captured as CAD variables)​            | ✔️                 |
+
+## Installation Guide
+
+The installation guide is available at **[help.webex.com](https://help.webex.com/en-us/article/nb8oxvy/Integrate-Webex-Contact-Center-with-Freshdesk)**
+
+## Lab Guides
+
+NA
+
+## Support
+
+Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
+
+Participate in discussions OR ask for help on the [Cisco Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/5926-discussions-contact-center).
