@@ -22,7 +22,7 @@
           "script": "https://d390gzw4ok28px.cloudfront.net/freshdesk/v4/dist/index.js",
           "properties": {
             "outDialAni": "<OutDialAniValue>",
-            "crmLibPath": "https://d390gzw4ok28px.cloudfront.net/freshdesk/v4/webexcc_freshdesk_desktop_v3_20220606.js"
+            "crmLibPath": "https://d390gzw4ok28px.cloudfront.net/freshdesk/v4/webexcc_freshdesk_desktop_v4_20220616.js"
           }
         }
       },
