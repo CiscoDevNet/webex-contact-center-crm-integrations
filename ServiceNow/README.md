@@ -15,12 +15,7 @@ Administrators are free to customize the layout based on the description and fun
 | 1   | outDialAni                              | This property allows you to override the Outdial ANI specified, for click to dial | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                                     |
 | 2   | screenpopCadName           | CAD variable name that has the value to be searched in CRM                        | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search.                                                                                                                         |
 | 3   | cadToCrmFieldMapping             | CAD variable name that can be stored in CRM logs. Ex: CadName1:SnowField1,CadName2:SnowField2   | Optional field.                                                                                                                                                                                         |
-| 4   | screenPopURL                      | servicenow end point load screenpop, it can run on SNOW instance. Ex:cti.do?sysparm_caller_phone=                                                                 | Mandatory field.                                                                                                                                                                                                              |
-| 5   | authBase64                 | your-base64-encoded-credentials for servicenow Rest API.                                                                | Mandatory field.                                                                                                                                                                                                              |
-| 6   | restAPI                    | Update your instance name with "&lt;your-instance&gt;"                                                      | Mandatory field. |
-| 7   | openCtiLibPath                    | Update your instance name with "&lt;your-instance&gt;"                                                       | Mandatory field. |
-| 8   | crmLibPath                          | No change is required                                                        | Mandatory field. |
-| 9   | aesPath                           | No change is required                                                        | Mandatory field. |
+| 4   | crmLibPath                          | No change is required                                                        | Mandatory field. |
 
 ## Desktop URLs per Datacenter
 
@@ -45,3 +40,5 @@ The following change log shows the version updates to the file and what changes 
 | 2   | April 2022 | servicenow-update-setV3.xml      | V3      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
 | 3   | Sep 2022 | ServiceNow_Desktop_0.0.6_v2.0.0.json |v2.0.0   | + complete file                                                                                          |
 | 4   | Sep 2022 |  webexcc-servicenow-update-setV4.xml | V4      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
+| 5   | Sep 2022 | ServiceNow_Desktop_0.0.6_v3.0.0.json |v3.0.0   | + complete file                                                                                          |
+| 6   | Sep 2022 |  webexcc-servicenow-update-setV5.xml | V5      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |

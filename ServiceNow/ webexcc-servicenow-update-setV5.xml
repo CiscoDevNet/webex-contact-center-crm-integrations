@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-09-20 18:48:50">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name> webexcc-servicenow-update-setV5</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>07c1ef082fc211106446cc96f699b6a3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d5e69df92fc211106446cc96f699b681</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_dnis</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_dnis" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;DNIS&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_dnis&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;44fc1f182f1301101ba7d7a72799b688&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;DNIS&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_dnis&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1694557071</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>11e6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6ef0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_dnis</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f49d9398721301106baef8dacd83e1a4</update_guid>
+<update_guid_history>f49d9398721301106baef8dacd83e1a4:-1694557071</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_0de000592f4a91106446cc96f699b6c2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Agent Desktop URL Ex: US https://desktop.wxcc-us1.cisco.com/</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>agentdesktop_url</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-18 23:18:04</sys_created_on><sys_id>0de000592f4a91106446cc96f699b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>agentdesktop_url</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_0de000592f4a91106446cc96f699b6c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-18 23:18:04</sys_updated_on><type>string</type><value>https://desktop.wxcc-us1.cisco.com/</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=0de000592f4a91106446cc96f699b6c2"/></record_update>]]></payload>
+<payload_hash>1309134032</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>11e6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18352e508ce0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>agentdesktop_url</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>ce510059de4a91101d3e475b6841f466</update_guid>
+<update_guid_history>ce510059de4a91101d3e475b6841f466:1309134032</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_0257879f476511105eb7f088436d4357</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>WebexCCRestAPIRole</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-31 22:20:02</sys_created_on><sys_id>0257879f476511105eb7f088436d4357</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WebexCCRestAPIRole</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_0257879f476511105eb7f088436d4357</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-31 22:20:02</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>1993147894</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>11e6193d2fc211106446cc96f699b64e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266dae70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>WebexCCRestAPIRole</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>9077439b436511107471d203fb4f853c</update_guid>
+<update_guid_history>9077439b436511107471d203fb4f853c:1993147894</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_468fdf982f1301101ba7d7a72799b6eb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cisco Webex Contact Center">c19d93982f1301101ba7d7a72799b6c8</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_webexcc_activity</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_webexcc_activity_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:03:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>468fdf982f1301101ba7d7a72799b6eb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_468fdf982f1301101ba7d7a72799b6eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:06:51</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>1706313697</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>11e69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266da4f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>Create New</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>2d902b1c7c1301107e5e80710000f508</update_guid>
+<update_guid_history>2d902b1c7c1301107e5e80710000f508:1706313697,fadf9f9834130110a4d67ba5268973bc:741299065</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_ringingtime_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_ringingtime" label="RingingTime" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_ringingtime</element><help/><hint/><label>RingingTime</label><language>en</language><name>u_webexcc_activity</name><plural>RingingTimes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>299dd3982f1301101ba7d7a72799b611</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RingingTime</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_ringingtime_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-535435039</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>15e6193d2fc211106446cc96f699b64a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d86c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.RingingTime</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e99dd398be130110ea3e69f652f8a333</update_guid>
+<update_guid_history>e99dd398be130110ea3e69f652f8a333:-535435039</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_application_419d93982f1301101ba7d7a72799b6dc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Cisco Webex Contact Center</name><order/><roles>u_webexcc_activity_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>419d93982f1301101ba7d7a72799b6dc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cisco Webex Contact Center</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_application_419d93982f1301101ba7d7a72799b6dc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:42</sys_updated_on></sys_ui_application></record_update>]]></payload>
+<payload_hash>-767117006</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>15e6193d2fc211106446cc96f699b64d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7540000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>Cisco Webex Contact Center</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>c19d9398f713011067954616f4b1bbde</update_guid>
+<update_guid_history>c19d9398f713011067954616f4b1bbde:-767117006</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_callobject_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_callobject" label="CallObject" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_callobject</element><help/><hint/><label>CallObject</label><language>en</language><name>u_webexcc_activity</name><plural>CallObjects</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>259dd3982f1301101ba7d7a72799b60d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallObject</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_callobject_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1822834357</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>19e6193d2fc211106446cc96f699b649</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8580000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.CallObject</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e59dd398f7130110c84ee401ff349d32</update_guid>
+<update_guid_history>e59dd398f7130110c84ee401ff349d32:-1822834357</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>599d93982f1301101ba7d7a72799b6ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity.u_webexcc_activity_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_webexcc_activity">999d93982f1301101ba7d7a72799b6ea</sys_security_acl><sys_update_name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><sys_user_role display_value="u_webexcc_activity_user" name="u_webexcc_activity_user">289ddb182f1301101ba7d7a72799b6b5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1493555244</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>19e6193d2fc211106446cc96f699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7c40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_webexcc_activity_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>1d9d93986213011062f13b9b0ec5d4ef</update_guid>
+<update_guid_history>1d9d93986213011062f13b9b0ec5d4ef:1493555244</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_activitydate_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_activitydate" label="ActivityDate" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_activitydate</element><help/><hint/><label>ActivityDate</label><language>en</language><name>u_webexcc_activity</name><plural>ActivityDates</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>a99dd3982f1301101ba7d7a72799b608</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ActivityDate</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_activitydate_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-822049205</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>1de6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d9720000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.ActivityDate</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a59dd398b7130110f9e376066ffd8b3c</update_guid>
+<update_guid_history>a59dd398b7130110f9e376066ffd8b3c:-822049205</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_899d93982f1301101ba7d7a72799b6e2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_webexcc_activity</description><name>u_webexcc_activity</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>899d93982f1301101ba7d7a72799b6e2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_899d93982f1301101ba7d7a72799b6e2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1729910269</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>1de6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>dd9d93985c130110cf213aea7a9790e5</update_guid>
+<update_guid_history>dd9d93985c130110cf213aea7a9790e5:-1729910269</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_4b6815b5472951105eb7f088436d431e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;activitytable&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+   
+	        var sys_id=0;
+			
+			var actInfo =request.body.data;
+			var webexcc = new GlideRecordSecure(gs.getProperty('webexccactivitytable'));
+	        webexcc.addQuery("u_callobject", actInfo.CallObject);
+            webexcc.query();
+			if(!webexcc.next()) {
+				webexcc.u_ani = actInfo.ani;
+				webexcc.u_dnis =actInfo.dnis; 
+				webexcc.u_queuename =actInfo.queuename;
+				webexcc.u_wrapuptime =actInfo.wrapuptime;
+				webexcc.u_callduration =actInfo.CallDurationInSeconds;
+				webexcc.u_ringingtime =actInfo.ringingtime;
+				webexcc.u_activitydate =actInfo.ActivityDate;
+				webexcc.u_callobject =actInfo.CallObject;
+				webexcc.u_calltype =actInfo.CallType;
+				webexcc.u_calldisposition=actInfo.CallDisposition;
+				sys_id=webexcc.insert();
+            
+				//Activities on Incident record;
+				
+	           //  phone format in servicenow
+
+					var phone = actInfo.ani + '';
+					phone = phone.replace('+', '');
+					phone = phone.replace(' ', '');
+					if (phone.length &gt; 10 &amp;&amp; parseInt(phone.substr(0, 1)) === 1) {
+						phone = phone.substr(1);
+						var inputPhone1 = phone.substr(0, 3);
+						var inputPhone2 = phone.substr(3, 3);
+						var inputPhone3 = phone.substr(6, 4);
+						phone = '(' + inputPhone1 + ') ' + inputPhone2 + '-' + inputPhone3;
+					} else if (phone.length == 10) {
+						var inputPhone1a = phone.substr(0, 3);
+						var inputPhone2a = phone.substr(3, 3);
+						var inputPhone3a = phone.substr(6, 4);
+						phone = '(' + inputPhone1a + ') ' + inputPhone2a + '-' + inputPhone3a;
+					}
+
+
+                var suser = new GlideRecordSecure("sys_user");
+					suser.addQuery("phone", phone);
+					suser.query();
+					if(suser.next()) {
+					var inc = new GlideRecordSecure('incident');
+							inc.addQuery('caller_id', suser.sys_id);
+							inc.orderByDesc('sys_created_on');
+							inc.query();
+								if (inc.next()) {
+									var jsonPretty = JSON.stringify(actInfo,null,2);
+									inc.comments =jsonPretty;
+     							    inc.update();
+	
+							}
+					} 
+			}	
+
+	
+	return {
+		message: 'WebexCC record has been created. The sys_id is ' + sys_id,
+		error: webexcc.getLastErrorMessage()
+	};
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/308173/webexcc/activitytable&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/activitytable&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-26 22:48:46&lt;/sys_created_on&gt;&lt;sys_id&gt;4b6815b5472951105eb7f088436d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;activitytable&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_4b6815b5472951105eb7f088436d431e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-18 23:52:21&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="WebexCC REST API"&gt;713e81bd47e551105eb7f088436d431f&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1339939442</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>1de6193d2fc211106446cc96f699b64e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>183530467e40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>activitytable</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>40398411708a9110e8962f0baf810301</update_guid>
+<update_guid_history>40398411708a9110e8962f0baf810301:1339939442,804e95af567551100022ce5c098ebc23:148820188,7e8c708fc1255110a478f19b2c34bd28:630174669,e19d9b6601611110ded4be9eb86d6745:-1992513023,0b09db22226111108b69973022a49b93:218513507,1b066135c1695110f59b139ead68c737:-557948978,9cc52df17f695110bab64fb9cfebb5a6:-210189694,d654e1fd3d2951107f5959520387d3cb:-340594775,aaf3e1b911295110a76154c77c1b86fe:-116560761,d963a9719a695110216ad6f236e98ebd:-659711947,7b3e19b9af2951103899cde46e6c380e:1475617731,a41e1d3d8d2951102d5cf54bef2d2592:58196989</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:43&lt;/sys_created_on&gt;&lt;sys_id&gt;199d93982f1301101ba7d7a72799b6fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_webexcc_activity&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1639319203</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>1de69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d83e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>299dd398f21301104eced71ff9363a24</update_guid>
+<update_guid_history>299dd398f21301104eced71ff9363a24:1639319203</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_queuename_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_queuename" label="QueueName" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_queuename</element><help/><hint/><label>QueueName</label><language>en</language><name>u_webexcc_activity</name><plural>QueueNames</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>e59dd3982f1301101ba7d7a72799b610</sys_id><sys_mod_count>0</sys_mod_count><sys_name>QueueName</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_queuename_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1545614963</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>51e6193d2fc211106446cc96f699b64a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d9b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.QueueName</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>bd9dd398531301105de7492fa6fbf93e</update_guid>
+<update_guid_history>bd9dd398531301105de7492fa6fbf93e:-1545614963</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_9d9d93982f1301101ba7d7a72799b6e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>9d9d93982f1301101ba7d7a72799b6e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity.u_webexcc_activity_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_webexcc_activity">899d93982f1301101ba7d7a72799b6e2</sys_security_acl><sys_update_name>sys_security_acl_role_9d9d93982f1301101ba7d7a72799b6e6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><sys_user_role display_value="u_webexcc_activity_user" name="u_webexcc_activity_user">289ddb182f1301101ba7d7a72799b6b5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>339120030</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>51e6193d2fc211106446cc96f699b64d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_webexcc_activity_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d99d93986e1301107322c0bdbb3b91e9</update_guid>
+<update_guid_history>d99d93986e1301107322c0bdbb3b91e9:339120030</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_callduration_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_callduration" label="CallDuration" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_callduration</element><help/><hint/><label>CallDuration</label><language>en</language><name>u_webexcc_activity</name><plural>CallDurations</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>e19dd3982f1301101ba7d7a72799b60c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallDuration</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_callduration_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-98154271</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>55e6193d2fc211106446cc96f699b649</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d9970000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.CallDuration</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b99dd398b81301107511abc543767c3d</update_guid>
+<update_guid_history>b99dd398b81301107511abc543767c3d:-98154271</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_999d93982f1301101ba7d7a72799b6f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_webexcc_activity</description><name>u_webexcc_activity</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>999d93982f1301101ba7d7a72799b6f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_999d93982f1301101ba7d7a72799b6f6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1510458139</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>55e6193d2fc211106446cc96f699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8100000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d99d939837130110cab7542e65a00cf8</update_guid>
+<update_guid_history>d99d939837130110cab7542e65a00cf8:-1510458139</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_calldisposition</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_calldisposition" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallDisposition&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_calldisposition&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;d06cdb182f1301101ba7d7a72799b6b0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CallDisposition&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_calldisposition&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>709577795</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>55e69df92fc211106446cc96f699b683</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_calldisposition</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>b09d939843130110c9b1ba3148f45571</update_guid>
+<update_guid_history>b09d939843130110c9b1ba3148f45571:709577795</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_wrapuptime</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_wrapuptime" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;WrapupTime&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_wrapuptime&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:42&lt;/sys_created_on&gt;&lt;sys_id&gt;f34d1f182f1301101ba7d7a72799b689&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;WrapupTime&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_wrapuptime&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-399407439</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>59e6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d72b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_wrapuptime</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>419d939853130110bf57c00bbc5970c3</update_guid>
+<update_guid_history>419d939853130110bf57c00bbc5970c3:-399407439</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_571ff7c52f4a91106446cc96f699b6a3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.propUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;propUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var propUtils = Class.create();
+propUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+         getWebexccProp : function () {
+           var webexccprop = {};
+           webexccprop.instanceurl= 'https://'+gs.getProperty('instance_name')+'.service-now.com/';
+           webexccprop.url=gs.getProperty('agentdesktop_url');
+           webexccprop.popupurl=gs.getProperty('screenpop_url');
+           return  JSON.stringify(webexccprop);
+     
+        },
+     setWebexcctable : function () {
+            var sys_id=0;
+			
+			var actInfo = JSON.parse(this.getParameter('actInfo'));
+			var webexcc = new GlideRecordSecure(gs.getProperty('webexccactivitytable'));
+            webexcc.addQuery("u_callobject", actInfo.CallObject);
+            webexcc.query();
+			if(!webexcc.next()) {
+				webexcc.u_ani = actInfo.ani;
+				webexcc.u_dnis =actInfo.dnis;
+				webexcc.u_queuename =actInfo.queuename;
+				webexcc.u_wrapuptime =actInfo.wrapuptime;
+				webexcc.u_callduration =actInfo.CallDurationInSeconds;
+				webexcc.u_ringingtime =actInfo.ringingtime;
+				webexcc.u_activitydate =actInfo.ActivityDate;
+				webexcc.u_callobject =actInfo.CallObject;
+				webexcc.u_calltype =actInfo.CallType;
+				webexcc.u_calldisposition=actInfo.CallDisposition;
+				sys_id=webexcc.insert();
+
+				//Activities on Incident record;
+				var actInfoString =this.getParameter('actInfo');
+                var suser = new GlideRecordSecure("sys_user");
+					suser.addQuery("phone", this.getParameter('ani'));
+					suser.query();
+					if(suser.next()) {
+					var inc = new GlideRecordSecure('incident');
+							inc.addQuery('caller_id', suser.sys_id);
+							inc.orderByDesc('sys_created_on');
+							inc.query();
+								if (inc.next()) {
+									var jsonPretty = JSON.stringify(JSON.parse(actInfoString),null,2);  
+									inc.comments =jsonPretty;
+								inc.update();
+	
+							}
+					} 
+				
+				var suserm = new GlideRecordSecure("sys_user");
+				suserm.addQuery("mobile_phone", this.getParameter('ani'));
+				suserm.query();
+				if(suserm.next()) {
+					var incm = new GlideRecordSecure('incident');
+					incm.addQuery('caller_id', suser.sys_id);
+					incm.orderByDesc('sys_created_on');
+					incm.query();
+					if (incm.next()) {
+						var jsonPretty1 = JSON.stringify(JSON.parse(actInfoString),null,2);  
+						incm.comments =jsonPretty1;
+						incm.update();
+
+					}
+				}
+					
+			}	
+            return sys_id;
+       },
+    type: 'propUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-18 23:13:15&lt;/sys_created_on&gt;&lt;sys_id&gt;571ff7c52f4a91106446cc96f699b6a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;propUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_571ff7c52f4a91106446cc96f699b6a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-20 17:19:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1109154183</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>59e6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1835be9a8040000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>propUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>cc8205b9428211108ac284e576e03300</update_guid>
+<update_guid_history>cc8205b9428211108ac284e576e03300:1109154183,cf7ff0f5b6821110741589df38cc038d:-1498768178,4bedf03500821110a0a233521667a4a5:-638434237,24e0a051c58a91107db38caeb5b8a824:1314434476,54628499704a91106cebceb6b5a0ec0c:-2147439936,9330c4d5174a9110723a2f527cb1a7cf:853746824</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_713e81bd47e551105eb7f088436d431f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/308173/webexcc</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>WebexCC REST API</name><namespace>308173</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>webexcc</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-26 21:40:31</sys_created_on><sys_id>713e81bd47e551105eb7f088436d431f</sys_id><sys_mod_count>2</sys_mod_count><sys_name>WebexCC REST API</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_713e81bd47e551105eb7f088436d431f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 20:14:47</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>-2077964328</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>59e6193d2fc211106446cc96f699b64e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266db3a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>WebexCC REST API</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>2777bb712b7511101fdcc8530f1cbd6a</update_guid>
+<update_guid_history>2777bb712b7511101fdcc8530f1cbd6a:-2077964328,d45891fd9be551106e2be83dba80c315:1071424648,b87e8d7d7be55110bc8d5e370a30f234:-682940654</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_incident_caller_id</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="caller_id" table="incident"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>edge_encryption_enabled=true,encode_utf8=false,ref_contributions=show_phone</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Caller</column_label><comments/><create_roles/><default_value>javascript:incidentGetCaller();</default_value><defaultsort/><delete_roles/><dependent>company</dependent><dependent_on_field>company</dependent_on_field><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value display_value="Incident Get Caller">0d39d9105f220100a9ad2572f2b47796</dynamic_default_value><dynamic_ref_qual/><element>caller_id</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>incident</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_user">sys_user</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2021-09-17 01:35:52</sys_created_on><sys_id>4da8ccf121920110a866589604c20d1c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Caller</sys_name><sys_package display_value="">79616603a9663010c0a065f439e66178</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_incident_caller_id</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-31 15:00:21</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>true</use_dependent_field><use_dynamic_default>true</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles>itil</write_roles><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-306392391</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>59e69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266dad10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Caller</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>fbc2a517bf211110b92a5a4e77dcc192</update_guid>
+<update_guid_history>fbc2a517bf211110b92a5a4e77dcc192:-306392391,b3b22517172111104e353f5746bc12ea:210646237,e750b9a5c8e91110ad3801308eb4aa1b:-306392391,3eb16b5cb713011058347ede2a403915:410052621,a6b12b5c9213011041ae00fa658657fd:-328891193,2da07466779511107fd02d53042f6d5c:-328891193</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_calltype</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_calltype" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallType&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_calltype&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;50dc93182f1301101ba7d7a72799b66c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CallType&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_calltype&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>798175729</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>5de6193d2fc211106446cc96f699b647</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6d70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_calltype</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>b49d9398e5130110d8ad22500edd4c9e</update_guid>
+<update_guid_history>b49d9398e5130110d8ad22500edd4c9e:798175729</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_02818c192f4a91106446cc96f699b638</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>WebexCC screenPopURL</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>screenpop_url</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-18 23:22:26</sys_created_on><sys_id>02818c192f4a91106446cc96f699b638</sys_id><sys_mod_count>0</sys_mod_count><sys_name>screenpop_url</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_02818c192f4a91106446cc96f699b638</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-18 23:22:26</sys_updated_on><type>string</type><value>cti.do?sysparm_caller_phone=</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=02818c192f4a91106446cc96f699b638"/></record_update>]]></payload>
+<payload_hash>-477168287</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>5de6193d2fc211106446cc96f699b64a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18352e9061a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>screenpop_url</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b15244996a4a911056da93dc7333b1a9</update_guid>
+<update_guid_history>b15244996a4a911056da93dc7333b1a9:-477168287</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_f4a0631c2f1301101ba7d7a72799b635</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="f4a0631c2f1301101ba7d7a72799b635" sys_domain="global" table="u_webexcc_activity" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>fca0ab1c2f1301101ba7d7a72799b6c1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_activitydate</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>f4a0ab1c2f1301101ba7d7a72799b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_queuename</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>78a0ab1c2f1301101ba7d7a72799b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_calltype</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>f8a0ab1c2f1301101ba7d7a72799b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_callduration</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>7ca0ab1c2f1301101ba7d7a72799b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_ani</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>fca0ab1c2f1301101ba7d7a72799b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>70a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_dnis</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>f0a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_callobject</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>74a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_calldisposition</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>f4a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_ringingtime</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>78a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_wrapuptime</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>f8a0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_id>7ca0ab1c2f1301101ba7d7a72799b6c3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_webexcc_activity" sys_domain="global" view="Default view">f4a0631c2f1301101ba7d7a72799b635</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_webexcc_activity</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:07:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f4a0631c2f1301101ba7d7a72799b635</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_f4a0631c2f1301101ba7d7a72799b635</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 20:07:04</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>715037632</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>5de6193d2fc211106446cc96f699b64d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266da840000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>78a0ab1cef130110df7744b6e9f064c5</update_guid>
+<update_guid_history>78a0ab1cef130110df7744b6e9f064c5:715037632,38a0ab1c5c13011022eb0ddfd414d5be:-70660961</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_0d9d93982f1301101ba7d7a72799b6cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cisco Webex Contact Center">c19d93982f1301101ba7d7a72799b6c8</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>WebexCC Activities</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_webexcc_activity</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_webexcc_activity_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0d9d93982f1301101ba7d7a72799b6cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WebexCC Activities</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_0d9d93982f1301101ba7d7a72799b6cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:42</sys_updated_on><timeline_page/><title>WebexCC Activities</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>1818298627</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>5de69df92fc211106446cc96f699b681</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d73f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activities</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>019d9398b1130110394058e0e61c2ddb</update_guid>
+<update_guid_history>019d9398b1130110394058e0e61c2ddb:1818298627</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_calldisposition_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_calldisposition" label="CallDisposition" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_calldisposition</element><help/><hint/><label>CallDisposition</label><language>en</language><name>u_webexcc_activity</name><plural>CallDispositions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>a19dd3982f1301101ba7d7a72799b60b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallDisposition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_calldisposition_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1459271097</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>91e6193d2fc211106446cc96f699b649</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d92e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.CallDisposition</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>ad9dd3981b130110ef3000465b91e439</update_guid>
+<update_guid_history>ad9dd3981b130110ef3000465b91e439:1459271097</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_999d93982f1301101ba7d7a72799b6f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_webexcc_activity</description><name>u_webexcc_activity</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>999d93982f1301101ba7d7a72799b6f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_999d93982f1301101ba7d7a72799b6f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1860473747</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>91e6193d2fc211106446cc96f699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7d40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d99d9398d8130110cdc82c0019d1adf2</update_guid>
+<update_guid_history>d99d9398d8130110cdc82c0019d1adf2:1860473747</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_ani</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_ani" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;ANI&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_ani&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;9c4c9b182f1301101ba7d7a72799b60a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ANI&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_ani&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>170357251</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>91e69df92fc211106446cc96f699b683</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6910000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_ani</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>709d939865130110737ca416abb20e6b</update_guid>
+<update_guid_history>709d939865130110737ca416abb20e6b:170357251</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_ringingtime</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_ringingtime" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;RingingTime&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_ringingtime&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:42&lt;/sys_created_on&gt;&lt;sys_id&gt;2e2ddfd42f1301101ba7d7a72799b63c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;RingingTime&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_ringingtime&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1832414275</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>95e6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7140000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_ringingtime</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>019d9398ad130110061a726c8dfa7fbd</update_guid>
+<update_guid_history>019d9398ad130110061a726c8dfa7fbd:1832414275</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_9850fac573612300d68ed5fdbdf6a73c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>List of trusted origins we allow to propagate messages (sent via window.postMessage) in the UI. Origins can be separated by comma, space or new line.</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.concourse.onmessage_enforce_same_origin_whitelist</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-11-01 23:37:08</sys_created_on><sys_id>9850fac573612300d68ed5fdbdf6a73c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>glide.ui.concourse.onmessage_enforce_same_origin_whitelist</sys_name><sys_package display_value="System (glidesoft)" source="glidesoft">bca5cc3121120110a866589604c20d04</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_9850fac573612300d68ed5fdbdf6a73c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-29 15:05:17</sys_updated_on><type>string</type><value>https://desktop.wxcc-us1.cisco.com</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=9850fac573612300d68ed5fdbdf6a73c"/></record_update>]]></payload>
+<payload_hash>-110987042</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>95e6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266daaa0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>glide.ui.concourse.onmessage_enforce_same_origin_whitelist</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>bcc053aaf1211110c99259844dc339ab</update_guid>
+<update_guid_history>bcc053aaf1211110c99259844dc339ab:-110987042,2b4f3a8640211110c6b7f50f8be408c7:-1369535757,934f3a86772111100df08fce7faed7c2:1967352975</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_289ddb182f1301101ba7d7a72799b6b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>u_webexcc_activity_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:40</sys_created_on><sys_id>289ddb182f1301101ba7d7a72799b6b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_289ddb182f1301101ba7d7a72799b6b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:40</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>396696454</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>95e6193d2fc211106446cc96f699b64e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6390000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>u_webexcc_activity_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>ec9d9398ce130110c88bd053d118b051</update_guid>
+<update_guid_history>ec9d9398ce130110c88bd053d118b051:396696454</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_b5bb1f182f1301101ba7d7a72799b67d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>WebexCC Activity</label><live_feed_enabled>false</live_feed_enabled><name>u_webexcc_activity</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:42</sys_created_on><sys_id>b5bb1f182f1301101ba7d7a72799b67d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WebexCC Activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_b5bb1f182f1301101ba7d7a72799b67d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:42</sys_updated_on><update_access>false</update_access><user_role display_value="u_webexcc_activity_user" name="u_webexcc_activity_user">289ddb182f1301101ba7d7a72799b6b5</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>763612608</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>95e69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d9ee0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>f19dd398eb13011074a302d610f9e540</update_guid>
+<update_guid_history>f19dd398eb13011074a302d610f9e540:763612608</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_callobject</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callobject" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallObject&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callobject&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;bcbc17182f1301101ba7d7a72799b654&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CallObject&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_callobject&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>241162545</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>99e6193d2fc211106446cc96f699b647</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6c50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_callobject</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>bc9d9398241301107cab79c52244b997</update_guid>
+<update_guid_history>bc9d9398241301107cab79c52244b997:241162545</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="WebexCC Activity" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>WebexCC Activity</label><language>en</language><name>u_webexcc_activity</name><plural>WebexCC Activities</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>9d9dd3982f1301101ba7d7a72799b605</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WebexCC Activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1448158496</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>99e6193d2fc211106446cc96f699b64a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d90c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a99dd3986e130110d6b996c806a2bf38</update_guid>
+<update_guid_history>a99dd3986e130110d6b996c806a2bf38:1448158496</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_d82c41282fc211106446cc96f699b6cf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var webexccurl = 'https://desktop.wxcc-us1.cisco.com';
+var popupurl = 'cti.do?sysparm_caller_phone=';
+
+var ga = new GlideAjax('propUtils');
+ga.addParam('sysparm_name', 'getWebexccProp');
+ga.getXML(SetCCprop);
+
+function SetCCprop(response) {
+    var msg = response.responseXML.documentElement.getAttribute("answer");
+
+    if (msg) {
+        var prop = JSON.parse(msg);
+        instanceurl = prop.instanceurl;
+        webexccurl = prop.url;
+        popupurl =prop.popupurl; //instanceurl + prop.popupurl;
+
+      
+    }
+}
+var adaf = document.getElementById('ccone-fr');
+
+ adaf.height = '600';
+ adaf.width = '550';
+
+adaf.src = webexccurl; 
+
+
+window.addEventListener('message', function(eventArgs) {
+    if (onMessage) {
+        onMessage(eventArgs);
+    } else {
+        jslog('ERROR: SNOW2 onMessage is null.');
+    }
+   
+   
+}, false);
+
+function onMessage(message) {
+    jslog('WebexCC UI page onMessage:', message);
+    var calldata = JSON.parse(message.data);
+    jslog('SNOW Test UI page onMessage calldata:', calldata.entityApiName);
+    if (calldata.msgType == "ScreenPop") {
+        jslog('SNOW Test UI page onMessage= phone:', calldata.ani);
+        screenpop(calldata.ani,calldata.callSessionInfo);
+    }
+    if (calldata.entityApiName == "Task") {
+        jslog('SNOW Test UI page onMessage= phone:', calldata.ani);
+        nowActivities(calldata, calldata.ani);
+    }
+}
+
+// screen pop
+function screenpop(callerani,callSessionInfo) {
+   
+
+	if(callerani===callSessionInfo.phoneNumber){
+		callerani=stripPrefixes(callerani);
+	}
+	
+	openFrameAPI.openCustomURL(popupurl + callerani); // window.open(popupurl + callerani, 'gsft_main');
+   
+}
+
+//  phone format in servicenow
+function stripPrefixes(param) {
+    var phone = param + '';
+    phone = phone.replace('+', '');
+    phone = phone.replace(' ', '');
+    if (phone.length &gt; 10 &amp;&amp; parseInt(phone.substr(0, 1)) === 1) {
+        phone = phone.substr(1);
+        var inputPhone1 = phone.substr(0, 3);
+        var inputPhone2 = phone.substr(3, 3);
+        var inputPhone3 = phone.substr(6, 4);
+        phone = '(' + inputPhone1 + ') ' + inputPhone2 + '-' + inputPhone3;
+    } else if (phone.length == 10) {
+        var inputPhone1a = phone.substr(0, 3);
+        var inputPhone2a = phone.substr(3, 3);
+        var inputPhone3a = phone.substr(6, 4);
+        phone = '(' + inputPhone1a + ') ' + inputPhone2a + '-' + inputPhone3a;
+    }
+
+    return phone;
+}
+
+// Creating the activity record in servicenow table
+function nowActivities(actInfo, ani) {
+    var gaout = new GlideAjax('propUtils');
+    gaout.addParam('sysparm_name', 'setWebexcctable');
+    gaout.addParam('actInfo', JSON.stringify(actInfo));
+    gaout.addParam('ani', stripPrefixes(ani));
+    gaout.getXML(SetCCsysId);
+
+
+}
+
+function SetCCsysId(response) {
+    var msg = response.responseXML.documentElement.getAttribute("answer");
+    if (msg) {
+        //msg;
+
+    }
+}
+
+openFrameAPI.subscribe(openFrameAPI.EVENTS.COMMUNICATION_EVENT,function(eventArgs){ 
+				
+	           if(eventArgs.type==='OUTGOING_CALL'){
+				    adaf.contentWindow.postMessage(JSON.stringify(eventArgs),webexccurl);	
+			   }	   
+			
+			});]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+      &lt;html&gt;
+		   &lt;script type="text/javascript" src="/scripts/openframe/latest/openFrameAPI.min.js"&gt;&lt;/script&gt;
+       &lt;body&gt;
+		   &lt;div id='ccone-divContainer' width ='550' height ='600'&gt;
+				 &lt;iframe id="ccone-fr" src="" height="100%" width="100%" frameborder="0"/&gt;
+             &lt;/div&gt;  
+		  
+       &lt;/body&gt;
+	 &lt;/html&gt; 	  
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;agentdesktop&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-16 20:53:23&lt;/sys_created_on&gt;&lt;sys_id&gt;d82c41282fc211106446cc96f699b6cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;agentdesktop&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_d82c41282fc211106446cc96f699b6cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-20 18:42:20&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1203567450</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>99e6193d2fc211106446cc96f699b64d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1835c354e390000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>agentdesktop</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>2e65d57535c21110536a182b92426083</update_guid>
+<update_guid_history>2e65d57535c21110536a182b92426083:-1203567450,b3dc6c7dbb0211109ecd329425d9ecc8:1296144637,91d60569368ad1106e0f003869f2cfa7:1769794520,89467429488ad1108c2095a922e3f89f:1911709249,03f530e18b8ad110849b6a112e8b766c:1174855578,8fa4b4e1a58ad110c051518f8222fb00:1204397380,483030e1628ad1106cc4fa9b35bc9072:1504236617,16313415300e911026d7862447d7e2e5:165228968,6660b0d1160e9110fca1c6d7311280e2:1427637175,21ada0dd45ca91109223d297e06659ba:1330817623,df0b689db2ca9110cb8ba256cf31518f:-505572807,2f17205951ca911001505df10e7a7dea:-1278759828,2ab5689523ca9110a54ace84167bda3c:1667397672,ae836c558fca91100dbf802897cb5e3b:-1998746174,06326c555dca91100e97d3a56e212547:1909038149,a4516cd1bdca91102103ca6e8634b7d6:-1736285127,21a5c499344a91104809f3354c385793:2139004293,d2fd77cd4a0a9110b3caf2f4f6b64392:516967611,edbd9de47f06111076443b12cb4e7ac2:399754931,4d2d5d64fd061110cbdcf4558981e9ce:1509604782,825b1d64db061110dc966edf9beeea6a:-2074209473,e02a596ca5c21110cafd482c3e99c36d:-1106048790,8c98596c3dc21110ab6d33eb86b5725c:-1357902066,3212d9e80ec211109db97f32aef3ddf9:-1666267032,8781192c1dc211100959ba665b7f2b63:48249719,deff89e8f2c211108193867e9f2f9e56:-1933144309,22ad812865c21110fb3c8954a001738d:-339490616,9f1d81285fc21110601b8b277aa82456:1926179100,870d0128c9c211109ad46f5139bccc29:1159146892</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_c19d93982f1301101ba7d7a72799b6c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Cisco Webex Contact Center</name><order>100</order><roles>u_webexcc_activity_user,agent</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c19d93982f1301101ba7d7a72799b6c8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Webex Contact Center</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_c19d93982f1301101ba7d7a72799b6c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 20:05:30</sys_updated_on><title>Webex Contact Center</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-624581448</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>99e69df92fc211106446cc96f699b681</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266db090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>Webex Contact Center</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>23557731bb751110056024c297cd1183</update_guid>
+<update_guid_history>23557731bb751110056024c297cd1183:-624581448,70fe9b98b9130110c4a5510633d9c22f:-758594216,8d9d93985513011049932dbab918f3ca:100552127</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_dnis_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_dnis" label="DNIS" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_dnis</element><help/><hint/><label>DNIS</label><language>en</language><name>u_webexcc_activity</name><plural>DNISs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>a59dd3982f1301101ba7d7a72799b60f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DNIS</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_dnis_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1922838179</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>9de6193d2fc211106446cc96f699b649</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d9470000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.DNIS</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a19dd398681301104ae353c88afacc3b</update_guid>
+<update_guid_history>a19dd398681301104ae353c88afacc3b:-1922838179</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>599d93982f1301101ba7d7a72799b6f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity.u_webexcc_activity_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_webexcc_activity">999d93982f1301101ba7d7a72799b6f6</sys_security_acl><sys_update_name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6f9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><sys_user_role display_value="u_webexcc_activity_user" name="u_webexcc_activity_user">289ddb182f1301101ba7d7a72799b6b5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>714367776</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>9de6193d2fc211106446cc96f699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8260000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_webexcc_activity_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>1d9d93985c13011084aec0bf218e40fb</update_guid>
+<update_guid_history>1d9d93985c13011084aec0bf218e40fb:714367776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_queuename</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_queuename" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;QueueName&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_queuename&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;c81dd3582f1301101ba7d7a72799b650&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;QueueName&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_queuename&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1852838339</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d1e6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7040000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_queuename</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>cd9d9398541301104ae79ca040d4a6b6</update_guid>
+<update_guid_history>cd9d9398541301104ae79ca040d4a6b6:1852838339</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_4f8323dc2f1301101ba7d7a72799b68a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>WebExCC Activity Table(Configure new table)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>webexccactivitytable</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 20:20:35</sys_created_on><sys_id>4f8323dc2f1301101ba7d7a72799b68a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>webexccactivitytable</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_4f8323dc2f1301101ba7d7a72799b68a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 18:33:19</sys_updated_on><type>string</type><value>u_webexcc_activity</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=4f8323dc2f1301101ba7d7a72799b68a"/></record_update>]]></payload>
+<payload_hash>1666636175</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d1e6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266db600000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>webexccactivitytable</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>8bd920defaf111104b3bcf6b696ac3c4</update_guid>
+<update_guid_history>8bd920defaf111104b3bcf6b696ac3c4:1666636175,07b32f5cda130110ebac4125500f5375:180168442</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_1e0e9b982f1301101ba7d7a72799b621</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>agent</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:56:10</sys_created_on><sys_id>1e0e9b982f1301101ba7d7a72799b621</sys_id><sys_mod_count>0</sys_mod_count><sys_name>agent</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_1e0e9b982f1301101ba7d7a72799b621</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:56:10</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>-724594722</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d1e6193d2fc211106446cc96f699b64e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266da220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>agent</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>992edb98a6130110b438b9aa47ac571f</update_guid>
+<update_guid_history>992edb98a6130110b438b9aa47ac571f:-724594722</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_cors_rule_6f42dfea472111105eb7f088436d43e9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_cors_rule"><sys_cors_rule action="INSERT_OR_UPDATE"><delete>false</delete><domain>https://desktop.wxcc-us1.cisco.com</domain><exposed_headers/><get>true</get><max_age>0</max_age><name>WebexCC CORS</name><patch>false</patch><post>true</post><put>true</put><rest_api>713e81bd47e551105eb7f088436d431f</rest_api><sys_class_name>sys_cors_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-29 15:14:10</sys_created_on><sys_id>6f42dfea472111105eb7f088436d43e9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>WebexCC CORS</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_cors_rule_6f42dfea472111105eb7f088436d43e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 20:07:19</sys_updated_on></sys_cors_rule></record_update>]]></payload>
+<payload_hash>-25090983</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d1e69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266db220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table/>
+<target_name>WebexCC CORS</target_name>
+<type>CORS Rule</type>
+<update_domain>global</update_domain>
+<update_guid>46c5ff318275111034801acaf9e0ecbe</update_guid>
+<update_guid_history>46c5ff318275111034801acaf9e0ecbe:-25090983,62c21baadb211110b2961e408106f193:1675724829</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_callduration</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callduration" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallDuration&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callduration&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:41&lt;/sys_created_on&gt;&lt;sys_id&gt;5b8c57582f1301101ba7d7a72799b65a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CallDuration&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_callduration&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1045716593</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d5e6193d2fc211106446cc96f699b647</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6b80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_callduration</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>709d9398421301104ecf20730f4cc690</update_guid>
+<update_guid_history>709d9398421301104ecf20730f4cc690:1045716593</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_wrapuptime_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_wrapuptime" label="WrapupTime" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_wrapuptime</element><help/><hint/><label>WrapupTime</label><language>en</language><name>u_webexcc_activity</name><plural>WrapupTimes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>699dd3982f1301101ba7d7a72799b612</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WrapupTime</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_wrapuptime_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1377308831</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d5e6193d2fc211106446cc96f699b64a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8ec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.WrapupTime</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e59dd398ac13011015b155603bb38837</update_guid>
+<update_guid_history>e59dd398ac13011015b155603bb38837:-1377308831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_module_419d93982f1301101ba7d7a72799b6df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cisco Webex Contact Center">419d93982f1301101ba7d7a72799b6dc</application><filter/><name>WebexCC Activities</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>u_webexcc_activity_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>419d93982f1301101ba7d7a72799b6df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WebexCC Activities</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_module_419d93982f1301101ba7d7a72799b6df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:42</sys_updated_on><table>u_webexcc_activity</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+<payload_hash>128604587</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d5e6193d2fc211106446cc96f699b64d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7690000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activities</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>499d9398f41301102a0d2c54bd995ae1</update_guid>
+<update_guid_history>499d9398f41301102a0d2c54bd995ae1:128604587</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_calltype_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_calltype" label="CallType" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_calltype</element><help/><hint/><label>CallType</label><language>en</language><name>u_webexcc_activity</name><plural>CallTypes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>659dd3982f1301101ba7d7a72799b60e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallType</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_calltype_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-257629547</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d9e6193d2fc211106446cc96f699b649</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8bc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.CallType</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e19dd3987f1301100332c6a7371fb136</update_guid>
+<update_guid_history>e19dd3987f1301100332c6a7371fb136:-257629547</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6f3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>599d93982f1301101ba7d7a72799b6f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity.u_webexcc_activity_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_webexcc_activity">999d93982f1301101ba7d7a72799b6f0</sys_security_acl><sys_update_name>sys_security_acl_role_599d93982f1301101ba7d7a72799b6f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><sys_user_role display_value="u_webexcc_activity_user" name="u_webexcc_activity_user">289ddb182f1301101ba7d7a72799b6b5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>324774042</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>d9e6193d2fc211106446cc96f699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7e80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_webexcc_activity_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>1d9d939831130110e7025478846f36f5</update_guid>
+<update_guid_history>1d9d939831130110e7025478846f36f5:324774042</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_webexcc_activity_u_ani_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_ani" label="ANI" language="en" table="u_webexcc_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_ani</element><help/><hint/><label>ANI</label><language>en</language><name>u_webexcc_activity</name><plural>ANIs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:44</sys_created_on><sys_id>619dd3982f1301101ba7d7a72799b60a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ANI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_activity_u_ani_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1823054515</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>dde6193d2fc211106446cc96f699b648</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d8a20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>WebexCC Activity.ANI</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>ed9dd398f013011063bec949cdf22d34</update_guid>
+<update_guid_history>ed9dd398f013011063bec949cdf22d34:-1823054515</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_999d93982f1301101ba7d7a72799b6ea</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_webexcc_activity</description><name>u_webexcc_activity</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-02 19:53:43</sys_created_on><sys_id>999d93982f1301101ba7d7a72799b6ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_webexcc_activity</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_999d93982f1301101ba7d7a72799b6ea</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 19:53:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-97621297</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>dde6193d2fc211106446cc96f699b64b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d7ac0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d99d9398e1130110affcf41e4fbe92ec</update_guid>
+<update_guid_history>d99d9398e1130110affcf41e4fbe92ec:-97621297</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_activity_u_activitydate</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_activitydate" table="u_webexcc_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;ActivityDate&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_activitydate&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;glide_date_time&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_webexcc_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-02 19:53:40&lt;/sys_created_on&gt;&lt;sys_id&gt;1ebb53182f1301101ba7d7a72799b6a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ActivityDate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_activity_u_activitydate&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-02 19:53:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1377283741</payload_hash>
+<remote_update_set display_value=" webexcc-servicenow-update-setV5">d5e69df92fc211106446cc96f699b681</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-09-20 18:48:49</sys_created_on>
+<sys_id>dde69df92fc211106446cc96f699b682</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1834266d6700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-09-20 18:48:49</sys_updated_on>
+<table>u_webexcc_activity</table>
+<target_name>u_webexcc_activity.u_activitydate</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e49d93987b1301100b8c467ea3461758</update_guid>
+<update_guid_history>e49d93987b1301100b8c467ea3461758:1377283741</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
