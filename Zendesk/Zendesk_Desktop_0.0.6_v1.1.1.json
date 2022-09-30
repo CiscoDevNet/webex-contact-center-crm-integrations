@@ -16,12 +16,12 @@
       "widgets": {
         "comp1": {
           "comp": "agentx-custom-desktop",
-          "script":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1/dist/index.js",
+          "script":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.1/dist/index.js",
            "properties": {
             "outDialAni":"<OutDialAniValue>",
             "agentStatus":"$STORE.agent.subStatus",
-            "customDesktopLibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1/webexcc_zendesk_desktop.min.js",
-            "crmlibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1/lib/zaf_sdk.min.js",
+            "customDesktopLibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.1/webexcc_zendesk_desktop.min.js",
+            "crmlibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.1/lib/zaf_sdk.min.js",
             "crmlibraryFileName" : "zaf_sdk.min.js",
             "isCaseCreationForAllInboundCallsEnabled" : "true",
             "adavanceSearchCadVariableName" : "NPI",
