@@ -37,6 +37,7 @@ To explore and understand which REST APIs are supported with Zendesk, import the
 
 **ServiceNow REST API Docs**
 
+https://developer.zendesk.com/documentation/developer-tools/working-with-the-zendesk-apis/exploring-zendesk-apis-with-postman/
 https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start
 https://developer.zendesk.com/api-reference/ticketing/introduction
 
