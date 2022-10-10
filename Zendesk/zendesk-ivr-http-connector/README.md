@@ -35,11 +35,11 @@ The following section explains how to get started with the HTTP connector in Web
 **Optional**
 To explore and understand which REST APIs are supported with Zendesk, import the simplified Postman collection. These are the same APIs that will be used inside of WebexCC Flow Designer to interact with Zendesk.
 
-**ServiceNow REST API Docs**
+**Zendesk REST API Docs**
 
-https://developer.zendesk.com/documentation/developer-tools/working-with-the-zendesk-apis/exploring-zendesk-apis-with-postman/
-https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start
-https://developer.zendesk.com/api-reference/ticketing/introduction
+- https://developer.zendesk.com/documentation/developer-tools/working-with-the-zendesk-apis/exploring-zendesk-apis-with-postman/
+- https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start
+- https://developer.zendesk.com/api-reference/ticketing/introduction
 
 ## Understanding the Sample Flow
 
