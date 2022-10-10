@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "710fb242-2b6c-48c0-8033-511d6bd2b64e",
+		"name": "Zendesk REST APIs Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19339147"
+	},
+	"item": [
+		{
+			"name": "Get User Details by ANI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{subdomain}}/api/v2/users/search.json?query=type:user +1234567890",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "type:user +1234567890"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Ticket By User ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{subdomain}}/api/v2/search.json?query=type:ticket status<solved  requester:7113860621111 &sort_by=created_at&sort_order=desc",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "type:ticket status<solved  requester:7113860621111 "
+						},
+						{
+							"key": "sort_by",
+							"value": "created_at"
+						},
+						{
+							"key": "sort_order",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ticket with Call Information",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ticket\": {\"comment\": { \"body\": \"Ticket update | Customer called to check the status of the ticket.\" }}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{subdomain}}/api/v2/tickets/1.json",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"tickets",
+						"1.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Current User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{subdomain}}/api/v2/users/me.json",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"me.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Agent Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{subdomain}}/api/lotus/assignables/groups/6873926241111/agents.json",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"lotus",
+						"assignables",
+						"groups",
+						"6873926241111",
+						"agents.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n    \"ticket\": \n    {  \n      \"comment\": {      \"body\": \"This ticket has been created through the IVR flow by Cisco Webex Contact Center\"    }, \n     \"subject\": \"Ticket created through IVR\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{subdomain}}/api/v2/tickets.json",
+					"host": [
+						"{{subdomain}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"tickets.json"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
