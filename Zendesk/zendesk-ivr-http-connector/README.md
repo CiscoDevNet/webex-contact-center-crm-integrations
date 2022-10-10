@@ -7,7 +7,7 @@ The following section explains how to get started with the HTTP connector in Web
 - The sample flow for **Zendesk_HTTP_Connector.json** which shows how a simple lookup can be performed in an IVR flow. For detailed steps, refer the video link given below.
 - The Postman collection **Zendesk REST APIs Sample.postman_collection.json** can be directly imported into Postman to understand the Zendesk REST APIs.
 
-## [How to Configure Zendesk HTTP Connector on Webex Contact Center Flow Designer]()
+## [How to Configure Zendesk HTTP Connector on Webex Contact Center Flow Designer](https://app.vidcast.io/share/4ee0bec7-a629-45a8-8bff-8df01b683163)
 
 ## Use Case
 
@@ -26,7 +26,8 @@ The following section explains how to get started with the HTTP connector in Web
   Login to Zendesk instance -> Admin portal -> Apps and integrations -> APIs -> Zendesk API -> Toggle the button to enable API authentication using agent's email address and password. Attached is the screenshot for reference.
 - Configuring the Zendesk connector using BasicAuth.
   Login to admin.webex.com to configure the connector
-  admin.webex.com > Contact Center > Connectors > Select Custom Connector -> BasicAuth.
+  admin.webex.com > Contact Center > Connectors > Select Custom Connector -> Authentication Type = BasicAuth.
+  Attached is the screenshot for reference.
 - Import the attached flow Zendesk_HTTP_Connector.json inside flow designer.
 - Change the queueName, audio files etc in the IVR Flow as per your configurations.
   Follow the tutorial video for end-to-end sample configurations.
