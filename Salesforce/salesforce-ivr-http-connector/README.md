@@ -13,12 +13,6 @@ The following section explains how to get started with the HTTP connector in Web
 
 ### [VIDEO: Part 2 of 2: Configure Salesforce HTTP Connector](https://app.vidcast.io/share/82e9adf5-cd50-43ce-9ac4-3a34d7a23e03)
 
-## Official Documentation
-
-**Salesforce Connector: https://help.webex.com/en-us/article/n26v7heb/Configure-Connected-App-for-Webex-Contact-Center-Salesforce-Connector**
-
-**Connected App Configuration: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_connected_app.htm**
-
 ## Use Case
 
 - Customer calls into Webex Contact Center and is greeted while an ANI lookup is performed on Salesforce.
@@ -65,7 +59,19 @@ curl --location --request POST 'https://abcde-dev-ed.my.salesforce.com/services/
 
 ## OAuth2 Settings - Salesforce
 
-![Connector Settings](./images/connector1.png)
+- Follow the Official Documentation and the vidcasts to configure the connector.
+
+- Screenshots are as shared below:
+
+**Salesforce Connector: https://help.webex.com/en-us/article/n26v7heb/Configure-Connected-App-for-Webex-Contact-Center-Salesforce-Connector**
+
+**Connected App Configuration: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_connected_app.htm**
+
+![Connector Settings](./images/connector01.png)
+
+![Connector Settings](./images/connector02.png)
+
+![Connector Settings](./images/connector03.png)
 
 ## Understanding the Sample Flow
 
@@ -78,9 +84,11 @@ curl --location --request POST 'https://abcde-dev-ed.my.salesforce.com/services/
 
 ![Flow Diagram 1](./images/flow1.png)
 
+![Flow Diagram 2](./images/flow2.png)
+
 ### Section 2 : Posting Webex Contact Center call information to the incident
 
 - This section uses Event Flows to post information to the incident just when the agent answers the call, and when the agent ends the call.
 - This is just an example of what is possible on the Salesforce Incident via the Flow Designer.
 
-![Flow Diagram 2](./images/flow2.png)
+![Flow Diagram 2](./images/flow3.png)
