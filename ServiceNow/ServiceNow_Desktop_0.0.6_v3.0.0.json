@@ -13,16 +13,16 @@
   "area": {
     "headless": {
       "id": "dw-headless",
-      "widgets": { 
+      "widgets": {
         "comp1": {
           "comp": "agentx-custom-desktop",
-           "script":"https://d390gzw4ok28px.cloudfront.net/servicenow/v3/dist/index.js",
-           "properties": {
-            "outDialAni":"<OutDialAniValue>",
-            "screenpopCadName":"",
-            "cadToCrmFieldMapping":"CustomerName:CustomerName,accountName:accountName2",
-            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/servicenow/v3/webexcc_servicenow_desktop.js"
-            }
+          "script": "https://d390gzw4ok28px.cloudfront.net/servicenow/v3/dist/index.js",
+          "properties": {
+            "outDialAni": "<OutDialAniValue>",
+            "screenpopCadName": "",
+            "cadToCrmFieldMapping": "CustomerName:CustomerName,accountName:accountName2",
+            "crmLibPath": "https://d390gzw4ok28px.cloudfront.net/servicenow/v3/webexcc_servicenow_desktop.js"
+          }
         }
       },
       "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
