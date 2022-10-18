@@ -54,8 +54,8 @@ curl --location --request POST 'https://abcde-dev-ed.my.salesforce.com/services/
 
 **Salesforce REST API Docs**
 
-- Salesforce REST API:
-- Salesforce Table API:
+- Salesforce REST API Introduction: https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm
+- Salesforce SOQL API Reference: https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_query.htm
 
 ## OAuth2 Settings - Salesforce
 
