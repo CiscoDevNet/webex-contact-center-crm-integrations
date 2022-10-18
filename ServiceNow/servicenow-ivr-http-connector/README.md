@@ -2,7 +2,7 @@
 
 The following section explains how to get started with the HTTP connector in Webex Contact Center that can interact with ServiceNow to make routing decisions, and extract information from ServiceNow. Since all HTTP verbs are supported, you can securely extract and update Incident/ other object types inside of ServiceNow.
 
-**Attached** 
+**Attached**
 
 - The sample flow for **ServiceNow_HTTP_Connector.json** which shows you how a simple lookup can be performed. For detailed steps, refer to the video below.
 - The Postman collection **ServiceNow API Collection.postman_collection.json** that can be directly imported into Postman to understand the ServiceNow REST APIs.
@@ -11,7 +11,7 @@ The following section explains how to get started with the HTTP connector in Web
 
 ## Use Case
 
-- Customer calls into Webex Contact Center and is greeted qhile an ANI lookup is performed on ServiceNow.
+- Customer calls into Webex Contact Center and is greeted while an ANI lookup is performed on ServiceNow.
 - From Webex Contact Center, the ServiceNow Incident ID is looked up inside of the CRM and data is extracted.
 - Customer is greeted with a personalized IVR.
 - Customer is prioritized based on Incident severity.
@@ -26,7 +26,7 @@ The following section explains how to get started with the HTTP connector in Web
 - Import the attached flow ServiceNow_HTTP_Connector.json inside flow designer.
 - Configure the WebexCC Flow along with the required details inside the flow.
 
-**Optional** 
+**Optional**
 To explore and understand what REST APIs are supported with ServiceNow, import the simplified Postman collection. These are the same APIs that will be used inside of WebexCC Flow Designer to interact with ServiceNow
 
 **ServiceNow REST API Docs**

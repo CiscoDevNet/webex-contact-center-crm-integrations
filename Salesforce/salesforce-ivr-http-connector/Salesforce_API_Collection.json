@@ -1,0 +1,2984 @@
+{
+	"info": {
+		"_postman_id": "913a2ed2-69e0-4ac1-b5e4-1d95021a5c4d",
+		"name": "SFDC - Generic Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "889186"
+	},
+	"item": [
+		{
+			"name": "GET Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Account"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 18:58:36 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=1/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"objectDescribe\": {\n        \"activateable\": false,\n        \"associateEntityType\": null,\n        \"associateParentEntity\": null,\n        \"createable\": true,\n        \"custom\": false,\n        \"customSetting\": false,\n        \"deepCloneable\": false,\n        \"deletable\": true,\n        \"deprecatedAndHidden\": false,\n        \"feedEnabled\": true,\n        \"hasSubtypes\": false,\n        \"isInterface\": false,\n        \"isSubtype\": false,\n        \"keyPrefix\": \"001\",\n        \"label\": \"Account\",\n        \"labelPlural\": \"Accounts\",\n        \"layoutable\": true,\n        \"mergeable\": true,\n        \"mruEnabled\": true,\n        \"name\": \"Account\",\n        \"queryable\": true,\n        \"replicateable\": true,\n        \"retrieveable\": true,\n        \"searchable\": true,\n        \"triggerable\": true,\n        \"undeletable\": true,\n        \"updateable\": true,\n        \"urls\": {\n            \"compactLayouts\": \"/services/data/v52.0/sobjects/Account/describe/compactLayouts\",\n            \"rowTemplate\": \"/services/data/v52.0/sobjects/Account/{ID}\",\n            \"approvalLayouts\": \"/services/data/v52.0/sobjects/Account/describe/approvalLayouts\",\n            \"listviews\": \"/services/data/v52.0/sobjects/Account/listviews\",\n            \"describe\": \"/services/data/v52.0/sobjects/Account/describe\",\n            \"quickActions\": \"/services/data/v52.0/sobjects/Account/quickActions\",\n            \"layouts\": \"/services/data/v52.0/sobjects/Account/describe/layouts\",\n            \"sobject\": \"/services/data/v52.0/sobjects/Account\"\n        }\n    },\n    \"recentItems\": [\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MSxrYAAT\"\n            },\n            \"Id\": \"0012v00003MSxrYAAT\",\n            \"Name\": \"Acme Corp\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MTICLAA5\"\n            },\n            \"Id\": \"0012v00003MTICLAA5\",\n            \"Name\": \"Acme Logistics & Computers\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Account By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account/0012v00003T1NOlAAN",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Account",
+						"0012v00003T1NOlAAN"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Account"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 18:58:36 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=1/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"objectDescribe\": {\n        \"activateable\": false,\n        \"associateEntityType\": null,\n        \"associateParentEntity\": null,\n        \"createable\": true,\n        \"custom\": false,\n        \"customSetting\": false,\n        \"deepCloneable\": false,\n        \"deletable\": true,\n        \"deprecatedAndHidden\": false,\n        \"feedEnabled\": true,\n        \"hasSubtypes\": false,\n        \"isInterface\": false,\n        \"isSubtype\": false,\n        \"keyPrefix\": \"001\",\n        \"label\": \"Account\",\n        \"labelPlural\": \"Accounts\",\n        \"layoutable\": true,\n        \"mergeable\": true,\n        \"mruEnabled\": true,\n        \"name\": \"Account\",\n        \"queryable\": true,\n        \"replicateable\": true,\n        \"retrieveable\": true,\n        \"searchable\": true,\n        \"triggerable\": true,\n        \"undeletable\": true,\n        \"updateable\": true,\n        \"urls\": {\n            \"compactLayouts\": \"/services/data/v52.0/sobjects/Account/describe/compactLayouts\",\n            \"rowTemplate\": \"/services/data/v52.0/sobjects/Account/{ID}\",\n            \"approvalLayouts\": \"/services/data/v52.0/sobjects/Account/describe/approvalLayouts\",\n            \"listviews\": \"/services/data/v52.0/sobjects/Account/listviews\",\n            \"describe\": \"/services/data/v52.0/sobjects/Account/describe\",\n            \"quickActions\": \"/services/data/v52.0/sobjects/Account/quickActions\",\n            \"layouts\": \"/services/data/v52.0/sobjects/Account/describe/layouts\",\n            \"sobject\": \"/services/data/v52.0/sobjects/Account\"\n        }\n    },\n    \"recentItems\": [\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MSxrYAAT\"\n            },\n            \"Id\": \"0012v00003MSxrYAAT\",\n            \"Name\": \"Acme Corp\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MTICLAA5\"\n            },\n            \"Id\": \"0012v00003MTICLAA5\",\n            \"Name\": \"Acme Logistics & Computers\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 18:58:51 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=2/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"objectDescribe\": {\n        \"activateable\": false,\n        \"associateEntityType\": null,\n        \"associateParentEntity\": null,\n        \"createable\": true,\n        \"custom\": false,\n        \"customSetting\": false,\n        \"deepCloneable\": false,\n        \"deletable\": true,\n        \"deprecatedAndHidden\": false,\n        \"feedEnabled\": true,\n        \"hasSubtypes\": false,\n        \"isInterface\": false,\n        \"isSubtype\": false,\n        \"keyPrefix\": \"500\",\n        \"label\": \"Case\",\n        \"labelPlural\": \"Cases\",\n        \"layoutable\": true,\n        \"mergeable\": true,\n        \"mruEnabled\": true,\n        \"name\": \"Case\",\n        \"queryable\": true,\n        \"replicateable\": true,\n        \"retrieveable\": true,\n        \"searchable\": true,\n        \"triggerable\": true,\n        \"undeletable\": true,\n        \"updateable\": true,\n        \"urls\": {\n            \"compactLayouts\": \"/services/data/v52.0/sobjects/Case/describe/compactLayouts\",\n            \"rowTemplate\": \"/services/data/v52.0/sobjects/Case/{ID}\",\n            \"approvalLayouts\": \"/services/data/v52.0/sobjects/Case/describe/approvalLayouts\",\n            \"caseArticleSuggestions\": \"/services/data/v52.0/sobjects/Case/suggestedArticles\",\n            \"caseRowArticleSuggestions\": \"/services/data/v52.0/sobjects/Case/{ID}/suggestedArticles\",\n            \"listviews\": \"/services/data/v52.0/sobjects/Case/listviews\",\n            \"describe\": \"/services/data/v52.0/sobjects/Case/describe\",\n            \"quickActions\": \"/services/data/v52.0/sobjects/Case/quickActions\",\n            \"layouts\": \"/services/data/v52.0/sobjects/Case/describe/layouts\",\n            \"sobject\": \"/services/data/v52.0/sobjects/Case\"\n        }\n    },\n    \"recentItems\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QXNsAAO\"\n            },\n            \"Id\": \"5002v000031QXNsAAO\",\n            \"CaseNumber\": \"00001399\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEB0AAO\"\n            },\n            \"Id\": \"5002v000031QEB0AAO\",\n            \"CaseNumber\": \"00001395\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QS16AAG\"\n            },\n            \"Id\": \"5002v000031QS16AAG\",\n            \"CaseNumber\": \"00001398\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QECNAA4\"\n            },\n            \"Id\": \"5002v000031QECNAA4\",\n            \"CaseNumber\": \"00001397\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031PzdoAAC\"\n            },\n            \"Id\": \"5002v000031PzdoAAC\",\n            \"CaseNumber\": \"00001372\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031PzdZAAS\"\n            },\n            \"Id\": \"5002v000031PzdZAAS\",\n            \"CaseNumber\": \"00001371\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031PsL0AAK\"\n            },\n            \"Id\": \"5002v000031PsL0AAK\",\n            \"CaseNumber\": \"00001369\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031PzdUAAS\"\n            },\n            \"Id\": \"5002v000031PzdUAAS\",\n            \"CaseNumber\": \"00001370\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031PsKzAAK\"\n            },\n            \"Id\": \"5002v000031PsKzAAK\",\n            \"CaseNumber\": \"00001368\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000036zGVgAAM",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case",
+						"5002v000036zGVgAAM"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000036zGVgAAM",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case",
+								"5002v000036zGVgAAM"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:06:03 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=17/15000"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Tue, 11 Oct 2022 19:05:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attributes\": {\n        \"type\": \"Case\",\n        \"url\": \"/services/data/v52.0/sobjects/Case/5002v000036zGVgAAM\"\n    },\n    \"Id\": \"5002v000036zGVgAAM\",\n    \"IsDeleted\": false,\n    \"MasterRecordId\": null,\n    \"CaseNumber\": \"00001400\",\n    \"ContactId\": null,\n    \"AccountId\": null,\n    \"AssetId\": null,\n    \"SourceId\": null,\n    \"ParentId\": null,\n    \"SuppliedName\": null,\n    \"SuppliedEmail\": null,\n    \"SuppliedPhone\": null,\n    \"SuppliedCompany\": null,\n    \"Type\": null,\n    \"Status\": \"New\",\n    \"Reason\": null,\n    \"Origin\": null,\n    \"Subject\": \"Need help with account renewal\",\n    \"Priority\": \"Medium\",\n    \"Description\": \"Unable to renew account.\",\n    \"IsClosed\": false,\n    \"ClosedDate\": null,\n    \"IsEscalated\": false,\n    \"OwnerId\": \"0052v00000iZ2prAAC\",\n    \"CreatedDate\": \"2022-10-11T19:05:49.000+0000\",\n    \"CreatedById\": \"0052v00000iZ2prAAC\",\n    \"LastModifiedDate\": \"2022-10-11T19:05:49.000+0000\",\n    \"LastModifiedById\": \"0052v00000iZ2prAAC\",\n    \"SystemModstamp\": \"2022-10-11T19:05:49.000+0000\",\n    \"ContactPhone\": null,\n    \"ContactMobile\": null,\n    \"ContactEmail\": null,\n    \"ContactFax\": null,\n    \"Comments\": null,\n    \"LastViewedDate\": \"2022-10-11T19:05:49.000+0000\",\n    \"LastReferencedDate\": \"2022-10-11T19:05:49.000+0000\",\n    \"EngineeringReqNumber__c\": null,\n    \"SLAViolation__c\": null,\n    \"Product__c\": null,\n    \"PotentialLiability__c\": null,\n    \"CallSessionId__c\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case Comments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO/CaseComments",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case",
+						"5002v000031QEBeAAO",
+						"CaseComments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case Comments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO/CaseComments",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case",
+								"5002v000031QEBeAAO",
+								"CaseComments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:00:26 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=4/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"CaseComment\",\n                \"url\": \"/services/data/v52.0/sobjects/CaseComment/00a2v00000l43mjAAA\"\n            },\n            \"Id\": \"00a2v00000l43mjAAA\",\n            \"ParentId\": \"5002v000031QEBeAAO\",\n            \"IsPublished\": false,\n            \"CommentBody\": \"This was an update by the WebexCC Demo via Postman.\",\n            \"CreatedById\": \"0052v00000iZ2prAAC\",\n            \"CreatedDate\": \"2022-10-11T19:00:15.000+0000\",\n            \"SystemModstamp\": \"2022-10-11T19:00:15.000+0000\",\n            \"LastModifiedDate\": \"2022-10-11T19:00:15.000+0000\",\n            \"LastModifiedById\": \"0052v00000iZ2prAAC\",\n            \"IsDeleted\": false\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case ID - Some Fields",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO?fields=CaseNumber,ContactId,AccountId,Subject,Priority,Description",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case",
+						"5002v000031QEBeAAO"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "CaseNumber,ContactId,AccountId,Subject,Priority,Description"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case ID - Some Fields",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO?fields=CaseNumber,ContactId,AccountId,Subject,Priority,Description",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case",
+								"5002v000031QEBeAAO"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "CaseNumber,ContactId,AccountId,Subject,Priority,Description"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:00:53 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=6/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attributes\": {\n        \"type\": \"Case\",\n        \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n    },\n    \"CaseNumber\": \"00001396\",\n    \"ContactId\": \"0032v00003rxIVtAAM\",\n    \"AccountId\": null,\n    \"Subject\": null,\n    \"Priority\": \"Medium\",\n    \"Description\": null,\n    \"Id\": \"5002v000031QEBeAAO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case ID by Case Number",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case ID Query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:01:18 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=7/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case ID by Contact Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003q1Q65AAE'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003q1Q65AAE'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case ID Query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:01:18 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=7/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case ID by Contact Id Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%25{{phone}}%25'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%25{{phone}}%25'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case ID Query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+CaseNumber='00001396'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:01:18 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=7/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Contacts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Contact",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Contact"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case by Contact ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003rxIVtAAM'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003rxIVtAAM'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 20:34:19 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=31/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 2,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QXNsAAO\"\n            },\n            \"Id\": \"5002v000031QXNsAAO\",\n            \"CaseNumber\": \"00001399\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Contacts by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Contact/0032v00003q1Q65AAE",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Contact",
+						"0032v00003q1Q65AAE"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Contacts by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Contact/0032v00003q1Q65AAE",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Contact",
+								"0032v00003q1Q65AAE"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 20:37:03 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=35/15000"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Mon, 12 Sep 2022 19:26:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attributes\": {\n        \"type\": \"Contact\",\n        \"url\": \"/services/data/v52.0/sobjects/Contact/0032v00003q1Q65AAE\"\n    },\n    \"Id\": \"0032v00003q1Q65AAE\",\n    \"IsDeleted\": false,\n    \"MasterRecordId\": null,\n    \"AccountId\": null,\n    \"LastName\": \"Howard\",\n    \"FirstName\": \"Avery\",\n    \"Salutation\": \"Mr.\",\n    \"Name\": \"Avery Howard\",\n    \"OtherStreet\": null,\n    \"OtherCity\": null,\n    \"OtherState\": null,\n    \"OtherPostalCode\": null,\n    \"OtherCountry\": null,\n    \"OtherLatitude\": null,\n    \"OtherLongitude\": null,\n    \"OtherGeocodeAccuracy\": null,\n    \"OtherAddress\": null,\n    \"MailingStreet\": null,\n    \"MailingCity\": null,\n    \"MailingState\": null,\n    \"MailingPostalCode\": null,\n    \"MailingCountry\": null,\n    \"MailingLatitude\": null,\n    \"MailingLongitude\": null,\n    \"MailingGeocodeAccuracy\": null,\n    \"MailingAddress\": null,\n    \"Phone\": \"+14806754111\",\n    \"Fax\": null,\n    \"MobilePhone\": null,\n    \"HomePhone\": null,\n    \"OtherPhone\": null,\n    \"AssistantPhone\": null,\n    \"ReportsToId\": null,\n    \"Email\": null,\n    \"Title\": null,\n    \"Department\": null,\n    \"AssistantName\": null,\n    \"LeadSource\": null,\n    \"Birthdate\": null,\n    \"Description\": null,\n    \"OwnerId\": \"0052v00000VsKKlAAN\",\n    \"CreatedDate\": \"2022-06-08T12:00:27.000+0000\",\n    \"CreatedById\": \"0052v00000VsKKlAAN\",\n    \"LastModifiedDate\": \"2022-06-08T12:00:27.000+0000\",\n    \"LastModifiedById\": \"0052v00000VsKKlAAN\",\n    \"SystemModstamp\": \"2022-09-12T19:26:57.000+0000\",\n    \"LastActivityDate\": \"2022-09-12\",\n    \"LastCURequestDate\": null,\n    \"LastCUUpdateDate\": null,\n    \"LastViewedDate\": \"2022-09-12T19:27:05.000+0000\",\n    \"LastReferencedDate\": \"2022-09-12T19:27:05.000+0000\",\n    \"EmailBouncedReason\": null,\n    \"EmailBouncedDate\": null,\n    \"IsEmailBounced\": false,\n    \"PhotoUrl\": \"/services/images/photo/0032v00003q1Q65AAE\",\n    \"Jigsaw\": null,\n    \"JigsawContactId\": null,\n    \"CleanStatus\": \"Pending\",\n    \"IndividualId\": null,\n    \"Level__c\": null,\n    \"Languages__c\": null,\n    \"primaryAgent__c\": null,\n    \"secondaryAgent__c\": null,\n    \"primarySkill__c\": null,\n    \"secondarySkill__c\": null,\n    \"queueName__c\": null,\n    \"isSurveyEnabled__c\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE Contact",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"HomePhone\": \"+11232343456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Contact/0032v00003q1Q65AAE",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Contact",
+						"0032v00003q1Q65AAE"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE Contact",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"HomePhone\": \"+14806754111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Contact/0032v00003q1Q65AAE",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Contact",
+								"0032v00003q1Q65AAE"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 20:52:20 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "upgrade-insecure-requests"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=55/15000"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "GET Contact by ANI",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+id,Name+FROM+Contact+WHERE+Phone+LIKE+'%25{{phone}}%25'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+id,Name+FROM+Contact+WHERE+Phone+LIKE+'%25{{phone}}%25'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case by Contact ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003rxIVtAAM'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003rxIVtAAM'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 20:34:19 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=31/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 2,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO\"\n            },\n            \"Id\": \"5002v000031QEBeAAO\",\n            \"CaseNumber\": \"00001396\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000031QXNsAAO\"\n            },\n            \"Id\": \"5002v000031QXNsAAO\",\n            \"CaseNumber\": \"00001399\",\n            \"ContactId\": \"0032v00003rxIVtAAM\",\n            \"AccountId\": null,\n            \"Subject\": null,\n            \"Priority\": \"Medium\",\n            \"Description\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Case by Contact ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003ryT6QAAU'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003ryT6QAAU'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Case by Contact ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003ryT6QAAU'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+Id,CaseNumber,ContactId,AccountId,Subject,Priority,Description+FROM+Case+WHERE+ContactId='0032v00003ryT6QAAU'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 18 Oct 2022 00:58:34 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=46/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Case\",\n                \"url\": \"/services/data/v52.0/sobjects/Case/5002v000036zGZnAAM\"\n            },\n            \"Id\": \"5002v000036zGZnAAM\",\n            \"CaseNumber\": \"00001402\",\n            \"ContactId\": \"0032v00003ryT6QAAU\",\n            \"AccountId\": \"0012v00003T1NOqAAN\",\n            \"Subject\": \"Unable to find account\",\n            \"Priority\": \"Medium\",\n            \"Description\": \"We are Unable to find the account\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Account - Query by Phone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%259050%25'",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%259050%25'"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Account - Query fields",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%259050%25'",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+name,phone+from+Account+WHERE+Phone+LIKE+'%259050%25'"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:01:28 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=7/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 1,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmyAAH\"\n            },\n            \"Name\": \"University of Arizona\",\n            \"Phone\": \"(520) 773-9050\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Account - Query name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+name+from+Account",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"query"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+name+from+Account"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Account - Query name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/query?q=SELECT+name+from+Account",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "SELECT+name+from+Account"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:01:40 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=8/15000"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalSize\": 20,\n    \"done\": true,\n    \"records\": [\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003I1AvYAAV\"\n            },\n            \"Name\": \"nadp\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003I1AvZAAV\"\n            },\n            \"Name\": \"Jdoe\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003I1AvaAAF\"\n            },\n            \"Name\": \"bsom\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002RkBWJAA3\"\n            },\n            \"Name\": \"Webex CC BLR\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MSxrYAAT\"\n            },\n            \"Name\": \"Acme Corp\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003NMn9XAAT\"\n            },\n            \"Name\": \"Dmitry\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003MTICLAA5\"\n            },\n            \"Name\": \"Acme Logistics & Computers\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00003I1AvTAAV\"\n            },\n            \"Name\": \"Sample Account for Entitlements\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMn1AAH\"\n            },\n            \"Name\": \"GenePoint\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmzAAH\"\n            },\n            \"Name\": \"United Oil & Gas, UK\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMn0AAH\"\n            },\n            \"Name\": \"United Oil & Gas, Singapore\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmrAAH\"\n            },\n            \"Name\": \"Edge Communications\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmsAAH\"\n            },\n            \"Name\": \"Burlington Textiles Corp of America\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmtAAH\"\n            },\n            \"Name\": \"Pyramid Construction Inc.\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmuAAH\"\n            },\n            \"Name\": \"Dickenson plc\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmvAAH\"\n            },\n            \"Name\": \"Grand Hotels & Resorts Ltd\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmxAAH\"\n            },\n            \"Name\": \"Express Logistics and Transport\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmyAAH\"\n            },\n            \"Name\": \"University of Arizona\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMmwAAH\"\n            },\n            \"Name\": \"United Oil & Gas Corp.\"\n        },\n        {\n            \"attributes\": {\n                \"type\": \"Account\",\n                \"url\": \"/services/data/v52.0/sobjects/Account/0012v00002JRMn2AAH\"\n            },\n            \"Name\": \"sForce\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "POST New Case Comment",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Comments\": \"This was an update by the WebexCC Demo via Postman.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000036zGZnAAM",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case",
+						"5002v000036zGZnAAM"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST New Case Comment",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Comments\": \"This was an update by the WebexCC Demo via Postman.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case",
+								"5002v000031QEBeAAO"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:00:15 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "upgrade-insecure-requests"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=2/15000"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "POST Update Case",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ContactId\": \"0032v00003q1Q65AAE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000036zGZnAAM",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case",
+						"5002v000036zGZnAAM"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST New Case Comment",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Comments\": \"This was an update by the WebexCC Demo via Postman.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case/5002v000031QEBeAAO",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case",
+								"5002v000031QEBeAAO"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:00:15 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "upgrade-insecure-requests"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=2/15000"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "CREATE Account",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\" : \"Postman Inc.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Name\" : \"Postman Inc.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Account",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Account"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:03:11 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=15/15000"
+						},
+						{
+							"key": "Location",
+							"value": "/services/data/v52.0/sobjects/Account/0012v00003T1NOlAAN"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"0012v00003T1NOlAAN\",\n    \"success\": true,\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE Case",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Subject\" : \"Need help with account renewal\",\n  \"Description\" : \"Unable to renew account.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case",
+					"protocol": "https",
+					"host": [
+						"{{instance}}",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Case"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE Case",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Subject\" : \"Need help with account renewal\",\n  \"Description\" : \"Unable to renew account.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{instance}}.my.salesforce.com/services/data/v52.0/sobjects/Case",
+							"protocol": "https",
+							"host": [
+								"{{instance}}",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Case"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 19:05:49 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=17/15000"
+						},
+						{
+							"key": "Location",
+							"value": "/services/data/v52.0/sobjects/Case/5002v000036zGVgAAM"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"5002v000036zGVgAAM\",\n    \"success\": true,\n    \"errors\": []\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{clientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{clientId}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://{{instance}}.my.salesforce.com/services/oauth2/token",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "accessToken",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "instance",
+			"value": "dev-edition-123",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": "admin@salesforce.com",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "yourPassword",
+			"type": "string"
+		},
+		{
+			"key": "clientId",
+			"value": "yourClientId",
+			"type": "string"
+		},
+		{
+			"key": "clientSecret",
+			"value": "yourClientSecret",
+			"type": "string"
+		},
+		{
+			"key": "phone",
+			"value": "4806751234",
+			"type": "string"
+		}
+	]
+}
