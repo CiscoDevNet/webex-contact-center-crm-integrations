@@ -37,13 +37,13 @@ Administrators are free to customize the layout based on the description and fun
 The following change log shows the version updates to the files, what changes and enhacements were included.
 (Please use the latest Desktop Layout JSON in the folder)
 
-| #   | File name                                | Desktop version | Change Description                                                                            | Change Date |
-| --- | ---------------------------------------- | --------------- | --------------------------------------------------------------------------------------------- | ----------- |
-| 1   | Zendesk_Desktop.json                     | 0.0.2           | First draft                                                                                   | Nov 2021    |
-| 2   | Zendesk_Desktop_v1.1.json                | 0.0.2           | New feature - Ticket custom field added                                                       | Jan 2022    |
-| 3   | Zendesk_Desktop_0.0.6_v1.json            | 0.0.6           | Desktop (Product) update                                                                      | April 2022  |
-| 4   | Zendesk_Desktop_0.0.6_v2.json            | 0.0.6           | New features - Popup user list on widget for multi record match & Dynamic subject field added | May 2022    |
-| 5   | Zendesk_Desktop_0.0.6_v8.json            | 0.0.6           | Widget reload issue fixed                                                                     | Aug 2022    |
+| #   | File name                         | Desktop version | Change Description                                                                            | Change Date |
+| --- | --------------------------------- | --------------- | --------------------------------------------------------------------------------------------- | ----------- |
+| 1   | Zendesk_Desktop.json              | 0.0.2           | First draft                                                                                   | Nov 2021    |
+| 2   | Zendesk_Desktop_v1.1.json         | 0.0.2           | New feature - Ticket custom field added                                                       | Jan 2022    |
+| 3   | Zendesk_Desktop_0.0.6_v1.json     | 0.0.6           | Desktop (Product) update                                                                      | April 2022  |
+| 4   | Zendesk_Desktop_0.0.6_v2.json     | 0.0.6           | New features - Popup user list on widget for multi record match & Dynamic subject field added | May 2022    |
+| 5   | Zendesk_Desktop_0.0.6_v8.json     | 0.0.6           | Widget reload issue fixed                                                                     | Aug 2022    |
 | 6   | Zendesk_Desktop_0.0.6_v1.1.1.json | 0.0.6           | Added defensive validation for the widget reload issue.                                       | Sep 2022    |
 
 ## Feature Matrix
@@ -78,4 +78,4 @@ Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcc
 
 Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
 
-Participate in discussions OR ask for help on the [Cisco Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/5926-discussions-contact-center).
+Participate in discussions OR ask for help on the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
