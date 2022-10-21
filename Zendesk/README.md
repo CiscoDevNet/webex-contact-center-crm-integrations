@@ -79,4 +79,4 @@ Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcc
 
 Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
 
-Participate in discussions OR ask for help on the [Cisco Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/5926-discussions-contact-center).
+Participate in discussions OR ask for help on the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
