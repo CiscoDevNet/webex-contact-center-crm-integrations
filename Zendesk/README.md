@@ -46,6 +46,7 @@ The following change log shows the version updates to the files, what changes an
 | 5   | Zendesk_Desktop_0.0.6_v8.json     | 0.0.6           | Fixes: Widget reload issue fixed                                                         | Aug 2022    |
 | 6   | Zendesk_Desktop_0.0.6_v1.1.1.json | 0.0.6           | Fixes: Added defensive validation for the widget reload issue.                           | Sep 2022    |
 | 7   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                                 | Oct 2022    |
+| 8   | Zendesk_Desktop_0.0.6_v1.1.3.json | 0.0.6           | Fixes: Removed standard values of properties from the layout.                            | Nov 2022    |
 
 ## Feature Matrix
 
