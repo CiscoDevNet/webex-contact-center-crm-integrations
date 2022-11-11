@@ -20,7 +20,7 @@
            "properties": {
             "outDialAni":"<OutDialAniValue>",
             "agentStatus":"$STORE.agent.subStatus",
-            "customDesktopLibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.2/webexcc_zendesk_desktop.min.js",
+            "customDesktopLibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.2/webexcc_zendesk_desktop_hotfix396.min.js",
             "crmlibraryPath":"https://d390gzw4ok28px.cloudfront.net/zendesk/v1.1.2/lib/zaf_sdk.min.js",
             "crmlibraryFileName" : "zaf_sdk.min.js",
             "isCaseCreationForAllInboundCallsEnabled" : "true",
