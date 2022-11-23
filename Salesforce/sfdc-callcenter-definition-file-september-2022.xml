@@ -1,7 +1,7 @@
 <callCenter>
     <section  sortOrder="0" name="reqGeneralInfo" label="Cisco Webex Contact Center Desktop Information">
-        <item sortOrder="0" name="reqInternalName" label="InternalName">WebexCCAgentDesktopV202209017</item>
-        <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(September 2022)</item>
+        <item sortOrder="0" name="reqInternalName" label="InternalName">WebexCCAgentDesktopV20221201</item>
+        <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(Dec 2022)</item>
         <item sortOrder="2" name="reqAdapterUrl" label="CTI Adapter URL">https://desktop.wxcc-us1.cisco.com/</item>
         <item sortOrder="3" name="reqUseApi" label="Use CTI API">true</item>
         <item sortOrder="4" name="reqSoftphoneHeight" label="Softphone Height">550</item>
@@ -28,7 +28,6 @@
         <item sortOrder="5" name="ActivitySubjectTemplate" label="Subject Template">{direction} Call {activityDatetime}</item>
         <item sortOrder="6" name="isCallNotesEnabled" label="Record Call Live Notes">false</item>
         <item sortOrder="7" name="sfdcFieldForcallNotes" label="Live Call Notes Field Mapping">Description</item>
-        <item sortOrder="8" name="isActivityRecordCreationAtConnected" label="Create Activity Record at Connected State">false</item>
     </section>
     <section sortOrder="4" name="reqSFDCCaseConfig" label="Case Management">
         <item sortOrder="0" name="isCaseCreationEnabledForInboundCalls" label="Auto Case Creation For Inbound Calls">false</item>
