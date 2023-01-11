@@ -38,21 +38,22 @@ The following change log shows the version updates to the files and what changes
 | 2   | June 2022  | Freshdesk_Desktop_0.0.6_v2.json          | 0.0.6           | + Add headerActions[""] to the desktop layout so the action headers will be suppressed. |
 | 3   | June 2022  | Freshdesk_Desktop_0.0.6_v1.json          | 0.0.6           | - removed                                                                               |
 | 4   | Sept 2022  | Freshdesk_Desktop_0.0.6_v4_20220616.json | 0.0.6           | new endpoint                                                                            |
+| 5   | Jan  2023  | Freshdesk_Desktop_0.0.6_2.1.4.json       | 0.0.6           | CAD groupId & groupIdDefault for creating a new ticket                                  |
 
 ## Feature Matrix
 
 This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
 
 | #   | Feature​                                                                         | Standard Connector |
-| --- | -------------------------------------------------------------------------------- | ------------------ |
+| --- | --------------------------------------------------------------------------------  | ------------------ |
 | 1   | Auto-login of Agents into Contact Center platform (SSO)​                         | ✔️                 |
-| 2   | Call Controls embedded in CRM application                                        | ✔️                 |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                   | ✔️                 |
+| 2   | Call Controls embedded in CRM application                                         | ✔️                 |
+| 3   | Screen-pop based on incoming call parameters (No Record Match)                    | ✔️                 |
 | 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​        | ✔️                 |
 | 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​      | ✔️                 |
 | 6   | Outbound Calling – Click to Call​                                                | ✔️                 |
-| 7   | Outbound Support                                                                 | ✔️                 |
-| 8   | Automatic call (activity) logging in CRM application                             | ✔️                 |
+| 7   | Outbound Support                                                                  | ✔️                 |
+| 8   | Automatic call (activity) logging in CRM application                              | ✔️                 |
 | 9   | IVR Data populated within CRM (Caller Entered Digits captured as CAD variables)​ | ✔️                 |
 
 ## Installation Guide
