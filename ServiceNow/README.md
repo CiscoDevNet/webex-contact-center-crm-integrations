@@ -16,7 +16,7 @@ Administrators are free to customize the layout based on the description and fun
 | 2   | screenpopCadName     | CAD variable name that has the value to be searched in CRM                                    | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search. |
 | 3   | cadToCrmFieldMapping | CAD variable name that can be stored in CRM logs. Ex: CadName1:SnowField1,CadName2:SnowField2 | Optional field.                                                                                      |
 | 4   | crmLibPath           | No change is required                                                                         | Mandatory field.                                                                                     |
-| 5   | screenpopOnConnected |This property allow you to a open screenpop on Ring or connected. If it is true mean OnConnected                                                                         | Mandatory field.                                                                                     |
+| 5   | screenpopOnConnected |This property allow you to a open screenpop on Ring or connected. If it is true - the screenpop opens when the call is connected (OnConnected). If missing or false, it defaults Screenpops to the Ringing Event.                                                                      | Optional field.                                                                                     |
 
 
 ## Desktop URLs per Datacenter
@@ -44,7 +44,7 @@ The following change log shows the version updates to the file and what changes 
 | 4   | Sep 2022   | webexcc-servicenow-update-setV4.xml  | V4      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
 | 5   | Sep 2022   | ServiceNow_Desktop_0.0.6_v3.0.0.json | v3.0.0  | + complete file                                                                                          |
 | 6   | Sep 2022   | webexcc-servicenow-update-setv5.xml  | v5      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
-| 7   | Jan 2023   | ServiceNow_Desktop_0.0.6_v4.0.1.json | v4.0.1  | + Add screenpopOnConnected                                                                                           |
+| 7   | Jan 2023   | ServiceNow_Desktop_0.0.6_v4.0.1.json | v4.0.1  | + Add screenpopOnConnected customization                                                                                         |
 
 ## Feature Matrix
 
