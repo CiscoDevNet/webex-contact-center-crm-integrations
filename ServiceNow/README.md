@@ -21,7 +21,11 @@ Administrators are free to customize the layout based on the description and fun
 
 ## Desktop URLs per Datacenter
 
+** Important Note**
+
 > Please note the Webex Contact Center Desktop URLs per Datacenter
+
+`The Desktop URLs need to be edited after installation using the steps in the official guide. Please Edit the system properties to point to the correct agent desktop URL corresponding to your datacenter`
 
 | #   | Desktop URL                         | Data Center   |
 | --- | ----------------------------------- | ------------- |
