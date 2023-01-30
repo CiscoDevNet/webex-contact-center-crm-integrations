@@ -21,7 +21,7 @@ Administrators are free to customize the layout based on the description and fun
 
 ## Desktop URLs per Datacenter
 
-** Important Note**
+**Important Note**
 
 > Please note the Webex Contact Center Desktop URLs per Datacenter
 
