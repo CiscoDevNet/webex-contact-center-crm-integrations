@@ -16,7 +16,7 @@
            "script":"https://d390gzw4ok28px.cloudfront.net/salesforce/v1.1.2/dist/index.js",
            "attributes": {
             "outDialAni":"<OutDialAniValue>",
-            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/salesforce/v1.1.2/webexcc_salesforce_desktop.min.js",
+            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/salesforce/v1.1.2/webexcc_salesforce_desktop.min_hotfix_15Feb2023.js",
             "openctiLibPath":"https://d390gzw4ok28px.cloudfront.net/salesforce/v1.1.2/lib/opencti_v48.js,https://d390gzw4ok28px.cloudfront.net/salesforce/v1.1.2/lib/integration.js",
             "nameOfOpenCtiFileName" : "opencti_v48.js"
             }
