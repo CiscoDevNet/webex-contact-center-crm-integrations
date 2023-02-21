@@ -25,7 +25,8 @@
             "crmEntityName" : "contact",
             "crmEntityFieldName" : "firstname",
             "inboundANIPrefixToBeRemoved" : "false", 
-            "inboundANIPrefix" : "+1"  
+            "inboundANIPrefix" : "+1",
+            "phoneCallActivityRecordConfig" : {"createActivityRecordForInboundCall":true,"createActivityRecordForOutboundCall":true,"openActivityRecordAutomatically":false}    
             }
           } 
       },
