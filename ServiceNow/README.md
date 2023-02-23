@@ -48,7 +48,8 @@ The following change log shows the version updates to the file and what changes 
 | 4   | Sep 2022   | webexcc-servicenow-update-setV4.xml  | V4      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
 | 5   | Sep 2022   | ServiceNow_Desktop_0.0.6_v3.0.0.json | v3.0.0  | + complete file                                                                                          |
 | 6   | Sep 2022   | webexcc-servicenow-update-setv5.xml  | v5      | + only used on dev instances - this file is not required for Enterprise licensed versions of Service Now |
-| 7   | Jan 2023   | ServiceNow_Desktop_0.0.6_v4.0.1.json | v4.0.1  | + Add screenpopOnConnected customization                                              | 8   | Sep 2022   | webexcc-servicenow-update-setv7.xml  | v7      | + only used on dev instances - this file is not required for Enterprise licensed                                            |
+| 7   | Jan 2023   | ServiceNow_Desktop_0.0.6_v4.0.1.json | v4.0.1  | + Add screenpopOnConnected customization |
+| 8   | Feb 2023   | webexcc-servicenow-update-setv7.xml  | v7      | + only used on dev instances - this file is not required for Enterprise licensed                                            |
 
 ## Feature Matrix
 
