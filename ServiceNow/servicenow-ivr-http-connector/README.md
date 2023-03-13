@@ -4,7 +4,7 @@ The following section explains how to get started with the HTTP connector in Web
 
 **Attached**
 
-- The sample flow for **ServiceNow_HTTP_Connector.json** which shows you how a simple lookup can be performed. For detailed steps, refer to the video below.
+- The sample flow for **ServiceNow_HTTP_Connector.json** which shows you how a simple lookup can be performed. For detailed steps, refer the video below.
 - The Postman collection **ServiceNow API Collection.postman_collection.json** that can be directly imported into Postman to understand the ServiceNow REST APIs.
 
 ## [Watch Now: Configure ServiceNow HTTP Connector on Webex Contact Center Flow Designer](https://app.vidcast.io/share/22e511b2-cb81-474d-a6c6-982214d0e473)
