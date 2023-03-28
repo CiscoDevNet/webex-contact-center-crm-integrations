@@ -20,7 +20,7 @@ Administrators are free to customize the layout based on the description and fun
 | 8   | inboundANIPrefixToBeRemoved | Flag to enable / disable removal of prefix from ANI for Inbound Calls.                                           | Optional field. Default value will be false.                                                                                                                                                                                            |
 | 9   | inboundANIPrefix            | Prefix to be removed from ANI for record match and screenpop in CRM for Inbound Calls. (Example : " "+1")        | Mandatory field for prefix removal.                                                                                                                                                                                                     |
 | 9   | phoneCallActivityRecordConfig            | JSON Object     |    Desktop layout property to enable or disable automatic display and creation of phone call activity record                                                                                                                                           |
-| 10   | channelIntegrationFrameWorkVersion2Enabled            |   Flag to enable / disable CIF V2   |    Desktop layout property to enable or disable Channel Integration Framework 2.0        |
+| 10   | channelIntegrationFrameWorkVersion2Enabled            |   Flag to enable / disable Channel Integration Framework (CIF) version 2.0 - support for Customer Service Workspace   |    Desktop layout property to enable or disable Channel Integration Framework 2.0        |
 
 ## Desktop URLs per Datacenter
 
