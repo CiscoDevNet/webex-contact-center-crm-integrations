@@ -18,7 +18,7 @@
             "outDialEp":"$STORE.agent.outDialEp", 
             "outDialAni":"<OutDialAniValue>",
             "desktopWidth":"500",
-            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/msdynamics/v1.4.1/dist/msdynamics-agent-desktop.min_hotfix22Feb2023.js",
+            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/msdynamics/v1.4.1/dist/msdynamics-agent-desktop.min.js",
             "hostName":"<HostNameOfMSDynamicsInstance>",
             "isAdvancedScreenpopEnabled" : "false",
             "cadVariableName" : "Customer_Name",
@@ -26,7 +26,8 @@
             "crmEntityFieldName" : "firstname",
             "inboundANIPrefixToBeRemoved" : "false", 
             "inboundANIPrefix" : "+1",
-            "phoneCallActivityRecordConfig" : {"createActivityRecordForInboundCall":true,"createActivityRecordForOutboundCall":true,"openActivityRecordAutomatically":false}    
+            "phoneCallActivityRecordConfig" : {"createActivityRecordForInboundCall":true,"createActivityRecordForOutboundCall":true,"openActivityRecordAutomatically":false},
+            "channelIntegrationFrameWorkVersion2Enabled" : true     
             }
           } 
       },

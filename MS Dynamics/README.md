@@ -19,7 +19,8 @@ Administrators are free to customize the layout based on the description and fun
 | 7   | crmEntityFieldName          | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched | Mandatory field for advanced search. Check [this](https://golive.anywhere365.io/platform_elements/webagent_for_dynamics365/scenarios/webagent_for_dynamcis365_cif_actions.html) for all the entity types and its associated field names |
 | 8   | inboundANIPrefixToBeRemoved | Flag to enable / disable removal of prefix from ANI for Inbound Calls.                                           | Optional field. Default value will be false.                                                                                                                                                                                            |
 | 9   | inboundANIPrefix            | Prefix to be removed from ANI for record match and screenpop in CRM for Inbound Calls. (Example : " "+1")        | Mandatory field for prefix removal.                                                                                                                                                                                                     |
-| 9   | phoneCallActivityRecordConfig            | JSON Object     |    Desktop layout property to enable or disable automatic dispaly and creation of phone call activity record                                                                                                                                           |
+| 9   | phoneCallActivityRecordConfig            | JSON Object     |    Desktop layout property to enable or disable automatic display and creation of phone call activity record                                                                                                                                           |
+| 10   | channelIntegrationFrameWorkVersion2Enabled            |   Flag to enable / disable CIF V2   |    Desktop layout property to enable or disable Channel Integration Framework 2.0        |
 
 ## Desktop URLs per Datacenter
 
@@ -46,6 +47,7 @@ The following change log shows the version updates to the files and what changes
 | 4   | MSDynamics_Desktop_0.0.6_v2.json     | 0.0.6           | Features: Advanced Screenpop / CAD variable based search                              | June 2022   |
 | 5   | MSDynamics_Desktop_0.0.6_v3.json     | 0.0.6           | Features: Flag added to enable / disable removal of prefix from ANI for Inbound Calls | Aug 2022    |
 | 6   | MSDynamics_Desktop_0.0.6_v1.3.1.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                              | Jan 2023    |
+| 7   | MSDynamics_Desktop_0.0.6_v1.5.1.json | 0.0.6           | Channel Integration Framework Version 2.0 Support enabled                                              | March 2023    |
 
 ## Feature Matrix
 
