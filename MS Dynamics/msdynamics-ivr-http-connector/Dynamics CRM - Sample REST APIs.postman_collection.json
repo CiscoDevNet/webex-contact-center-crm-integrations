@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "3b824389-c88f-4646-acfc-ae67a3627515",
+		"name": "Dynamics CRM - Sample REST APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19339147"
+	},
+	"item": [
+		{
+			"name": "1. Who Am I",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{webapiurl}}WhoAmI",
+					"host": [
+						"{{webapiurl}}WhoAmI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get Contact ID & Name from ANI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webapiurl}}contacts?$select=fullname,telephone1,contactid&$filter=contains(telephone1,'{{ani}}')",
+					"host": [
+						"{{webapiurl}}contacts"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "fullname,telephone1,contactid"
+						},
+						{
+							"key": "$filter",
+							"value": "contains(telephone1,'{{ani}}')"
+						},
+						{
+							"key": "$filter",
+							"value": "contains(telephone1,'14806754110')",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Get Accounts Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{webapiurl}}accounts",
+					"host": [
+						"{{webapiurl}}accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Get Selected Account Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webapiurl}}accounts?$select=name&$filter=name eq 'Nehas Test Account'",
+					"host": [
+						"{{webapiurl}}accounts"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "name"
+						},
+						{
+							"key": "$filter",
+							"value": "name eq 'Nehas Test Account'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Get Case Details based on the Contact ID",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webapiurl}}incidents?$filter=_customerid_value eq 'dc9bbbfe-e0e5-ed11-a7c7-0022482137b9'&$select=title,_customerid_value,ticketnumber",
+					"host": [
+						"{{webapiurl}}incidents"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "_customerid_value eq 'dc9bbbfe-e0e5-ed11-a7c7-0022482137b9'"
+						},
+						{
+							"key": "$select",
+							"value": "title,_customerid_value,ticketnumber"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Get Case Details based on the Case Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webapiurl}}incidents?$select=title,_customerid_value&$filter=title eq 'Nehas Test Case'",
+					"host": [
+						"{{webapiurl}}incidents"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "title,_customerid_value"
+						},
+						{
+							"key": "$filter",
+							"value": "title eq 'Nehas Test Case'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Create a new Case linked with a Contact",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"New Test Title\",\n  \"description\": \"New Case Description\",\n   \"customerid_contact@odata.bind\": \"/contacts(dc9bbbfe-e0e5-ed11-a7c7-0022482137b9)\",\n  \"caseorigincode\": 1,\n  \"casetypecode\": 2\n}"
+				},
+				"url": {
+					"raw": "{{webapiurl}}incidents",
+					"host": [
+						"{{webapiurl}}incidents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Update an existing Contact",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"lastname\": \"Webex\"\n}"
+				},
+				"url": {
+					"raw": "{{webapiurl}}contacts(dc9bbbfe-e0e5-ed11-a7c7-0022482137b9)",
+					"host": [
+						"{{webapiurl}}contacts(dc9bbbfe-e0e5-ed11-a7c7-0022482137b9)"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessTokenUrl",
+				"value": "{{accessTokenURL}}",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "{{scope}}",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{clientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{clientID}}",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://org734cd33d.crm.dynamics.com/",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "D365 Token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "http://localhost",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
