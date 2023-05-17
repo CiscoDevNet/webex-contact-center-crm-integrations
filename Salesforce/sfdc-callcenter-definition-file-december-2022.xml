@@ -13,7 +13,7 @@
         <item sortOrder="1" name="screenpopSearchParamCadName" label="CAD Variable Name ">cad_variable</item>
         <item sortOrder="2" name="prefixStringTobeRemoved" label="Remove ANI Prefix Strings">+1,+91</item>
     </section>
-    <section sortOrder="2" name="reqNoRecordMatchConfig" label="Screenpop Settings">
+    <section sortOrder="2" name="reqNoRecordMatchConfig" label="Screenpop Settings for No Matching Records">
         <item sortOrder="0" name="isNoRecordMatchScenarioEnabled" label="Enable Screenpop For No Matching Records">false</item>
         <item sortOrder="1" name="nameOfCrmRecordObject" label="Salesforce object name">Contact</item>
         <item sortOrder="2" name="sfdcObjetFieldCadVariableMappings1" label="Object Field Mappings">[{"wxccFieldName":"phoneNumber","sfdcFieldName":"Phone","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
