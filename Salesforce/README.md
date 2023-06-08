@@ -29,6 +29,7 @@ The following change log shows the version updates to the files and what changes
 | 4   | Sep 2022   | salesforce_desktop_0.0.6_v1.0.1.json | 0.0.6           | New feature sets           | Sept 2022   |
 | 5   | Nov 2022   | salesforce_desktop_0.0.6_v1.1.2.json | 0.0.6           | New feature set and hotfix | Nov 2022    |
 | 6   | April 2023 | salesforce_desktop_0.0.6_v1.1.4.json | 0.0.6           | Hotfix                     | April 2023  |
+| 7   | June 2023  | salesforce_desktop_0.0.6_v1.1.5.json | 0.0.6           | Hotfix                     | June 2023   |
 
 ## Feature Matrix
 
