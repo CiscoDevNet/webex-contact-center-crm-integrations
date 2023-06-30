@@ -19,10 +19,10 @@
       "widgets": {
         "comp1": {
           "comp": "agentx-custom-desktop",
-          "script": "https://d3s2tlfde7b0jo.cloudfront.net/freshdesk/2.1.4/dist/index.js",
+          "script": "https://cx-crmconnector.ciscoccservice.com/freshdesk/2.1.4/dist/index.js",
           "properties": {
             "outDialAni": "<OutDialAniValue>",
-            "crmLibPath": "https://d3s2tlfde7b0jo.cloudfront.net/freshdesk/2.1.4/webexcc_freshdesk_desktop_2.1.4.js"
+            "crmLibPath": "https://cx-crmconnector.ciscoccservice.com/freshdesk/2.1.4/webexcc_freshdesk_desktop_2.1.4.js"
           }
         }
       },
