@@ -13,9 +13,9 @@
       "widgets": {
         "comp1": {
           "comp": "agentx-msdynamics-desktop",
-           "script":"https://d390gzw4ok28px.cloudfront.net/msdynamics/v1.5.1/dist/index.js",
+           "script":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.1/dist/index.js",
            "properties": {
-            "crmLibPath":"https://d390gzw4ok28px.cloudfront.net/msdynamics/v1.5.1/dist/msdynamics-agent-desktop.min.js",
+            "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.1/dist/msdynamics-agent-desktop.min.js",
             "hostName":"<hostname>",
             "desktopWidth":"500",
             "inboundANIPrefixToBeRemoved" : "false", 
