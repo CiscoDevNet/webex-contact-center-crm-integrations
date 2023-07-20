@@ -42,7 +42,7 @@
           "children": [
             {
               "comp": "agentx-custom-desktop",
-              "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.6/dist/index.js",
+              "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.7/dist/index.js",
               "attributes": {
                   "isSFDCWidgetEnabled":"true" 
                   },
