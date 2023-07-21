@@ -31,6 +31,7 @@ The following change log shows the version updates to the files and what changes
 | 6   | April 2023 | salesforce_desktop_0.0.6_v1.1.4.json | 0.0.6           | Hotfix                     | April 2023  |
 | 7   | June 2023  | salesforce_desktop_0.0.6_v1.1.5.json | 0.0.6           | Hotfix                     | June 2023   |
 | 8   | July 2023  | salesforce_desktop_0.0.6_v1.1.6.json | 0.0.6           | New Feature sets           | July 2023   |
+| 9   | July 2023  | salesforce_desktop_0.0.6_v1.1.7.json | 0.0.6           | New Feature sets           | July 2023   |
 
 ## Feature Matrix
 
@@ -51,13 +52,14 @@ This section outlines the features available in the standard connector as well a
 | 11  | Contact Center Reporting within the CRM​                                                     | ✔️                 |
 | 12  | Activity ownership transfer during Call Transfer​                                            | ✔️                 |
 | 13  | Screen-pop and activity logging retention during consult transfer/conference​                | ✔️                 |
-| 14  | On demand country code removal from inbound call ANI field                                  | ✔️                 |
-| 15  | Custom screenpop settings for no record match screenpop search                              | ✔️                 |
-| 16  | Recording of call live notes update to activity record                                      | ✔️                 |
-| 17  | Dynamic activity record subject                                                             | ✔️                 |
-| 18  | Case management                                                                             | ✔️                 |
-| 19  | Omni state sync                                                                             | ✔️                 |
-| 20  | SFDC actions widget                                                                         | ✔️                 |
+| 14  | Automated activity record open ​in edit mode on connected or/and wrap-up state               | ✔️                 |
+| 15  | On demand country code removal from inbound call ANI field                                  | ✔️                 |
+| 16  | Custom screenpop settings for no record match screenpop search                              | ✔️                 |
+| 17  | Recording of call live notes update to activity record                                      | ✔️                 |
+| 18  | Dynamic activity record subject                                                             | ✔️                 |
+| 19  | Case management                                                                             | ✔️                 |
+| 20  | Omni state sync                                                                             | ✔️                 |
+| 21  | SFDC actions widget                                                                         | ✔️                 |
 
 ## Installation Guide
 
