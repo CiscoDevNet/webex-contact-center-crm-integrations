@@ -24,7 +24,7 @@
         <item sortOrder="1" name="reqIsActivityAutoRefreshEnabled" label="Auto Refresh Enabled">false</item>
         <item sortOrder="2" name="isActivityRecordCreationAtConnected" label="Create Activity Record at Connected State">false</item>
         <item sortOrder="3" name="activityRecordOpenedInEditmodeConnectedState" label="Open Activity Record On Connected State">false</item>
-        <item sortOrder="4" name="activityRecordOpenedInEditmodeCallDisConnectedState" label="Open Activity Record On Disconnected State">false</item>
+        <item sortOrder="4" name="activityRecordOpenedInEditmodeCallDisConnectedState" label="Open Activity Record On Wrap-Up State">false</item>
         <item sortOrder="5" name="isActivityRecordOwnershiptobeChangedForTransferredCalls" label="Activity record ownership to be changed for transferred calls">false</item>
         <item sortOrder="6" name="nameOfTheCadvariableHoldingActivityRecordId" label="Name of the cad variable that holds activity id">ActivityId</item>
         <item sortOrder="7" name="isCallNotesEnabled" label="Record Call Live Notes">false</item>
