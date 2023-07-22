@@ -52,7 +52,7 @@ This section outlines the features available in the standard connector as well a
 | 11  | Contact Center Reporting within the CRM​                                                     | ✔️                 |
 | 12  | Activity ownership transfer during Call Transfer​                                            | ✔️                 |
 | 13  | Screen-pop and activity logging retention during consult transfer/conference​                | ✔️                 |
-| 14  | Automated activity record open ​in edit mode on connected or/and wrap-up state               | ✔️                 |
+| 14  | Automated phone call activity record opening ​in edit mode on connected and/or wrap-up state | ✔️                 |
 | 15  | On demand country code removal from inbound call ANI field                                  | ✔️                 |
 | 16  | Custom screenpop settings for no record match screenpop search                              | ✔️                 |
 | 17  | Recording of call live notes update to activity record                                      | ✔️                 |
