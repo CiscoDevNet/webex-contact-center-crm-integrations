@@ -48,6 +48,7 @@ The following change log shows the version updates to the files and what changes
 | 5   | MSDynamics_Desktop_0.0.6_v3.json     | 0.0.6           | Features: Flag added to enable / disable removal of prefix from ANI for Inbound Calls | Aug 2022    |
 | 6   | MSDynamics_Desktop_0.0.6_v1.3.1.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                              | Jan 2023    |
 | 7   | MSDynamics_Desktop_0.0.6_v1.5.1.json | 0.0.6           | Channel Integration Framework Version 2.0 Support enabled                             | March 2023  |
+| 8   | MSDynamics_Desktop_0.0.6_v1.5.2.json | 0.0.6           | Package update and bug fixes                                                          | August 2023 |
 
 ## Feature Matrix
 
