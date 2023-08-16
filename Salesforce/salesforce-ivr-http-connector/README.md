@@ -30,7 +30,7 @@ The following section explains how to get started with the HTTP connector in Web
 ## Pre-Requisites
 
 - Configuring the Salesforce connector using OAuth2. Follow the above Video link to enable the REST API. Look below for the OAuth2 settings.
-- Login to admin.webex.com and configure the connector details -> admin.webex.com > Contact Center > Connectors > Select Custom Connector -> OAuth2: Enter the details as per the video.
+- Login to admin.webex.com and configure the connector details -> admin.webex.com > Contact Center > Connectors > Select the out-of-box Salesforce Connector card -> OAuth2: Enter the details as per the video.
 - Import the attached flow Salesforce_HTTP_Connector.json inside flow designer.
 - Configure the WebexCC Flow along with the required details inside the flow.
 
