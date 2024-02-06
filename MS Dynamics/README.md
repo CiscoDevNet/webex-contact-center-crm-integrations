@@ -21,6 +21,7 @@ Administrators are free to customize the layout based on the description and fun
 | 9   | inboundANIPrefix                           | Prefix to be removed from ANI for record match and screenpop in CRM for Inbound Calls. (Example : " "+1")         | Mandatory field for prefix removal.                                                                                                                                                                              |
 | 9   | phoneCallActivityRecordConfig              | JSON Object                                                                                                       | Desktop layout property to enable or disable automatic display and creation of phone call activity record                                                                                                        |
 | 10  | channelIntegrationFrameWorkVersion2Enabled | Flag to enable / disable Channel Integration Framework (CIF) version 2.0 - support for Customer Service Workspace | Desktop layout property to enable or disable Channel Integration Framework 2.0                                                                                                                                   |
+| 11  | isWidgetDisplayEnabled | Flag to enable / disable Actions Widget | Flag to enable / disable Actions Widget                                                                                                                               |
 
 ## Desktop URLs per Datacenter
 
@@ -49,6 +50,7 @@ The following change log shows the version updates to the files and what changes
 | 6   | MSDynamics_Desktop_0.0.6_v1.3.1.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                              | Jan 2023    |
 | 7   | MSDynamics_Desktop_0.0.6_v1.5.1.json | 0.0.6           | Channel Integration Framework Version 2.0 Support enabled                             | March 2023  |
 | 8   | MSDynamics_Desktop_0.0.6_v1.5.2.json | 0.0.6           | Package update and bug fixes                                                          | August 2023 |
+| 9   | MSDynamics_Desktop_0.0.6_v1.5.3.json | 0.0.6           | New feature Actions Widget                                                            | Feb 2024    |
 
 ## Feature Matrix
 
@@ -69,6 +71,7 @@ This section outlines the features available in the standard connector as well a
 | 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 |
 | 12  | Activity ownership transfer during Call Transfer​                                           | -                  |
 | 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 |
+| 14  | Actions Widget​               | ✔️                 |
 
 ## Installation Guide
 
