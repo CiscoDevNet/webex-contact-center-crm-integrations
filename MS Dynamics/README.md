@@ -22,6 +22,11 @@ Administrators are free to customize the layout based on the description and fun
 | 9   | phoneCallActivityRecordConfig              | JSON Object                                                                                                       | Desktop layout property to enable or disable automatic display and creation of phone call activity record                                                                                                        |
 | 10  | channelIntegrationFrameWorkVersion2Enabled | Flag to enable / disable Channel Integration Framework (CIF) version 2.0 - support for Customer Service Workspace | Desktop layout property to enable or disable Channel Integration Framework 2.0                                                                                                                                   |
 | 11  | isWidgetDisplayEnabled | Flag to enable / disable Actions Widget | Flag to enable / disable Actions Widget                                                                                                                               |
+| 12  | createActivityRecordConfig | Phone call activity record configuration | Phone call activity record configuration                                                                                                                              |
+| 13  | openContactFormWithPrefilledDataConfig | New contact form configuration | New contact form configuration                                                                                                                               |
+| 14  | createCaseRecordConfig | Case management configuration | Case management configuration                                                                                                                               |
+| 15  | actionsWidgetConfig | Actions widget feature configuration | Actions widget feature configuration                                                                                                                               |
+
 
 ## Desktop URLs per Datacenter
 
