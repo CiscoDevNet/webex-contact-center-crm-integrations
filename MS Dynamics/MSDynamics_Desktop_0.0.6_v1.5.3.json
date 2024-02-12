@@ -30,7 +30,7 @@
             "channelIntegrationFrameWorkVersion2Enabled" : true,
             "isWidgetDisplayEnabled" : true,
             "createActivityRecordConfig" : [{"CadFieldName":"callNotes","msDynamicsFieldName":"description","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"directioncodeValue","msDynamicsFieldName":"directioncode","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"firstname","msDynamicsFieldName":"firstname","isDefaultValueEnabled":true,"defaultFieldValue":"GIREESH"}],  
+            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
             "createCaseRecordConfig" : [{"CadFieldName":"contactId","msDynamicsFieldName":"customerid","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"ivrDescription","msDynamicsFieldName":"title","isDefaultValueEnabled":true,"defaultFieldValue":"case created by webexcc"}], 
             "actionsWidgetConfig" : {"isLiveNotesEnabled":true,"isCreateCaseEnabled":true}  
             }
