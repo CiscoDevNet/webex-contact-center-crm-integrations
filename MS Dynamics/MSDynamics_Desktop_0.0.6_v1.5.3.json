@@ -16,7 +16,7 @@
            "script":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
            "properties": {
             "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/msdynamics-agent-desktop.min.js",
-            "hostName":"https://wxccdesktop.crm8.dynamics.com/",
+            "hostName":"<hostname>",
             "desktopWidth":"500",
             "inboundANIPrefixToBeRemoved" : "true", 
             "inboundANIPrefix" : "+",
