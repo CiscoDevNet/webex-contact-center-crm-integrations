@@ -28,7 +28,7 @@
             "outDialEp":"$STORE.agent.outDialEp", 
             "outDialAni":"<OutDialAniValue>",
             "channelIntegrationFrameWorkVersion2Enabled" : true,
-            "isWidgetDisplayEnabled" : true,
+            "isWidgetDisplayEnabled" : false,
             "createActivityRecordConfig" : [{"CadFieldName":"callNotes","msDynamicsFieldName":"description","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"directioncodeValue","msDynamicsFieldName":"directioncode","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
             "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
             "createCaseRecordConfig" : [{"CadFieldName":"contactId","msDynamicsFieldName":"customerid","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"ivrDescription","msDynamicsFieldName":"title","isDefaultValueEnabled":true,"defaultFieldValue":"case created by webexcc"}], 
