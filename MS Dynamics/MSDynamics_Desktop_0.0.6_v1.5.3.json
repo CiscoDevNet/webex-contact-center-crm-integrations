@@ -16,7 +16,7 @@
            "script":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
            "properties": {
             "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/msdynamics-agent-desktop.min.js",
-            "hostName":"https://wxccdesktop.crm8.dynamics.com/",
+            "hostName":"<hostname>",
             "desktopWidth":"500",
             "inboundANIPrefixToBeRemoved" : "true", 
             "inboundANIPrefix" : "+",
@@ -30,7 +30,7 @@
             "channelIntegrationFrameWorkVersion2Enabled" : true,
             "isWidgetDisplayEnabled" : true,
             "createActivityRecordConfig" : [{"CadFieldName":"callNotes","msDynamicsFieldName":"description","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"directioncodeValue","msDynamicsFieldName":"directioncode","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"firstname","msDynamicsFieldName":"firstname","isDefaultValueEnabled":true,"defaultFieldValue":"GIREESH"}],  
+            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
             "createCaseRecordConfig" : [{"CadFieldName":"contactId","msDynamicsFieldName":"customerid","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"ivrDescription","msDynamicsFieldName":"title","isDefaultValueEnabled":true,"defaultFieldValue":"case created by webexcc"}], 
             "actionsWidgetConfig" : {"isLiveNotesEnabled":true,"isCreateCaseEnabled":true}  
             }
