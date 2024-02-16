@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-02-12 22:29:21">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-02-16 21:43:37">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -20,11 +20,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>0434e4ce93140210420075dcebba10db</sys_id>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>15108d1793540210420075dcebba10f1</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,18 +34,277 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>sys_transform_entry_e25a715747a7311095cff2b4116d4371</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="WebexCC Activity TransformMap"&gt;d8d7d0af2fc121106446cc96f699b605&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;u_callnotes&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;u_webexcc_imp_activity&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:11:29&lt;/sys_created_on&gt;&lt;sys_id&gt;e25a715747a7311095cff2b4116d4371&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_callnotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_e25a715747a7311095cff2b4116d4371&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:11:29&lt;/sys_updated_on&gt;&lt;target_field&gt;u_callnotes&lt;/target_field&gt;&lt;target_table&gt;sn_openframe_phone_log&lt;/target_table&gt;&lt;use_source_script&gt;false&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1374561955</payload_hash>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>1110499793540210420075dcebba102f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d9f6c518e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
+<table/>
+<target_name>u_callnotes</target_name>
+<type>Field Map</type>
+<update_domain>global</update_domain>
+<update_guid>cc7afd176ba73110749c24ea90a3e982</update_guid>
+<update_guid_history>cc7afd176ba73110749c24ea90a3e982:1374561955</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_webexcc_imp_activity_u_callnotes</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callnotes" table="u_webexcc_imp_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallNotes&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callnotes&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;3000&lt;/max_length&gt;&lt;name&gt;u_webexcc_imp_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:05:26&lt;/sys_created_on&gt;&lt;sys_id&gt;e4f8f1d347a7311095cff2b4116d43d3&lt;/sys_id&gt;&lt;sys_name&gt;CallNotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_imp_activity_u_callnotes&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:05:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1435767635</payload_hash>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>1510499793540210420075dcebba102e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d9f6c516f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
+<table>u_webexcc_imp_activity</table>
+<target_name>WebexCC IMP Activity.CallNotes</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>6709b5d351a73110c388f88d9aec5307</update_guid>
+<update_guid_history>6709b5d351a73110c388f88d9aec5307:1435767635</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_sn_openframe_phone_log_u_callnotes</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callnotes" table="sn_openframe_phone_log"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallNotes&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callnotes&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;3000&lt;/max_length&gt;&lt;name&gt;sn_openframe_phone_log&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:06:48&lt;/sys_created_on&gt;&lt;sys_id&gt;7d49f9d347a7311095cff2b4116d4308&lt;/sys_id&gt;&lt;sys_name&gt;CallNotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_sn_openframe_phone_log_u_callnotes&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:06:48&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-532614795</payload_hash>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>1d10499793540210420075dcebba102d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d9f6c51810000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
+<table>sn_openframe_phone_log</table>
+<target_name>Phone Log.CallNotes</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>23593dd3f2a73110166cc4b23ad2f6f2</update_guid>
+<update_guid_history>23593dd3f2a73110166cc4b23ad2f6f2:-532614795</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_571ff7c52f4a91106446cc96f699b6a3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.propUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;propUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var propUtils = Class.create();
+propUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+         getWebexccProp : function () {
+           var webexccprop = {};
+           webexccprop.instanceurl= 'https://'+gs.getProperty('instance_name')+'.service-now.com/';
+           webexccprop.url=gs.getProperty('agentdesktop_url');
+           return  JSON.stringify(webexccprop);
+     
+        },
+	     UserGetSysId : function () {
+			var opened_for;
+			
+			var sysidlist = {};
+		    var user = new GlideRecordSecure("sys_user");
+			  user.addQuery(this.getParameter('field'),this.getParameter('value'));
+			  user.query();
+			  if(user.next()) {
+				 opened_for=user.sys_id;//return user.sys_id;
+					var inc = new GlideRecordSecure('incident');
+							inc.addQuery('caller_id', opened_for);
+				            inc.addQuery('state','IN','1,2');
+							inc.orderByDesc('sys_created_on');
+							inc.query();
+								if (inc.next()) {
+									sysidlist.incsysid=inc.getUniqueValue();
+	                           }else{
+									inc.initialize();
+									inc.caller_id=opened_for;
+									inc.contact_type='phone';
+									inc.short_description='Call Received From '+ this.getParameter('value');
+									sysidlist.incsysid=inc.insert();
+								}
+			  } 
+			var grInt = new GlideRecordSecure('interaction');
+				grInt.initialize(); 
+				grInt.assigned_to= gs.getUserID(); 
+				grInt.type= 'phone'; 
+				grInt.opened_for= opened_for; 
+			var sysid=grInt.insert();
+			sysidlist.sysid=sysid;
+			
+			return JSON.stringify(sysidlist);//sysid;
+		},
+	     createNew : function () {
+			var opened_for;
+			
+			var sysidlist = {};
+		    var user = new GlideRecordSecure("sys_user");
+			  user.addQuery(this.getParameter('field'),this.getParameter('value'));
+			  user.query();
+			  if(user.next()) {
+				 opened_for=user.sys_id;//return user.sys_id;
+					var inc = new GlideRecordSecure('incident');
+					inc.initialize();
+					inc.caller_id=opened_for;
+					inc.contact_type='phone';
+					inc.short_description='Call Received From '+ this.getParameter('value');
+					sysidlist.incsysid=inc.insert();
+								
+			  } 
+			// var grInt = new GlideRecordSecure('interaction');
+			// 	grInt.initialize(); 
+			// 	grInt.assigned_to= gs.getUserID(); 
+			// 	grInt.type= 'phone'; 
+			// 	grInt.opened_for= opened_for; 
+			// var sysid=grInt.insert();
+			// sysidlist.sysid=sysid;
+			sysidlist.sysid=-1;
+
+			return JSON.stringify(sysidlist);//sysid;
+		},
+	 setAssociateRecord : function () { 
+             var sys_id=0;
+			
+				//Activities on Incident record;
+				var actInfoString =this.getParameter('actInfo');
+                var suser = new GlideRecordSecure("sys_user");
+					suser.addQuery("phone", this.getParameter('ani'));
+					suser.query();
+					if(suser.next()) {
+					var inc = new GlideRecordSecure('incident');
+							inc.addQuery('caller_id', suser.sys_id);
+						    inc.addQuery('state','IN','1,2');
+							inc.orderByDesc('sys_created_on');
+							inc.query();
+								if (inc.next()) {
+									var jsonPretty = JSON.stringify(JSON.parse(actInfoString),null,2);  
+									inc.comments =jsonPretty;
+								inc.update();
+	
+							}
+					} 
+			
+            return sys_id;
+       },
+     setWebexcctable : function () {
+            var sys_id=0;
+			
+			var actInfo = JSON.parse(this.getParameter('actInfo'));
+			var webexcc = new GlideRecordSecure(gs.getProperty('webexccactivitytable'));
+            webexcc.addQuery("u_callobject", actInfo.CallObject);
+            webexcc.query();
+			if(!webexcc.next()) {
+				webexcc.u_ani = actInfo.ani;
+				webexcc.u_dnis =actInfo.dnis;
+				webexcc.u_queuename =actInfo.queuename;
+				webexcc.u_wrapuptime =actInfo.wrapuptime;
+				webexcc.u_callduration =actInfo.CallDurationInSeconds;
+				webexcc.u_ringingtime =actInfo.ringingtime;
+				webexcc.u_activitydate =actInfo.ActivityDate;
+				webexcc.u_callobject =actInfo.CallObject;
+				webexcc.u_calltype =actInfo.CallType;
+				webexcc.u_calldisposition=actInfo.CallDisposition;
+				webexcc.u_callnotes=actInfo.callNotes;
+				sys_id=webexcc.insert();
+
+				//Activities on Incident record;
+				var actInfoString =this.getParameter('actInfo');
+                var suser = new GlideRecordSecure("sys_user");
+					suser.addQuery("phone", this.getParameter('ani'));
+					suser.query();
+					if(suser.next()) {
+					var inc = new GlideRecordSecure('incident');
+							inc.addQuery('caller_id', suser.sys_id);
+						    inc.addQuery('state','IN','1,2');
+							inc.orderByDesc('sys_created_on');
+							inc.query();
+								if (inc.next()) {
+									var jsonPretty = JSON.stringify(JSON.parse(actInfoString),null,2);  
+									inc.comments =jsonPretty;
+								inc.update();
+	
+							}
+					} 
+							
+			}	
+            return sys_id;
+       },
+    type: 'propUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-18 23:13:15&lt;/sys_created_on&gt;&lt;sys_id&gt;571ff7c52f4a91106446cc96f699b6a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;propUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_571ff7c52f4a91106446cc96f699b6a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-14 00:17:28&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1734524360</payload_hash>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>5d10499793540210420075dcebba102e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18da4f9c4170000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
+<table/>
+<target_name>propUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>71868e525d180210a44e022e14a24248</update_guid>
+<update_guid_history>71868e525d180210a44e022e14a24248:-1734524360,e9cb319744a73110ca886b5d1ee5e633:1602049516,6197799fdc673110ee6bbd38b7227c82:1199974215,94d0226fe25121103539e03dfebeacf8:-1397347364,3fff1a2fda512110c1e8ef743c1d7f4d:1791820265,466d5e2b435121109697ed484fa7b7a7:991818349,902c56a7565121106e33fffbcf552041:-1482042493,029b122b05512110e61e305d88ec04c9:878761827,8cca1e272851211062262d6214f67031:-655969910,23991ea3d151211083f6cbba7327ce57:-1526184520,1727d2a3f65121109b9073ed646736de:-735873013,90e552a3b5512110b7782dd74bb8f432:-2146641845,8181562b15112110745c91ae9080d0c5:251619836,5a31d6af10112110ca91bc48a6e16f12:1990318684,07c597aed3d1211071764bf4ce6f337c:-593754789,10907b2313016110731395be70899aa4:-307004279,17e350772ac21110d8d40cbc57c2068b:-1660785130,cc8205b9428211108ac284e576e03300:1109154183,cf7ff0f5b6821110741589df38cc038d:-1498768178,4bedf03500821110a0a233521667a4a5:-638434237,24e0a051c58a91107db38caeb5b8a824:1314434476,54628499704a91106cebceb6b5a0ec0c:-2147439936,9330c4d5174a9110723a2f527cb1a7cf:853746824</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sys_documentation_u_webexcc_imp_activity_u_callnotes_en</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_callnotes" label="CallNotes" language="en" table="u_webexcc_imp_activity"><sys_documentation action="INSERT_OR_UPDATE"><element>u_callnotes</element><help/><hint/><label>CallNotes</label><language>en</language><name>u_webexcc_imp_activity</name><plural>CallNotes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-10 19:05:26</sys_created_on><sys_id>e30975d347a7311095cff2b4116d43ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallNotes</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_webexcc_imp_activity_u_callnotes_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-10 19:05:26</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
 <payload_hash>-734293972</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>0034e4ce93140210420075dcebba10dc</sys_id>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>9910499793540210420075dcebba102e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>18d9f6c51760000001</sys_recorded_at>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
 <table>u_webexcc_imp_activity</table>
 <target_name>WebexCC IMP Activity.CallNotes</target_name>
 <type>Field Label</type>
@@ -128,18 +387,21 @@ function actionswidget(callSessionInfo,msgType) {
 			gaout.getXMLWait();
 			
 			var sysObj = JSON.parse(gaout.getAnswer());
-			
+			var intsid=-1;
+			if(localStorage.hasOwnProperty("intsid")) {
+				intsid=localStorage.getItem("intsid");
+			}
 			if(sysObj.incsysid){
 				openFrameAPI.openServiceNowForm({
 				entity: 'incident',
 				query: 'sys_id='+sysObj.incsysid, 
-				'interaction_sys_id': sysObj.sysid  
+				'interaction_sys_id': intsid  
 			});
 			}else{
 				openFrameAPI.openServiceNowForm({
 				entity: 'incident',
 				query: 'sys_id=-1',
-				'interaction_sys_id': sysObj.sysid   
+				'interaction_sys_id': intsid //sysObj.sysid   
 			});
 			}
 
@@ -168,6 +430,7 @@ function actionswidget(callSessionInfo,msgType) {
 			// 	entity: 'sn_openframe_phone_log',
 			// 	query: 'sys_id=-1&amp;sysparm_query=call_type=INBOUND'
 			// });
+		
    }
    
 }
@@ -187,7 +450,7 @@ function screenpop(callerani,callSessionInfo) {
 	    gaout.getXMLWait();
 	  // var sysid = gaout.getAnswer();
 	  var sysObj = JSON.parse(gaout.getAnswer());
-	
+	    localStorage.setItem("intsid",sysObj.sysid);
 	if(sysObj.incsysid){
 		openFrameAPI.openServiceNowForm({
         entity: 'incident',
@@ -227,6 +490,7 @@ function stripPrefixes(param) {
 
 // Creating the activity record in servicenow table
 function nowActivities(actInfo, ani) {
+	 localStorage.setItem("intsid",-1); //remove local storage value after call
     var gaout = new GlideAjax('propUtils');
     gaout.addParam('sysparm_name', 'setWebexcctable');
     gaout.addParam('actInfo', JSON.stringify(actInfo));
@@ -261,23 +525,23 @@ openFrameAPI.subscribe(openFrameAPI.EVENTS.COMMUNICATION_EVENT,function(eventArg
 		  
        &lt;/body&gt;
 	 &lt;/html&gt; 	  
-&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;agentdesktop&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-04 00:26:31&lt;/sys_created_on&gt;&lt;sys_id&gt;dbe887662f1121106446cc96f699b62d&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;agentdesktop&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_dbe887662f1121106446cc96f699b62d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 18:56:06&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1487475075</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;agentdesktop&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-04 00:26:31&lt;/sys_created_on&gt;&lt;sys_id&gt;dbe887662f1121106446cc96f699b62d&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;agentdesktop&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_dbe887662f1121106446cc96f699b62d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-14 22:09:28&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1577622684</payload_hash>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>4834e4ce93140210420075dcebba10dc</sys_id>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>d110499793540210420075dcebba102f</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>18d9f6c515d0000001</sys_recorded_at>
+<sys_recorded_at>18da9aaf05b0000001</sys_recorded_at>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
 <table/>
 <target_name>agentdesktop</target_name>
 <type>UI Page</type>
 <update_domain>global</update_domain>
-<update_guid>fee6b513fea731103abd78f8dbad4d40</update_guid>
-<update_guid_history>fee6b513fea731103abd78f8dbad4d40:-1487475075,81bc0d5b9f8721104918190cd242eb90:-1647181674,22302a2f2551211087d5360132dbda57:-2054998199,b4d7dea3e95121107e45c285bd2742b2:-1690667803,2d25922bfa112110f82496e77c94e30c:-1899685237,56c2522bf211211028404cba187764f0:-2004630832,a98357ee4bd121109db0587bab599f90:-746183872,c11353ae37d12110eff498ea5774116d:-1240883814,515217aee1d1211065a3c4573c92bc2b:-746183872,a7b1d32e54d12110add067228ae8ea9a:15997504,f2d05beafdd1211030480e8b7027aa69:-275739157,d07017ea64d121101cbd3ffab2c6787c:-1872033050,16efcbeae6d1211091ad047a6e05c68e:2032865012,8e6f83eafcd121100f35e5891b203f38:-2133166079,d26ecbe645d1211046c15b6e559e6844:184553929,03fccbe646d12110f2ebb0dfd3af7e4f:1551892360,694c87e6bad12110da0c34cae5bbca58:517584049,d7eb43e68ad12110575b37e0af6e5fa6:-1167371119,083b876686d12110eb2d4eb4b992650d:511749614,299a4b666cd12110bb99ce0a750a3bd2:-2000475993,d7e80f26efd1211003e8e3a62bd01cf9:-954132851</update_guid_history>
+<update_guid>a4d2fa2e2d540210e93a3ea0feeb0536</update_guid>
+<update_guid_history>a4d2fa2e2d540210e93a3ea0feeb0536:1577622684,45d16ea623140210498f7a99a8b2c39a:1058685614,031f52a6e9140210a1121c24f79dd714:-240339632,f86c56a2df140210271675c10a063f06:1859351688,e2e682120c1802104114fc3d179c632a:1962125769,3f858a12d718021073b74165784bcbb5:1226063758,23e34e5e6fd40210996505490a435f4b:-27675941,c503c25ef1d4021084a4b159d5637eb5:1441199478,a063a1965054021019ecc6e1e7e2278f:604967165,fee6b513fea731103abd78f8dbad4d40:-1487475075,81bc0d5b9f8721104918190cd242eb90:-1647181674,22302a2f2551211087d5360132dbda57:-2054998199,b4d7dea3e95121107e45c285bd2742b2:-1690667803,2d25922bfa112110f82496e77c94e30c:-1899685237,56c2522bf211211028404cba187764f0:-2004630832,a98357ee4bd121109db0587bab599f90:-746183872,c11353ae37d12110eff498ea5774116d:-1240883814,515217aee1d1211065a3c4573c92bc2b:-746183872,a7b1d32e54d12110add067228ae8ea9a:15997504,f2d05beafdd1211030480e8b7027aa69:-275739157,d07017ea64d121101cbd3ffab2c6787c:-1872033050,16efcbeae6d1211091ad047a6e05c68e:2032865012,8e6f83eafcd121100f35e5891b203f38:-2133166079,d26ecbe645d1211046c15b6e559e6844:184553929,03fccbe646d12110f2ebb0dfd3af7e4f:1551892360,694c87e6bad12110da0c34cae5bbca58:517584049,d7eb43e68ad12110575b37e0af6e5fa6:-1167371119,083b876686d12110eb2d4eb4b992650d:511749614,299a4b666cd12110bb99ce0a750a3bd2:-2000475993,d7e80f26efd1211003e8e3a62bd01cf9:-954132851</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -289,279 +553,21 @@ openFrameAPI.subscribe(openFrameAPI.EVENTS.COMMUNICATION_EVENT,function(eventArg
 <name>sys_documentation_sn_openframe_phone_log_u_callnotes_en</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_callnotes" label="CallNotes" language="en" table="sn_openframe_phone_log"><sys_documentation action="INSERT_OR_UPDATE"><element>u_callnotes</element><help/><hint/><label>CallNotes</label><language>en</language><name>sn_openframe_phone_log</name><plural>CallNotes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-10 19:06:48</sys_created_on><sys_id>af593dd347a7311095cff2b4116d43ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CallNotes</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_sn_openframe_phone_log_u_callnotes_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-10 19:06:48</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
 <payload_hash>1251095630</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
+<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">15108d1793540210420075dcebba10f1</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>4c34e4ce93140210420075dcebba10db</sys_id>
+<sys_created_on>2024-02-16 21:43:36</sys_created_on>
+<sys_id>d510499793540210420075dcebba102e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>18d9f6c51880000001</sys_recorded_at>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
+<sys_updated_on>2024-02-16 21:43:36</sys_updated_on>
 <table>sn_openframe_phone_log</table>
 <target_name>Phone Log.CallNotes</target_name>
 <type>Field Label</type>
 <update_domain>global</update_domain>
 <update_guid>eb593dd39fa7311084449a95bf7ad4f3</update_guid>
 <update_guid_history>eb593dd39fa7311084449a95bf7ad4f3:1251095630</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_transform_entry_e25a715747a7311095cff2b4116d4371</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="WebexCC Activity TransformMap"&gt;d8d7d0af2fc121106446cc96f699b605&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;u_callnotes&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
-
-	// Add your code here
-	return ""; // return the value to be put into the target field
-
-})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;u_webexcc_imp_activity&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:11:29&lt;/sys_created_on&gt;&lt;sys_id&gt;e25a715747a7311095cff2b4116d4371&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_callnotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_e25a715747a7311095cff2b4116d4371&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:11:29&lt;/sys_updated_on&gt;&lt;target_field&gt;u_callnotes&lt;/target_field&gt;&lt;target_table&gt;sn_openframe_phone_log&lt;/target_table&gt;&lt;use_source_script&gt;false&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
-<payload_hash>1374561955</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>8434e4ce93140210420075dcebba10dc</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>18d9f6c518e0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
-<table/>
-<target_name>u_callnotes</target_name>
-<type>Field Map</type>
-<update_domain>global</update_domain>
-<update_guid>cc7afd176ba73110749c24ea90a3e982</update_guid>
-<update_guid_history>cc7afd176ba73110749c24ea90a3e982:1374561955</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_dictionary_u_webexcc_imp_activity_u_callnotes</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callnotes" table="u_webexcc_imp_activity"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallNotes&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callnotes&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;3000&lt;/max_length&gt;&lt;name&gt;u_webexcc_imp_activity&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:05:26&lt;/sys_created_on&gt;&lt;sys_id&gt;e4f8f1d347a7311095cff2b4116d43d3&lt;/sys_id&gt;&lt;sys_name&gt;CallNotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_webexcc_imp_activity_u_callnotes&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:05:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
-<payload_hash>1435767635</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>8834e4ce93140210420075dcebba10db</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>18d9f6c516f0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
-<table>u_webexcc_imp_activity</table>
-<target_name>WebexCC IMP Activity.CallNotes</target_name>
-<type>Dictionary</type>
-<update_domain>global</update_domain>
-<update_guid>6709b5d351a73110c388f88d9aec5307</update_guid>
-<update_guid_history>6709b5d351a73110c388f88d9aec5307:1435767635</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_include_571ff7c52f4a91106446cc96f699b6a3</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.propUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;propUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var propUtils = Class.create();
-propUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-
-         getWebexccProp : function () {
-           var webexccprop = {};
-           webexccprop.instanceurl= 'https://'+gs.getProperty('instance_name')+'.service-now.com/';
-           webexccprop.url=gs.getProperty('agentdesktop_url');
-           return  JSON.stringify(webexccprop);
-     
-        },
-	     UserGetSysId : function () {
-			var opened_for;
-			
-			var sysidlist = {};
-		    var user = new GlideRecordSecure("sys_user");
-			  user.addQuery(this.getParameter('field'),this.getParameter('value'));
-			  user.query();
-			  if(user.next()) {
-				 opened_for=user.sys_id;//return user.sys_id;
-					var inc = new GlideRecordSecure('incident');
-							inc.addQuery('caller_id', opened_for);
-				            inc.addQuery('state','IN','1,2');
-							inc.orderByDesc('sys_created_on');
-							inc.query();
-								if (inc.next()) {
-									sysidlist.incsysid=inc.getUniqueValue();
-	                           }else{
-									inc.initialize();
-									inc.caller_id=opened_for;
-									inc.contact_type='phone';
-									inc.short_description='Call Received From '+ this.getParameter('value');
-									sysidlist.incsysid=inc.insert();
-								}
-			  } 
-			var grInt = new GlideRecordSecure('interaction');
-				grInt.initialize(); 
-				grInt.assigned_to= gs.getUserID(); 
-				grInt.type= 'phone'; 
-				grInt.opened_for= opened_for; 
-			var sysid=grInt.insert();
-			sysidlist.sysid=sysid;
-			
-			return JSON.stringify(sysidlist);//sysid;
-		},
-	     createNew : function () {
-			var opened_for;
-			
-			var sysidlist = {};
-		    var user = new GlideRecordSecure("sys_user");
-			  user.addQuery(this.getParameter('field'),this.getParameter('value'));
-			  user.query();
-			  if(user.next()) {
-				 opened_for=user.sys_id;//return user.sys_id;
-					var inc = new GlideRecordSecure('incident');
-					inc.initialize();
-					inc.caller_id=opened_for;
-					inc.contact_type='phone';
-					inc.short_description='Call Received From '+ this.getParameter('value');
-					sysidlist.incsysid=inc.insert();
-								
-			  } 
-			var grInt = new GlideRecordSecure('interaction');
-				grInt.initialize(); 
-				grInt.assigned_to= gs.getUserID(); 
-				grInt.type= 'phone'; 
-				grInt.opened_for= opened_for; 
-			var sysid=grInt.insert();
-			sysidlist.sysid=sysid;
-			
-			return JSON.stringify(sysidlist);//sysid;
-		},
-	 setAssociateRecord : function () { 
-             var sys_id=0;
-			
-				//Activities on Incident record;
-				var actInfoString =this.getParameter('actInfo');
-                var suser = new GlideRecordSecure("sys_user");
-					suser.addQuery("phone", this.getParameter('ani'));
-					suser.query();
-					if(suser.next()) {
-					var inc = new GlideRecordSecure('incident');
-							inc.addQuery('caller_id', suser.sys_id);
-						    inc.addQuery('state','IN','1,2');
-							inc.orderByDesc('sys_created_on');
-							inc.query();
-								if (inc.next()) {
-									var jsonPretty = JSON.stringify(JSON.parse(actInfoString),null,2);  
-									inc.comments =jsonPretty;
-								inc.update();
-	
-							}
-					} 
-			
-            return sys_id;
-       },
-     setWebexcctable : function () {
-            var sys_id=0;
-			
-			var actInfo = JSON.parse(this.getParameter('actInfo'));
-			var webexcc = new GlideRecordSecure(gs.getProperty('webexccactivitytable'));
-            webexcc.addQuery("u_callobject", actInfo.CallObject);
-            webexcc.query();
-			if(!webexcc.next()) {
-				webexcc.u_ani = actInfo.ani;
-				webexcc.u_dnis =actInfo.dnis;
-				webexcc.u_queuename =actInfo.queuename;
-				webexcc.u_wrapuptime =actInfo.wrapuptime;
-				webexcc.u_callduration =actInfo.CallDurationInSeconds;
-				webexcc.u_ringingtime =actInfo.ringingtime;
-				webexcc.u_activitydate =actInfo.ActivityDate;
-				webexcc.u_callobject =actInfo.CallObject;
-				webexcc.u_calltype =actInfo.CallType;
-				webexcc.u_calldisposition=actInfo.CallDisposition;
-				webexcc.u_callnotes=actInfo.callNotes;
-				sys_id=webexcc.insert();
-
-				//Activities on Incident record;
-				var actInfoString =this.getParameter('actInfo');
-                var suser = new GlideRecordSecure("sys_user");
-					suser.addQuery("phone", this.getParameter('ani'));
-					suser.query();
-					if(suser.next()) {
-					var inc = new GlideRecordSecure('incident');
-							inc.addQuery('caller_id', suser.sys_id);
-						    inc.addQuery('state','IN','1,2');
-							inc.orderByDesc('sys_created_on');
-							inc.query();
-								if (inc.next()) {
-									var jsonPretty = JSON.stringify(JSON.parse(actInfoString),null,2);  
-									inc.comments =jsonPretty;
-								inc.update();
-	
-							}
-					} 
-							
-			}	
-            return sys_id;
-       },
-    type: 'propUtils'
-});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-18 23:13:15&lt;/sys_created_on&gt;&lt;sys_id&gt;571ff7c52f4a91106446cc96f699b6a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;propUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_571ff7c52f4a91106446cc96f699b6a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:17:19&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<payload_hash>1602049516</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>c034e4ce93140210420075dcebba10dc</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>18d9f6c51950000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
-<table/>
-<target_name>propUtils</target_name>
-<type>Script Include</type>
-<update_domain>global</update_domain>
-<update_guid>e9cb319744a73110ca886b5d1ee5e633</update_guid>
-<update_guid_history>e9cb319744a73110ca886b5d1ee5e633:1602049516,6197799fdc673110ee6bbd38b7227c82:1199974215,94d0226fe25121103539e03dfebeacf8:-1397347364,3fff1a2fda512110c1e8ef743c1d7f4d:1791820265,466d5e2b435121109697ed484fa7b7a7:991818349,902c56a7565121106e33fffbcf552041:-1482042493,029b122b05512110e61e305d88ec04c9:878761827,8cca1e272851211062262d6214f67031:-655969910,23991ea3d151211083f6cbba7327ce57:-1526184520,1727d2a3f65121109b9073ed646736de:-735873013,90e552a3b5512110b7782dd74bb8f432:-2146641845,8181562b15112110745c91ae9080d0c5:251619836,5a31d6af10112110ca91bc48a6e16f12:1990318684,07c597aed3d1211071764bf4ce6f337c:-593754789,10907b2313016110731395be70899aa4:-307004279,17e350772ac21110d8d40cbc57c2068b:-1660785130,cc8205b9428211108ac284e576e03300:1109154183,cf7ff0f5b6821110741589df38cc038d:-1498768178,4bedf03500821110a0a233521667a4a5:-638434237,24e0a051c58a91107db38caeb5b8a824:1314434476,54628499704a91106cebceb6b5a0ec0c:-2147439936,9330c4d5174a9110723a2f527cb1a7cf:853746824</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_dictionary_sn_openframe_phone_log_u_callnotes</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_callnotes" table="sn_openframe_phone_log"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;CallNotes&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_callnotes&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;3000&lt;/max_length&gt;&lt;name&gt;sn_openframe_phone_log&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-10 19:06:48&lt;/sys_created_on&gt;&lt;sys_id&gt;7d49f9d347a7311095cff2b4116d4308&lt;/sys_id&gt;&lt;sys_name&gt;CallNotes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_sn_openframe_phone_log_u_callnotes&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-10 19:06:48&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-532614795</payload_hash>
-<remote_update_set display_value="webexcc-servicenow-update-setv7-1-ActionsWidget">0434e4ce93140210420075dcebba10db</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2024-02-12 22:29:20</sys_created_on>
-<sys_id>c434e4ce93140210420075dcebba10db</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>18d9f6c51810000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2024-02-12 22:29:20</sys_updated_on>
-<table>sn_openframe_phone_log</table>
-<target_name>Phone Log.CallNotes</target_name>
-<type>Dictionary</type>
-<update_domain>global</update_domain>
-<update_guid>23593dd3f2a73110166cc4b23ad2f6f2</update_guid>
-<update_guid_history>23593dd3f2a73110166cc4b23ad2f6f2:-532614795</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
