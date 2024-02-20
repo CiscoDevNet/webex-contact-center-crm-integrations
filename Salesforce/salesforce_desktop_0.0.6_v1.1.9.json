@@ -17,7 +17,7 @@
            "attributes": {
             "outDialAni":"<OutDialAniValue>",
             "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/webexcc_salesforce_desktop.min.js",
-            "openctiLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.7/lib/integration.js",
+            "openctiLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/integration.js",
             "nameOfOpenCtiFileName" : "opencti_v48.js",
             "agentTeamName" : "$STORE.agent.teamName" 
             }
