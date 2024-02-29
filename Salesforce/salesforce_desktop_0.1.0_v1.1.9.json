@@ -32,11 +32,11 @@
         "widgets": {
           "comp1": {
             "comp": "agentx-custom-desktop",
-             "script":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
+             "script":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
              "attributes": {
               "outDialAni":"<OutDialAniValue>",
-              "crmLibPath":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/webexcc_salesforce_desktop.min.js",
-              "openctiLibPath":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/lib/integration.js",
+              "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/webexcc_salesforce_desktop.min.js",
+              "openctiLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/integration.js",
               "nameOfOpenCtiFileName" : "opencti_v48.js",
               "isSFDCWidgetEnabled":"false",
               "agentTeamName" : "$STORE.agent.teamName" 
@@ -65,7 +65,7 @@
             "children": [
               {
                 "comp": "agentx-custom-desktop",
-                "script": "https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
+                "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
                 "attributes": {
                   "isSFDCWidgetEnabled":"true" 
                 },
@@ -763,11 +763,11 @@
         "widgets": {
           "comp1": {
             "comp": "agentx-custom-desktop",
-             "script":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
+             "script":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
              "attributes": {
               "outDialAni":"<OutDialAniValue>",
-              "crmLibPath":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/webexcc_salesforce_desktop.min.js",
-              "openctiLibPath":"https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/lib/integration.js",
+              "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/webexcc_salesforce_desktop.min.js",
+              "openctiLibPath":"https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/opencti_v48.js,https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/lib/integration.js",
               "nameOfOpenCtiFileName" : "opencti_v48.js",
               "isSFDCWidgetEnabled":"false",
               "agentTeamName" : "$STORE.agent.teamName" 
@@ -796,7 +796,7 @@
             "children": [
               {
                 "comp": "agentx-custom-desktop",
-                "script": "https://cx-crmconnector-nonprod-cdn.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
+                "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
                 "attributes": {
                   "isSFDCWidgetEnabled":"true" 
                 },
