@@ -28,66 +28,28 @@
         }
       ],
       "headless": {
-      "id": "dw-headless",
-      "widgets": {
-        "comp1": {
-          "comp": "agentx-msdynamics-desktop", 
-           "script":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
-           "properties": {
-            "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/msdynamics-agent-desktop.min.js",
-            "hostName":"<hostname>",
-            "desktopWidth":"500",
-            "inboundANIPrefixToBeRemoved" : "true", 
-            "inboundANIPrefix" : "+",
-            "isAdvancedScreenpopEnabled" : "false",
-            "cadVariableName" : "Customer_Name",
-            "crmEntityName" : "contact",
-            "crmEntityFieldName" : "firstname",
-            "phoneCallActivityRecordConfig" : {"createActivityRecordForInboundCall":true,"createActivityRecordForOutboundCall":true,"openActivityRecordAutomatically":true},
-            "outDialEp":"$STORE.agent.outDialEp", 
-            "outDialAni":"<OutDialAniValue>",
-            "channelIntegrationFrameWorkVersion2Enabled" : true,
-            "isWidgetDisplayEnabled" : false,
-            "createActivityRecordConfig" : [{"CadFieldName":"callNotes","msDynamicsFieldName":"description","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"directioncodeValue","msDynamicsFieldName":"directioncode","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "createCaseRecordConfig" : [{"CadFieldName":"contactId","msDynamicsFieldName":"customerid","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"ivrDescription","msDynamicsFieldName":"title","isDefaultValueEnabled":true,"defaultFieldValue":"case created by webexcc"}], 
-            "actionsWidgetConfig" : {"isLiveNotesEnabled":true,"isCreateCaseEnabled":true}  
-            }
+        "id": "dw-headless",
+        "widgets": { 
+          "comp1": {
+            "comp": "agentx-custom-desktop",
+             "script":"https://cx-crmconnector.ciscoccservice.com/servicenow/v4/dist/index.js",
+             "properties": {
+              "outDialAni":"<OutDialAniValue>",
+              "screenpopCadName":"",
+              "screenpopOnConnected":"true",
+              "cadToCrmFieldMapping":"CustomerName:CustomerName,accountName:accountName2",
+              "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/servicenow/v4/webexcc_servicenow_desktop.js"
+              }
           }
+        },
+        "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
       },
-      "layout": {
-        "areas": [["comp1"]],
-        "size": { "cols": [1], "rows": [1] }
-      }
-    },
       "panel": {
         "comp": "md-tabs",
         "attributes": {
           "class": "widget-tabs"
         },
         "children": [
-          {
-            "comp": "md-tab",
-            "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-            "children": [{ "comp": "span", "textContent": "MSDynamics Actions" }]
-          },
-          {
-            "comp": "md-tab-panel",
-            "attributes": { "slot": "panel", "class": "widget-pane" },
-            "children": [
-              {
-                "comp": "agentx-msdynamics-desktop",
-                "script": "https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
-                "properties": {
-                  "isWidgetDisplayEnabled": true
-                },
-                "wrapper": {
-                  "title": "MSDynamics Actions !",
-                  "maximizeAreaName": "app-maximize-area"
-                }
-              }
-            ]
-          },
           {
             "comp": "md-tab",
             "attributes": {
@@ -770,67 +732,29 @@
           "comp": "agentx-state-selector"
         }
       ],
-     "headless": {
-      "id": "dw-headless",
-      "widgets": {
-        "comp1": {
-          "comp": "agentx-msdynamics-desktop", 
-           "script":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
-           "properties": {
-            "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/msdynamics-agent-desktop.min.js",
-            "hostName":"<hostname>",
-            "desktopWidth":"500",
-            "inboundANIPrefixToBeRemoved" : "true", 
-            "inboundANIPrefix" : "+",
-            "isAdvancedScreenpopEnabled" : "false",
-            "cadVariableName" : "Customer_Name",
-            "crmEntityName" : "contact",
-            "crmEntityFieldName" : "firstname",
-            "phoneCallActivityRecordConfig" : {"createActivityRecordForInboundCall":true,"createActivityRecordForOutboundCall":true,"openActivityRecordAutomatically":true},
-            "outDialEp":"$STORE.agent.outDialEp", 
-            "outDialAni":"<OutDialAniValue>",
-            "channelIntegrationFrameWorkVersion2Enabled" : true,
-            "isWidgetDisplayEnabled" : false,
-            "createActivityRecordConfig" : [{"CadFieldName":"callNotes","msDynamicsFieldName":"description","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"directioncodeValue","msDynamicsFieldName":"directioncode","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "openContactFormWithPrefilledDataConfig" : [{"CadFieldName":"phoneNumber","msDynamicsFieldName":"telephone1","isDefaultValueEnabled":false,"defaultFieldValue":""}],  
-            "createCaseRecordConfig" : [{"CadFieldName":"contactId","msDynamicsFieldName":"customerid","isDefaultValueEnabled":false,"defaultFieldValue":""},{"CadFieldName":"ivrDescription","msDynamicsFieldName":"title","isDefaultValueEnabled":true,"defaultFieldValue":"case created by webexcc"}], 
-            "actionsWidgetConfig" : {"isLiveNotesEnabled":true,"isCreateCaseEnabled":true}  
-            }
+      "headless": {
+        "id": "dw-headless",
+        "widgets": { 
+          "comp1": {
+            "comp": "agentx-custom-desktop",
+             "script":"https://cx-crmconnector.ciscoccservice.com/servicenow/v4/dist/index.js",
+             "properties": {
+              "outDialAni":"<OutDialAniValue>",
+              "screenpopCadName":"",
+              "screenpopOnConnected":"true",
+              "cadToCrmFieldMapping":"CustomerName:CustomerName,accountName:accountName2",
+              "crmLibPath":"https://cx-crmconnector.ciscoccservice.com/servicenow/v4/webexcc_servicenow_desktop.js"
+              }
           }
+        },
+        "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
       },
-      "layout": {
-        "areas": [["comp1"]],
-        "size": { "cols": [1], "rows": [1] }
-      }
-    },
       "panel": {
         "comp": "md-tabs",
         "attributes": {
           "class": "widget-tabs"
         },
         "children": [
-          {
-            "comp": "md-tab",
-            "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-            "children": [{ "comp": "span", "textContent": "MSDynamics Actions" }]
-          },
-          {
-            "comp": "md-tab-panel",
-            "attributes": { "slot": "panel", "class": "widget-pane" },
-            "children": [
-              {
-                "comp": "agentx-msdynamics-desktop",
-                "script": "https://cx-crmconnector.ciscoccservice.com/msdynamics/v1.5.3/dist/index.js",
-                "properties": {
-                  "isWidgetDisplayEnabled": true
-                },
-                "wrapper": {
-                  "title": "MSDynamics Actions !",
-                  "maximizeAreaName": "app-maximize-area"
-                }
-              }
-            ]
-          },
           {
             "comp": "md-tab",
             "attributes": {
