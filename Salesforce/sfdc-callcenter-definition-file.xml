@@ -1,7 +1,7 @@
 <callCenter>
     <section  sortOrder="0" name="reqGeneralInfo" label="Cisco Webex Contact Center Desktop Information">
-        <item sortOrder="0" name="reqInternalName" label="InternalName">WebexCCAgentDesktopV20230720</item>
-        <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(July 2023)</item>
+        <item sortOrder="0" name="reqInternalName" label="InternalName">WebexCCAgentDesktopV20241121</item>
+        <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center Agent Desktop 2.0(Nov 2024)</item>
         <item sortOrder="2" name="reqAdapterUrl" label="CTI Adapter URL">https://desktop.wxcc-us1.cisco.com/</item>
         <item sortOrder="3" name="reqUseApi" label="Use CTI API">true</item>
         <item sortOrder="4" name="reqSoftphoneHeight" label="Softphone Height">550</item>
@@ -38,9 +38,10 @@
         <item sortOrder="0" name="isCaseCreationEnabledForInboundCalls" label="Auto Case Creation For Inbound Calls">false</item>
         <item sortOrder="1" name="isCaseCreationEnabledForOutboundCalls" label="Auto Case Creation For Outbound calls">false</item>
         <item sortOrder="2" name="isCreatedCaseObjectToBeOpenInEditMode" label="Open Case Object In Edit Mode">false</item>
-        <item sortOrder="3" name="sfdcCaseFieldCadVariableMappings1" label="Field Mappings">[{"wxccFieldName":"AccountId","sfdcFieldName":"AccountId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"},{"wxccFieldName":"ContactId","sfdcFieldName":"ContactId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
-        <item sortOrder="4" name="sfdcCaseFieldCadVariableMappings2" label="Object Field Mappings">[{"wxccFieldName":"phoneNumber","sfdcFieldName":"ContactPhone","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
-        <item sortOrder="5" name="sfdcCaseFieldConditionalMappings1" label="Object Conditional Mappings">[]</item>
+        <item sortOrder="3" name="isOpenCaseObjectAlwaysInViewMode" label="Open Case Object Always In View Mode">false</item>
+        <item sortOrder="4" name="sfdcCaseFieldCadVariableMappings1" label="Field Mappings">[{"wxccFieldName":"AccountId","sfdcFieldName":"AccountId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"},{"wxccFieldName":"ContactId","sfdcFieldName":"ContactId","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
+        <item sortOrder="5" name="sfdcCaseFieldCadVariableMappings2" label="Object Field Mappings">[{"wxccFieldName":"phoneNumber","sfdcFieldName":"ContactPhone","isDefaultValueEnabled":"false","isConditionalEnabled":"false"}]</item>
+        <item sortOrder="6" name="sfdcCaseFieldConditionalMappings1" label="Object Conditional Mappings">[]</item>
     </section>
     <section sortOrder="5" name="reqOutDialConfig" label="Outdial Configuration">
        <item sortOrder="0" name="reqPrefixStringTobeRemoved" label="Remove Phone Number Prefix Strings">+1</item>
