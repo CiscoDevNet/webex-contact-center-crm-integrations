@@ -51,6 +51,7 @@ The following change log shows the version updates to the files, what changes an
 | 8   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Removed standard values of properties from the layout.                                   | Nov 2022    |
 | 9   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Desktop reload issue hotfix396.                                                          | Nov 2022    |
 | 10  | Zendesk_Desktop_0.0.6_v1.2.0.json | 0.0.6           | Features: New feature added for populating call information in Custom Fields in Zendesk ticket. | Jan 2023    |
+| 11  | Zendesk_Desktop_0.0.6_v1.2.2.json | 0.0.6           | Features: New feature added for ticket management | Feb 2025    |
 
 ## Feature Matrix
 
@@ -71,6 +72,7 @@ This section outlines the features available in the standard connector as well a
 | 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 |
 | 12  | Activity ownership transfer during Call Transfer​                                           | -                  |
 | 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 |
+| 14  | Ticket management                                                                          | ✔️                 |
 
 ## Installation Guide
 
