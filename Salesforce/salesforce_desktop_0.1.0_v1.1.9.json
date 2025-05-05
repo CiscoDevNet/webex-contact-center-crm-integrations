@@ -67,7 +67,8 @@
                 "comp": "agentx-custom-desktop",
                 "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
                 "attributes": {
-                  "isSFDCWidgetEnabled":"true" 
+                  "isSFDCWidgetEnabled":"true",
+                  "customSubjectEnabledForCallNotes": false 
                 },
                 "wrapper": {
                   "title": "Salesforce Actions",
@@ -798,7 +799,8 @@
                 "comp": "agentx-custom-desktop",
                 "script": "https://cx-crmconnector.ciscoccservice.com/salesforce/v1.1.9/dist/index.js",
                 "attributes": {
-                  "isSFDCWidgetEnabled":"true" 
+                  "isSFDCWidgetEnabled":"true",
+                  "customSubjectEnabledForCallNotes": false 
                 },
                 "wrapper": {
                   "title": "Salesforce Actions",
