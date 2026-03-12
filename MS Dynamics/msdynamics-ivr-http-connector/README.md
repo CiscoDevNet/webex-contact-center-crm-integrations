@@ -1,41 +1,48 @@
-# Webex Contact Center - IVR HTTP Connector for MS Dynamics
+# Microsoft Dynamics 365 - IVR HTTP Connector
 
-The following section explains how to get started with the HTTP connector in Webex Contact Center that can interact with MS Dynamics CRM, extract information and make routing decisions accordingly. Since all HTTP verbs are supported, you can securely extract and update the contact / other object types inside of MS Dynamics with the help of this HTTP Connector.
+![Connector](https://img.shields.io/badge/HTTP%20Connector-Microsoft%20Dynamics%20365-0A66C2)
+![Legacy Version 1](https://img.shields.io/badge/Webex%20CC-Legacy%20Version%201-orange)
+[![Video Guide](https://img.shields.io/badge/Vidcast-Setup%20Guide-blue)](https://app.vidcast.io/share/17b06533-8391-4327-b51f-0716076b8ea3)
 
-**Attached**
+Reference assets for using the Webex Contact Center HTTP connector with Microsoft Dynamics 365 to perform IVR lookups, routing decisions, and screen pop actions. This folder includes a sample flow, a Postman collection, and screenshots of the sample setup.
 
-- The sample flow for **MSD_HTTP_Connector_Flow.json** shows how a simple lookup can be performed in an IVR flow. For detailed steps, refer the video link given below.
-- The Postman collection **Dynamics CRM - Sample REST APIs.postman_collection.json** can be directly imported into Postman to understand the MS Dynamics REST APIs.
+## Included Assets
 
-## [How to Configure MS Dynamics HTTP Connector on Webex Contact Center Flow Designer](https://app.vidcast.io/share/17b06533-8391-4327-b51f-0716076b8ea3)
+| Asset | Purpose |
+| --- | --- |
+| [`MSD_HTTP_Connector_Flow.json`](./MSD_HTTP_Connector_Flow.json) | Sample IVR flow showing Microsoft Dynamics 365 lookup behavior |
+| [`Dynamics CRM - Sample REST APIs.postman_collection.json`](./Dynamics%20CRM%20-%20Sample%20REST%20APIs.postman_collection.json) | Postman collection for exploring the Microsoft Dynamics APIs used in the sample |
+| [`images/`](./images/) | Connector configuration and flow screenshots |
+
+## Watch The Setup Video
+
+- [How to Configure MS Dynamics HTTP Connector on Webex Contact Center Flow Designer](https://app.vidcast.io/share/17b06533-8391-4327-b51f-0716076b8ea3)
 
 ## Use Case
 
-- Customer calls into Webex Contact Center and is greeted while an ANI lookup is performed on MS Dynamics.
-- Based on the ANI, customer details are fetched from the MS Dynamics CRM.
-- If the customer record does not exist in the CRM, the call is transferred to the agent after playing a message. When the call is answered by the agent, a New Case Form opens in a new tab.
-- If the customer record exists in the CRM, another lookup is performed to get the Case details for the customer (based on the Customer ID received from the previous request).
-- Customer is greeted with a personalized message on the IVR.
-- Customer is prioritized based on Incident severity.
-- The call is routed to an agent.
-- Last created ticket information is popped in a new browser tab.
+- Customer calls into Webex Contact Center and is greeted while an ANI lookup is performed on Microsoft Dynamics 365.
+- Based on ANI, customer details are fetched from the CRM.
+- If the customer record does not exist, the call is transferred to an agent and a new case form opens in a new tab.
+- If the customer record exists, a follow-up lookup retrieves the most relevant case details.
+- The caller receives a personalized IVR experience and is prioritized based on incident severity.
+- The call is routed to an agent and the latest case information is opened in a new browser tab.
 
-## Pre-Requisites
+## Prerequisites
 
-- An application created in Dynamics CRM
-- Configuring the MS Dynamics connector using OAuth 2.0 :
-  - Login to admin.webex.com to configure the connector
-    <br/>admin.webex.com > Contact Center > Integrations > Connectors > Select Custom Connector -> Authentication Type = OAuth 2.0
-  - Attached is the screenshot for reference.
-    ![Set up Custom Connector](./images/Setup_Custom_Connector_on_Control_Hub.png)
-- Import the attached flow MSD_HTTP_Connector_Flow.json inside flow designer.
-- Change the connector name, queueName, audio files etc in the IVR Flow as per your configurations.
-  Follow the tutorial video for end-to-end sample configurations.
+- Create an application in Microsoft Dynamics CRM.
+- Configure the Microsoft Dynamics connector with OAuth 2.0.
+- In `admin.webex.com`, go to `Contact Center > Integrations > Connectors`, select `Custom Connector`, and set `Authentication Type = OAuth 2.0`.
+- Import `MSD_HTTP_Connector_Flow.json` into Flow Designer.
+- Update the connector name, queue name, audio files, and other flow-specific values before testing.
 
-**Optional**
-To explore and understand which REST APIs are supported with MS Dynamics, import the simplified Postman collection. These are the same APIs that will be used inside the Webex Contact Center Flow Designer to interact with MS Dynamics.
+![Set up Custom Connector](./images/Setup_Custom_Connector_on_Control_Hub.png)
 
-**MS Dynamics REST API Docs**
+## Optional API Exploration
+
+- Import `Dynamics CRM - Sample REST APIs.postman_collection.json` into Postman to explore the APIs used by the sample flow.
+- These are the same APIs used inside Webex Contact Center Flow Designer to interact with Microsoft Dynamics 365.
+
+## API References
 
 - [Register an app with Azure Active Directory](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory)
 - [Add app roles to your application](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)
@@ -43,23 +50,20 @@ To explore and understand which REST APIs are supported with MS Dynamics, import
 - [Manage application users in the Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/manage-application-users#view-or-edit-the-details-of-an-application-user)
 - [Use Postman to perform operations with the Web API](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/use-postman-perform-operations)
 
-## Understanding the Sample Flow
+## Understanding The Sample Flow
 
-### Section 1 : IVR lookup and Routing
+### Section 1: IVR Lookup and Routing
 
-- Within the IVR flow, a look is performed in the MS Dynamics CRM.
-- This script has 2 HTTP nodes inside the main flow.
-- First lookup gets the Customer ID and Customer Name of the Caller from the MS Dynamics CRM using the ANI.
-- Second lookup fetches the Case Details associated with that Caller using the Customer ID received from the previous request.
+- The IVR flow performs two HTTP lookups against Microsoft Dynamics 365.
+- The first lookup gets the customer ID and customer name of the caller by ANI.
+- The second lookup fetches case details associated with that caller by using the customer ID from the first request.
 
 ![Flow Diagram 1](./images/MainFlow.png)
 
-### Section 2 : Screenpop on agent answer
+### Section 2: Screen Pop on Agent Answer
 
-- This section uses Event Flows to screenpop : <br/>
-  a - New Case Form, in a new browser tab when the call is answered, in case of a new customer. <br/>
-  b - Last created case details, in a new browser tab when the call is answered, in case of an existing customer.
+- This section uses Event Flows to screen pop either a new case form or the most recent case details in a new browser tab.
+- The behavior differs depending on whether the caller is a new or existing customer.
+- It demonstrates one way to drive Microsoft Dynamics 365 experiences from Flow Designer.
 
 ![Flow Diagram 2](./images/EventFlow.png)
-
-This is just an example of what is possible and can be done on the MS Dynamics CRM via the Flow Designer !

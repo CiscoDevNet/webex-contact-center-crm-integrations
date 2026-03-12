@@ -1,67 +1,62 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - Freshdesk
+# Freshdesk - Webex Contact Center Legacy Connector
 
-Welcome to the Webex Contact Center CRM Integrations Github repository!
+![CRM](https://img.shields.io/badge/CRM-Freshdesk-2CA01C)
+![Legacy Version 1](https://img.shields.io/badge/Webex%20CC-Legacy%20Version%201-orange)
+[![Official Guide](https://img.shields.io/badge/help.webex.com-Official%20Guide-blue)](https://help.webex.com/en-us/article/nb8oxvy/Integrate-Webex-Contact-Center-with-Freshdesk)
 
-This folder contains the latest Desktop Layout for Freshdesk integrated Agent Desktop inside of the CRM console.
+Legacy Version 1 desktop layout assets for the Freshdesk embedded Webex Contact Center Agent Desktop. This folder contains the current layout package for the legacy connector.
 
-## Desktop Layout Properties
+> Latest desktop layout: [`Freshdesk_Desktop_0.1.0_2.1.4.json`](./Freshdesk_Desktop_0.1.0_2.1.4.json)
+>
+> Official guide: [Integrate Webex Contact Center with Freshdesk](https://help.webex.com/en-us/article/nb8oxvy/Integrate-Webex-Contact-Center-with-Freshdesk)
+
+## Quick Links
+
+| Asset | Purpose |
+| --- | --- |
+| [`Freshdesk_Desktop_0.1.0_2.1.4.json`](./Freshdesk_Desktop_0.1.0_2.1.4.json) | Latest Freshdesk desktop layout package |
+
+## Configuration Notes
+
+- `crmLibPath` is mandatory and should not be changed.
+- `outdialAni` can be used to override the Outdial ANI for click-to-dial behavior.
+- The current package includes the ticket group configuration updates added in the latest changelog entry.
+
+## Desktop URLs by Datacenter
+
+| Desktop URL | Datacenter |
+| --- | --- |
+| `https://desktop.wxcc-us1.cisco.com` | North America |
+| `https://desktop.wxcc-eu1.cisco.com` | UK |
+| `https://desktop.wxcc-eu2.cisco.com` | EU |
+| `https://desktop.wxcc-anz1.cisco.com` | APJC |
+
+## Layout Properties
 
 The following section describes the properties in the layout and their utility in turning on certain features.
 
-Administrators are free to customize the layout based on the description and functionality below.
-
-| #   | Layout Properties | Description                                                                       | Functionality                                                                            |
-| --- | ----------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 1   | outdialAni        | This property allows you to override the Outdial ANI specified, for click to dial | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used. |
-| 2   | crmLibPath        | Do not change                                                                     | Mandatory field.                                                                         |
-
-## Desktop URLs per Datacenter
-
-> Please note the Webex Contact Center Desktop URLs per Datacenter
-
-| #   | Desktop URL                         | Data Center   |
-| --- | ----------------------------------- | ------------- |
-| 1   | https://desktop.wxcc-us1.cisco.com  | North America |
-| 2   | https://desktop.wxcc-eu1.cisco.com  | UK            |
-| 3   | https://desktop.wxcc-eu2.cisco.com  | EU            |
-| 4   | https://desktop.wxcc-anz1.cisco.com | APJC          |
-
-# Change Log :
-
-The following change log shows the version updates to the files and what changes and enhacements were included:
-
-(Please use the latest Desktop Layout JSON in the folder)
-
-| #   | Date       | Filename                                 | Desktop Version | Comments                                                                                |
-| --- | ---------- | ---------------------------------------- | --------------- | --------------------------------------------------------------------------------------- |
-| 1   | April 2022 | Freshdesk_Desktop_0.0.6_v1.json          | 0.0.6           | + initial commit                                                                        |
-| 2   | June 2022  | Freshdesk_Desktop_0.0.6_v2.json          | 0.0.6           | + Add headerActions[""] to the desktop layout so the action headers will be suppressed. |
-| 3   | June 2022  | Freshdesk_Desktop_0.0.6_v1.json          | 0.0.6           | - removed                                                                               |
-| 4   | Sept 2022  | Freshdesk_Desktop_0.0.6_v4_20220616.json | 0.0.6           | new endpoint                                                                            |
-| 5   | Jan  2023  | Freshdesk_Desktop_0.0.6_2.1.4.json       | 0.0.6           | CAD groupId & groupIdDefault for creating a new ticket                                  |
+| #   | Layout Property | Description                                                                       | Functionality                                                                             |
+| --- | --------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 1   | outdialAni      | Override the Outdial ANI specified for click to dial                              | Optional field. The default Outdial ANI set on the tenant or agent profile will be used. |
+| 2   | crmLibPath      | Do not change                                                                     | Mandatory field.                                                                          |
 
 ## Feature Matrix
 
 This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
 
-| #   | Feature​                                                                         | Standard Connector |
-| --- | --------------------------------------------------------------------------------  | ------------------ |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                         | ✔️                 |
-| 2   | Call Controls embedded in CRM application                                         | ✔️                 |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                    | ✔️                 |
-| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​        | ✔️                 |
-| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​      | ✔️                 |
-| 6   | Outbound Calling – Click to Call​                                                | ✔️                 |
-| 7   | Outbound Support                                                                  | ✔️                 |
-| 8   | Automatic call (activity) logging in CRM application                              | ✔️                 |
-| 9   | IVR Data populated within CRM (Caller Entered Digits captured as CAD variables)​ | ✔️                 |
-
-## Installation Guide
-
-The installation guide is available at **[help.webex.com - Integrate WebexCC With FreshDesk](https://help.webex.com/en-us/article/nb8oxvy/Integrate-Webex-Contact-Center-with-Freshdesk)**
+| #   | Feature | Standard Connector |
+| --- | --- | --- |
+| 1   | Auto-login of agents into Contact Center platform (SSO) | ✔️ |
+| 2   | Call controls embedded in CRM application | ✔️ |
+| 3   | Screen pop based on incoming call parameters (no record match) | ✔️ |
+| 4   | Screen pop based on incoming call parameters (single record match - ANI) | ✔️ |
+| 5   | Screen pop based on incoming call parameters (multiple record match - ANI) | ✔️ |
+| 6   | Outbound calling - click to call | ✔️ |
+| 7   | Outbound support | ✔️ |
+| 8   | Automatic call activity logging in CRM | ✔️ |
+| 9   | IVR data populated within CRM (caller-entered digits captured as CAD variables) | ✔️ |
 
 ## Support
 
-Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
-
-Participate in discussions OR ask for help on the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
+- Open a case with [Cisco TAC](https://cisco.com/go/tac).
+- Ask questions in the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
