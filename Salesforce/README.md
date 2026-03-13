@@ -20,10 +20,6 @@ Legacy Version 1 desktop layout assets for the Salesforce embedded Webex Contact
 | [`sfdc-callcenter-definition-file.xml`](./sfdc-callcenter-definition-file.xml) | Salesforce call center definition file |
 | [IVR HTTP connector bundle](./salesforce-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
 
-## Preview
-
-![Salesforce connector preview](./salesforce-ivr-http-connector/images/connector01.png)
-
 ## Configuration Notes
 
 - The CTI adapter URL in the call center definition file varies by Webex Contact Center production datacenter.
