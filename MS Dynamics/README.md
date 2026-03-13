@@ -19,10 +19,6 @@ Legacy Version 1 desktop layout assets for the Microsoft Dynamics 365 embedded W
 | [`MSDynamics_Desktop_0.1.0_v1.5.3.json`](./MSDynamics_Desktop_0.1.0_v1.5.3.json) | Latest Microsoft Dynamics 365 desktop layout package |
 | [IVR HTTP connector bundle](./msdynamics-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
 
-## Preview
-
-![Microsoft Dynamics preview](./msdynamics-ivr-http-connector/images/MainFlow.png)
-
 ## Configuration Notes
 
 - Set `hostName` to your Microsoft Dynamics 365 instance URL.
