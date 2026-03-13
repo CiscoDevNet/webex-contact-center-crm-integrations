@@ -19,10 +19,6 @@ Legacy Version 1 desktop layout assets for the Zendesk embedded Webex Contact Ce
 | [`Zendesk_Desktop_0.1.0_v1.2.2.json`](./Zendesk_Desktop_0.1.0_v1.2.2.json) | Latest Zendesk desktop layout package |
 | [IVR HTTP connector bundle](./zendesk-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
 
-## Preview
-
-![Zendesk preview](./zendesk-ivr-http-connector/images/MainFlow.png)
-
 ## Configuration Notes
 
 - `adavanceSearchCadVariableName` and `adavanceSearchCrmObjectName` control the advanced search behavior used for screen pop.
