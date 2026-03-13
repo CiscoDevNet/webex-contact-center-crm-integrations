@@ -1,89 +1,87 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - Zendesk
+# Zendesk - Webex Contact Center Legacy Connector
 
-Welcome to the Webex Contact Center CRM Integrations Github repository!
+![CRM](https://img.shields.io/badge/CRM-Zendesk-03363D)
+![Legacy Version 1](https://img.shields.io/badge/Webex%20CC-Legacy%20Version%201-orange)
+[![Official Guide](https://img.shields.io/badge/help.webex.com-Official%20Guide-blue)](https://help.webex.com/en-us/article/jg2krv/Integrate-Webex-Contact-Center-with-Zendesk)
 
-This folder contains the latest Desktop Layout for Zendesk integrated Agent Desktop inside of the CRM console.
+Legacy Version 1 desktop layout assets for the Zendesk embedded Webex Contact Center Agent Desktop. This folder includes the current layout package and the companion IVR HTTP connector reference bundle.
 
-## Desktop Layout Properties
+> Latest desktop layout: [`Zendesk_Desktop_0.1.0_v1.2.2.json`](./Zendesk_Desktop_0.1.0_v1.2.2.json)
+>
+> Companion bundle: [zendesk-ivr-http-connector](./zendesk-ivr-http-connector/README.md)
+>
+> Official guide: [Integrate Webex Contact Center with Zendesk](https://help.webex.com/en-us/article/jg2krv/Integrate-Webex-Contact-Center-with-Zendesk)
+
+## Quick Links
+
+| Asset | Purpose |
+| --- | --- |
+| [`Zendesk_Desktop_0.1.0_v1.2.2.json`](./Zendesk_Desktop_0.1.0_v1.2.2.json) | Latest Zendesk desktop layout package |
+| [IVR HTTP connector bundle](./zendesk-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
+
+## Preview
+
+![Zendesk preview](./zendesk-ivr-http-connector/images/MainFlow.png)
+
+## Configuration Notes
+
+- `adavanceSearchCadVariableName` and `adavanceSearchCrmObjectName` control the advanced search behavior used for screen pop.
+- Ticket subject customization, custom field mapping, and ticket management are all enabled through layout properties in the package.
+- The date and subject formatting behavior remains driven by the values configured in the layout JSON.
+
+## Desktop URLs by Datacenter
+
+| Desktop URL | Datacenter |
+| --- | --- |
+| `https://desktop.wxcc-us1.cisco.com` | North America |
+| `https://desktop.wxcc-eu1.cisco.com` | UK |
+| `https://desktop.wxcc-eu2.cisco.com` | EU |
+| `https://desktop.wxcc-anz1.cisco.com` | APJC |
+
+## Layout Properties
 
 The following section describes the properties in the layout and their utility in turning on certain features.
 
-Administrators are free to customize the layout based on the description and functionality below.
-
-| #   | Layout Properties                         | Description                                                                                                                                                                                                                                                          | Functionality                                                                                                                                                                                                                |
-| --- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | outdialAni                                | This property allows you to override the Outdial ANI specified, for click to dial                                                                                                                                                                                    | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                                     |
-| 2   | isCaseCreationForAllInboundCallsEnabled   | Flag to enable / disable auto case creation for Inbound calls                                                                                                                                                                                                        | Mandatory field. The value should be either true or false.                                                                                                                                                                   |
-| 3   | adavanceSearchCadVariableName             | CAD variable name that has the value to be searched in CRM                                                                                                                                                                                                           | Mandatory field for advanced search. If no value is provided, screenpop will be based on ANI search.                                                                                                                         |
-| 4   | adavanceSearchCrmObjectName               | crm_object is the standard or custom Zendesk object like user, ticket etc. whereas crm_object_field is the standard or custom field of the Zendesk object like 'phone' field in the user object e.g. user npi : , where user = crm_object and npi = crm_object_field | Mandatory field for advanced search.                                                                                                                                                                                         |
-| 5   | ticketDynamicField                        | Ticket field name                                                                                                                                                                                                                                                    | Optional field.                                                                                                                                                                                                              |
-| 6   | ticketDynamicFieldValue                   | Ticket field value                                                                                                                                                                                                                                                   | Optional field.                                                                                                                                                                                                              |
-| 7   | ticketDynamicSubject                      | Ticket dynamic Subject line                                                                                                                                                                                                                                          | Mandatory field. Define your own subject line (static or dynamic). Call parameters can be used for making the subject line dynamic (Example : {direction} call at {activityDateTime} -> Inbound call at 06.29.2022 12:01 p ) |
-| 8   | dateTimeFormat                            | Preferred date time format                                                                                                                                                                                                                                           | Optional field - Default value will be used (MM.dd.yyyy hh:mm a)                                                                                                                                                             |
-| 9   | customFieldsToBeUpdatedForExistingTickets | Flag to enable/disable the updation of custom fields for existing tickets after call wrap-up.                                                                                                                                                                        | Optional field - By default, it is disabled.                                                                                                                                                                                 |
-| 10  | ticketCustomFieldsMapping                 | Use this feature to map the WebexCC CAD variables and Zendesk CRM Custom field IDs to auto populate CAD variable values in ticket object’s Custom fields while creating or updating ticket.                                                                          | Optional field - By default, it is disabled.                                                                                                                                                                                 |
-
-## Desktop URLs per Datacenter
-
-> Please note the Webex Contact Center Desktop URLs per Datacenter
-
-| #   | Desktop URL                         | Data Center   |
-| --- | ----------------------------------- | ------------- |
-| 1   | https://desktop.wxcc-us1.cisco.com  | North America |
-| 2   | https://desktop.wxcc-eu1.cisco.com  | UK            |
-| 3   | https://desktop.wxcc-eu2.cisco.com  | EU            |
-| 4   | https://desktop.wxcc-anz1.cisco.com | APJC          |
-
-# Change Log :
-
-The following change log shows the version updates to the files, what changes and enhacements were included.
-(Please use the latest Desktop Layout JSON in the folder)
-
-| #   | File name                         | Desktop version | Change Description                                                                              | Change Date |
-| --- | --------------------------------- | --------------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| 1   | Zendesk_Desktop.json              | 0.0.2           | Initial Layout Upload                                                                           | Nov 2021    |
-| 2   | Zendesk_Desktop_v1.1.json         | 0.0.2           | Features: Ticket custom field added                                                             | Jan 2022    |
-| 3   | Zendesk_Desktop_0.0.6_v1.json     | 0.0.6           | Features: Desktop (Product) update                                                              | April 2022  |
-| 4   | Zendesk_Desktop_0.0.6_v2.json     | 0.0.6           | Features: Popup user list on widget for multi record match & Dynamic subject field added        | May 2022    |
-| 5   | Zendesk_Desktop_0.0.6_v8.json     | 0.0.6           | Fixes: Widget reload issue fixed                                                                | Aug 2022    |
-| 6   | Zendesk_Desktop_0.0.6_v1.1.1.json | 0.0.6           | Fixes: Added defensive validation for the widget reload issue.                                  | Sep 2022    |
-| 7   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                                        | Oct 2022    |
-| 8   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Removed standard values of properties from the layout.                                   | Nov 2022    |
-| 9   | Zendesk_Desktop_0.0.6_v1.1.2.json | 0.0.6           | Fixes: Desktop reload issue hotfix396.                                                          | Nov 2022    |
-| 10  | Zendesk_Desktop_0.0.6_v1.2.0.json | 0.0.6           | Features: New feature added for populating call information in Custom Fields in Zendesk ticket. | Jan 2023    |
-| 11  | Zendesk_Desktop_0.0.6_v1.2.2.json | 0.0.6           | Features: New feature added for ticket management | Feb 2025    |
+| #   | Layout Property                         | Description                                                                                                                                                                                                                                                          | Functionality                                                                                                                                                                                                                |
+| --- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | outdialAni                              | Override the Outdial ANI specified for click to dial                                                                                                                                                                                                                 | Optional field. The default Outdial ANI set on the tenant or agent profile will be used.                                                                                                                                    |
+| 2   | isCaseCreationForAllInboundCallsEnabled | Enable or disable auto case creation for inbound calls                                                                                                                                                                                                               | Mandatory field. The value should be either `true` or `false`.                                                                                                                                                              |
+| 3   | adavanceSearchCadVariableName           | CAD variable name that has the value to be searched in CRM                                                                                                                                                                                                           | Mandatory field for advanced search. If no value is provided, screen pop is based on ANI search.                                                                                                                            |
+| 4   | adavanceSearchCrmObjectName             | Standard or custom Zendesk object and field to search, for example `user.phone`                                                                                                                                                                                     | Mandatory field for advanced search.                                                                                                                                                                                         |
+| 5   | ticketDynamicField                      | Ticket field name                                                                                                                                                                                                                                                    | Optional field.                                                                                                                                                                                                              |
+| 6   | ticketDynamicFieldValue                 | Ticket field value                                                                                                                                                                                                                                                   | Optional field.                                                                                                                                                                                                              |
+| 7   | ticketDynamicSubject                    | Ticket dynamic subject line                                                                                                                                                                                                                                          | Mandatory field. Define your own subject line. Call parameters can be used to make the subject line dynamic.                                                                                                                |
+| 8   | dateTimeFormat                          | Preferred date and time format                                                                                                                                                                                                                                       | Optional field. Default value is `MM.dd.yyyy hh:mm a`.                                                                                                                                                                      |
+| 9   | customFieldsToBeUpdatedForExistingTickets | Enable or disable updates to custom fields for existing tickets after call wrap-up                                                                                                                                                                                 | Optional field. Disabled by default.                                                                                                                                                                                         |
+| 10  | ticketCustomFieldsMapping               | Map Webex Contact Center CAD variables to Zendesk custom field IDs                                                                                                                                                                                                  | Optional field. Disabled by default.                                                                                                                                                                                         |
 
 ## Feature Matrix
 
 This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
 
-| #   | Feature​                                                                                    | Standard Connector |
-| --- | ------------------------------------------------------------------------------------------- | ------------------ |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | ✔️                 |
-| 2   | Call Controls embedded in CRM application                                                   | ✔️                 |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | ✔️                 |
-| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | ✔️                 |
-| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | ✔️                 |
-| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | ✔️                 |
-| 7   | Outbound Calling – Click to Call​                                                           | ✔️                 |
-| 8   | Outbound Support                                                                            | ✔️                 |
-| 9   | Automatic call (activity) logging in CRM application                                        | ✔️                 |
-| 10  | IVR Data populated within CRM (Caller Entered Digits captured as CAD variables)​            | ✔️                 |
-| 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 |
-| 12  | Activity ownership transfer during Call Transfer​                                           | -                  |
-| 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 |
-| 14  | Ticket management                                                                          | ✔️                 |
+| #   | Feature | Standard Connector |
+| --- | --- | --- |
+| 1   | Auto-login of agents into Contact Center platform (SSO) | ✔️ |
+| 2   | Call controls embedded in CRM application | ✔️ |
+| 3   | Screen pop based on incoming call parameters (no record match) | ✔️ |
+| 4   | Screen pop based on incoming call parameters (single record match - ANI) | ✔️ |
+| 5   | Screen pop based on incoming call parameters (multiple record match - ANI) | ✔️ |
+| 6   | Advanced screen pop based on incoming call parameters (other params such as case management) | ✔️ |
+| 7   | Outbound calling - click to call | ✔️ |
+| 8   | Outbound support | ✔️ |
+| 9   | Automatic call activity logging in CRM | ✔️ |
+| 10  | IVR data populated within CRM (caller-entered digits captured as CAD variables) | ✔️ |
+| 11  | Contact Center reporting within the CRM | ✔️ |
+| 12  | Activity ownership transfer during call transfer | - |
+| 13  | Screen pop and activity logging retention during consult transfer or conference | ✔️ |
+| 14  | Ticket management | ✔️ |
 
-## Installation Guide
+## Additional Resources
 
-The installation guide is available at **[help.webex.com](https://help.webex.com/en-us/article/jg2krv/Integrate-Webex-Contact-Center-with-Zendesk)**
-
-## Lab Guides
-
-Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)** that covers some of these integrations along with step by step instructions on the installation.
+- [Zendesk IVR HTTP connector README](./zendesk-ivr-http-connector/README.md)
+- [CRM Integrations lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)
 
 ## Support
 
-Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
-
-Participate in discussions OR ask for help on the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
+- Open a case with [Cisco TAC](https://cisco.com/go/tac).
+- Ask questions in the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).

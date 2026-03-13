@@ -1,93 +1,93 @@
-# Integrate Webex Contact Center with Microsoft Dynamics
+# Microsoft Dynamics 365 - Webex Contact Center Legacy Connector
 
-This folder contains the latest Desktop Layout for the Microsoft Dynamics integrated Agent Desktop inside of the CRM.
+![CRM](https://img.shields.io/badge/CRM-Microsoft%20Dynamics%20365-0A66C2)
+![Legacy Version 1](https://img.shields.io/badge/Webex%20CC-Legacy%20Version%201-orange)
+[![Official Guide](https://img.shields.io/badge/help.webex.com-Official%20Guide-blue)](https://help.webex.com/en-us/article/aw26j2/Integrate-Webex-Contact-Center-with-Microsoft-Dynamics-365-(Version-1%E2%80%94Legacy))
 
-## Desktop Layout Properties
+Legacy Version 1 desktop layout assets for the Microsoft Dynamics 365 embedded Webex Contact Center Agent Desktop. This folder includes the current layout package and the companion IVR HTTP connector reference bundle.
+
+> Latest desktop layout: [`MSDynamics_Desktop_0.1.0_v1.5.3.json`](./MSDynamics_Desktop_0.1.0_v1.5.3.json)
+>
+> Companion bundle: [msdynamics-ivr-http-connector](./msdynamics-ivr-http-connector/README.md)
+>
+> Official guide: [Integrate Webex Contact Center with Microsoft Dynamics 365 (Version 1-Legacy)](https://help.webex.com/en-us/article/aw26j2/Integrate-Webex-Contact-Center-with-Microsoft-Dynamics-365-(Version-1%E2%80%94Legacy))
+
+## Quick Links
+
+| Asset | Purpose |
+| --- | --- |
+| [`MSDynamics_Desktop_0.1.0_v1.5.3.json`](./MSDynamics_Desktop_0.1.0_v1.5.3.json) | Latest Microsoft Dynamics 365 desktop layout package |
+| [IVR HTTP connector bundle](./msdynamics-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
+
+## Preview
+
+![Microsoft Dynamics preview](./msdynamics-ivr-http-connector/images/MainFlow.png)
+
+## Configuration Notes
+
+- Set `hostName` to your Microsoft Dynamics 365 instance URL.
+- When `isAdvancedScreenpopEnabled` is enabled, the related entity and field properties must also be configured.
+- CIF 2.0 support, case management, and the Actions Widget are controlled through optional layout properties in the latest package.
+
+## Desktop URLs by Datacenter
+
+| Desktop URL | Datacenter |
+| --- | --- |
+| `https://desktop.wxcc-us1.cisco.com` | North America |
+| `https://desktop.wxcc-eu1.cisco.com` | UK |
+| `https://desktop.wxcc-eu2.cisco.com` | EU |
+| `https://desktop.wxcc-anz1.cisco.com` | APJC |
+
+## Layout Properties
 
 The following section describes the properties in the layout and their utility in turning on certain features.
 
-Administrators are free to customize the layout based on the description and functionality below.
-
-| #   | Layout Properties                          | Description                                                                                                       | Functionality                                                                                                                                                                                                    |
-| --- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | outdialAni                                 | This property allows you to override the Outdial ANI specified, for click to dial                                 | Optional field. The default Outdial ANI set on the tenant or Agent Profile will be used.                                                                                                                         |
-| 2   | desktopWidth                               | This property is used to set the desktop connector width.                                                         | Optional field. Default desktop width will be considered.                                                                                                                                                        |
-| 3   | hostName                                   | Hostname of the MS Dynamics Instance (Example : "hostName":"https://org91c3bc64.crm.dynamics.com/")               | Mandatory field.                                                                                                                                                                                                 |
-| 4   | isAdvancedScreenpopEnabled                 | Flag to enable / disable advanced search (CAD variable based search)                                              | Mandatory field. The value should be either true or false.                                                                                                                                                       |
-| 5   | cadVariableName                            | CAD variable name whose value is to be searched in the CRM                                                        | Mandatory field for advanced search.                                                                                                                                                                             |
-| 6   | crmEntityName                              | Entity type in the MS Dynamics. Example - Contact / Account / Case                                                | Mandatory field for advanced search.                                                                                                                                                                             |
-| 7   | crmEntityFieldName                         | Field name of the particular entity (crmEntityName) in MS Dynamics - within which the records are to be searched  | Mandatory field for advanced search. Check this [vidcast](https://app.vidcast.io/share/b84fea07-d72d-4fd9-ad75-691045392f43) on how to find entity field names for any entity type in your MS Dynamics instance. |
-| 8   | inboundANIPrefixToBeRemoved                | Flag to enable / disable removal of prefix from ANI for Inbound Calls.                                            | Optional field. Default value will be false.                                                                                                                                                                     |
-| 9   | inboundANIPrefix                           | Prefix to be removed from ANI for record match and screenpop in CRM for Inbound Calls. (Example : " "+1")         | Mandatory field for prefix removal.                                                                                                                                                                              |
-| 9   | phoneCallActivityRecordConfig              | JSON Object                                                                                                       | Desktop layout property to enable or disable automatic display and creation of phone call activity record                                                                                                        |
-| 10  | channelIntegrationFrameWorkVersion2Enabled | Flag to enable / disable Channel Integration Framework (CIF) version 2.0 - support for Customer Service Workspace | Desktop layout property to enable or disable Channel Integration Framework 2.0                                                                                                                                   |
-| 11  | isWidgetDisplayEnabled | Flag to enable / disable Actions Widget | Flag to enable / disable Actions Widget                                                                                                                               |
-| 12  | createActivityRecordConfig | Phone call activity record configuration | Phone call activity record configuration                                                                                                                              |
-| 13  | openContactFormWithPrefilledDataConfig | New contact form configuration | New contact form configuration                                                                                                                               |
-| 14  | createCaseRecordConfig | Case management configuration | Case management configuration                                                                                                                               |
-| 15  | actionsWidgetConfig | Actions widget feature configuration | Actions widget feature configuration                                                                                                                               |
-
-
-## Desktop URLs per Datacenter
-
-> Please note the Webex Contact Center Desktop URLs per Datacenter
-
-| #   | Desktop URL                         | Data Center   |
-| --- | ----------------------------------- | ------------- |
-| 1   | https://desktop.wxcc-us1.cisco.com  | North America |
-| 2   | https://desktop.wxcc-eu1.cisco.com  | UK            |
-| 3   | https://desktop.wxcc-eu2.cisco.com  | EU            |
-| 4   | https://desktop.wxcc-anz1.cisco.com | APJC          |
-
-## Change Log
-
-The following change log shows the version updates to the files and what changes and enhacements were included:
-
-(Please use the latest Desktop Layout JSON in the folder)
-
-| #   | File name                            | Desktop version | Change Description                                                                    | Change Date |
-| --- | ------------------------------------ | --------------- | ------------------------------------------------------------------------------------- | ----------- |
-| 1   | MSDynamics_Desktop.json              | 0.0.2           | First draft                                                                           | June 2021   |
-| 2   | MSDynamics_Desktop_v1.1.json         | 0.0.2           | Features: Minor changes                                                               | August 2021 |
-| 3   | MSDynamics_Desktop_0.0.6_v1.json     | 0.0.6           | Features: Desktop (Product) update                                                    | April 2022  |
-| 4   | MSDynamics_Desktop_0.0.6_v2.json     | 0.0.6           | Features: Advanced Screenpop / CAD variable based search                              | June 2022   |
-| 5   | MSDynamics_Desktop_0.0.6_v3.json     | 0.0.6           | Features: Flag added to enable / disable removal of prefix from ANI for Inbound Calls | Aug 2022    |
-| 6   | MSDynamics_Desktop_0.0.6_v1.3.1.json | 0.0.6           | Fixes: Removed usage of deprecated APIs.                                              | Jan 2023    |
-| 7   | MSDynamics_Desktop_0.0.6_v1.5.1.json | 0.0.6           | Channel Integration Framework Version 2.0 Support enabled                             | March 2023  |
-| 8   | MSDynamics_Desktop_0.0.6_v1.5.2.json | 0.0.6           | Package update and bug fixes                                                          | August 2023 |
-| 9   | MSDynamics_Desktop_0.0.6_v1.5.3.json | 0.0.6           | New feature Actions Widget                                                            | Feb 2024    |
+| #   | Layout Property                          | Description                                                                                                       | Functionality                                                                                                                                                                                                    |
+| --- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | outdialAni                               | Override the Outdial ANI specified for click to dial                                                             | Optional field. The default Outdial ANI set on the tenant or agent profile will be used.                                                                                                                        |
+| 2   | desktopWidth                             | Set the desktop connector width                                                                                  | Optional field. Default desktop width will be used.                                                                                                                                                              |
+| 3   | hostName                                 | Hostname of the Microsoft Dynamics instance, for example `"https://org91c3bc64.crm.dynamics.com/"`             | Mandatory field.                                                                                                                                                                                                 |
+| 4   | isAdvancedScreenpopEnabled               | Enable or disable advanced search (CAD-variable based search)                                                    | Mandatory field. The value should be either `true` or `false`.                                                                                                                                                   |
+| 5   | cadVariableName                          | CAD variable name whose value is searched in the CRM                                                             | Mandatory field for advanced search.                                                                                                                                                                             |
+| 6   | crmEntityName                            | Entity type in Microsoft Dynamics, for example Contact, Account, or Case                                         | Mandatory field for advanced search.                                                                                                                                                                             |
+| 7   | crmEntityFieldName                       | Field name of the entity in Microsoft Dynamics within which the records are searched                             | Mandatory field for advanced search. See this [vidcast](https://app.vidcast.io/share/b84fea07-d72d-4fd9-ad75-691045392f43) for how to locate entity field names in your tenant.                               |
+| 8   | inboundANIPrefixToBeRemoved              | Enable or disable removal of prefix from ANI for inbound calls                                                   | Optional field. Default value is `false`.                                                                                                                                                                        |
+| 9   | inboundANIPrefix                         | Prefix to remove from ANI for record match and screen pop in CRM for inbound calls                               | Mandatory field when prefix removal is enabled.                                                                                                                                                                  |
+| 10  | phoneCallActivityRecordConfig            | JSON object                                                                                                      | Desktop layout property to enable or disable automatic display and creation of phone call activity records.                                                                                                      |
+| 11  | channelIntegrationFrameWorkVersion2Enabled | Enable or disable Channel Integration Framework (CIF) 2.0 support for Customer Service Workspace                | Desktop layout property to enable or disable CIF 2.0.                                                                                                                                                            |
+| 12  | isWidgetDisplayEnabled                   | Enable or disable the Actions Widget                                                                             | Optional field.                                                                                                                                                                                                  |
+| 13  | createActivityRecordConfig               | Phone call activity record configuration                                                                         | Optional field.                                                                                                                                                                                                  |
+| 14  | openContactFormWithPrefilledDataConfig   | New contact form configuration                                                                                   | Optional field.                                                                                                                                                                                                  |
+| 15  | createCaseRecordConfig                   | Case management configuration                                                                                    | Optional field.                                                                                                                                                                                                  |
+| 16  | actionsWidgetConfig                      | Actions Widget feature configuration                                                                             | Optional field.                                                                                                                                                                                                  |
 
 ## Feature Matrix
 
 This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
 
-| #   | Feature​                                                                                    | Standard Connector |
-| --- | ------------------------------------------------------------------------------------------- | ------------------ |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | ✔️                 |
-| 2   | Call Controls embedded in CRM application                                                   | ✔️                 |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | ✔️                 |
-| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | ✔️                 |
-| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | ✔️                 |
-| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | ✔️                 |
-| 7   | Outbound Calling – Click to Call​                                                           | ✔️                 |
-| 8   | Outbound Support                                                                            | ✔️                 |
-| 9   | Automatic call (activity) logging in CRM application                                        | ✔️                 |
-| 10  | IVR Data populated within CRM (Caller Entered Digits captured as CAD variables)​            | ✔️                 |
-| 11  | Contact Center Reporting within the CRM​                                                    | ✔️                 |
-| 12  | Activity ownership transfer during Call Transfer​                                           | -                  |
-| 13  | Screen-pop and activity logging retention during consult transfer/conference​               | ✔️                 |
-| 14  | Actions Widget​               | ✔️                 |
+| #   | Feature | Standard Connector |
+| --- | --- | --- |
+| 1   | Auto-login of agents into Contact Center platform (SSO) | ✔️ |
+| 2   | Call controls embedded in CRM application | ✔️ |
+| 3   | Screen pop based on incoming call parameters (no record match) | ✔️ |
+| 4   | Screen pop based on incoming call parameters (single record match - ANI) | ✔️ |
+| 5   | Screen pop based on incoming call parameters (multiple record match - ANI) | ✔️ |
+| 6   | Advanced screen pop based on incoming call parameters (other params such as case management) | ✔️ |
+| 7   | Outbound calling - click to call | ✔️ |
+| 8   | Outbound support | ✔️ |
+| 9   | Automatic call activity logging in CRM | ✔️ |
+| 10  | IVR data populated within CRM (caller-entered digits captured as CAD variables) | ✔️ |
+| 11  | Contact Center reporting within the CRM | ✔️ |
+| 12  | Activity ownership transfer during call transfer | - |
+| 13  | Screen pop and activity logging retention during consult transfer or conference | ✔️ |
+| 14  | Actions Widget | ✔️ |
 
-## Installation Guide
+## Additional Resources
 
-The installation guide is available at **[help.webex.com](https://help.webex.com/en-us/article/aw26j2/Integrate-Webex-Contact-Center-with-Microsoft-Dynamics-365)**
-
-## Lab Guides
-
-Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)** that covers some of these integrations along with step by step instructions on the installation.
+- [Microsoft Dynamics IVR HTTP connector README](./msdynamics-ivr-http-connector/README.md)
+- [CRM Integrations lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)
 
 ## Support
 
-Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
-
-Participate in discussions OR ask for help on the [Cisco Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/5926-discussions-contact-center).
+- Open a case with [Cisco TAC](https://cisco.com/go/tac).
+- Ask questions in the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).

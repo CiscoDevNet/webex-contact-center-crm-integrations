@@ -1,79 +1,78 @@
-# Webex Contact Center CRM Integrations - Desktop Layouts - Salesforce
+# Salesforce - Webex Contact Center Legacy Connector
 
-Welcome to the Webex Contact Center CRM Integrations Github repository!
+![CRM](https://img.shields.io/badge/CRM-Salesforce-00A1E0)
+![Legacy Version 1](https://img.shields.io/badge/Webex%20CC-Legacy%20Version%201-orange)
+[![Official Guide](https://img.shields.io/badge/help.webex.com-Official%20Guide-blue)](https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy))
 
-This folder contains the latest Desktop Layout and call center definition file for Salesforce integrated Agent Desktop inside of the CRM console.
+Legacy Version 1 desktop layout assets for the Salesforce embedded Webex Contact Center Agent Desktop experience. This folder includes the primary desktop layout package, the Salesforce call center definition file, and the companion IVR HTTP connector reference bundle.
 
-The CTI adapter url for the call center definition file will vary based on different regions of Webex contact center production data centers. By default the CTI adapter url points to US1 data center. The CTI adapter url for different data centers are listed below:
+> Latest desktop layout: [`salesforce_desktop_0.1.0_v1.1.9.json`](./salesforce_desktop_0.1.0_v1.1.9.json)
+>
+> Companion file: [`sfdc-callcenter-definition-file.xml`](./sfdc-callcenter-definition-file.xml)
+>
+> Official guide: [Integrate Webex Contact Center with Salesforce (Version 1-Legacy)](https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy))
 
-> Please note the CTI Adapter URLs for different data centers:
+## Quick Links
 
-| #   | CTI Adapter URL                     | Data Center   |
-| --- | ----------------------------------- | ------------- |
-| 1   | https://desktop.wxcc-us1.cisco.com  | North America |
-| 2   | https://desktop.wxcc-eu1.cisco.com  | UK            |
-| 3   | https://desktop.wxcc-eu2.cisco.com  | EU            |
-| 4   | https://desktop.wxcc-anz1.cisco.com | APJC          |
+| Asset | Purpose |
+| --- | --- |
+| [`salesforce_desktop_0.1.0_v1.1.9.json`](./salesforce_desktop_0.1.0_v1.1.9.json) | Latest Salesforce desktop layout package in this repository |
+| [`sfdc-callcenter-definition-file.xml`](./sfdc-callcenter-definition-file.xml) | Salesforce call center definition file |
+| [IVR HTTP connector bundle](./salesforce-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
 
-## Change Log
+## Preview
 
-The following change log shows the version updates to the files and what changes and enhacements were included:
+![Salesforce connector preview](./salesforce-ivr-http-connector/images/connector01.png)
 
-(Please use the latest Desktop Layout JSON in the folder)
+## Configuration Notes
 
-| #   | Date       | Filename                             | Desktop Version | Change Description         | Change Date |
-| --- | ---------- | ------------------------------------ | --------------- | -------------------------- | ----------- |
-| 1   | Jan 2022   | Salesforce_Desktop.json              | 0.0.2           | First draft                | June 2021   |
-| 2   | April 2022 | Salesforce_Desktop_v1.1.json         | 0.0.2           | Minor changes              | Sep 2021    |
-| 3   | April 2022 | Salesforce_Desktop_0.0.6_v1.json     | 0.0.6           | Desktop (Product) update   | April 2022  |
-| 4   | Sep 2022   | salesforce_desktop_0.0.6_v1.0.1.json | 0.0.6           | New feature sets           | Sept 2022   |
-| 5   | Nov 2022   | salesforce_desktop_0.0.6_v1.1.2.json | 0.0.6           | New feature set and hotfix | Nov 2022    |
-| 6   | April 2023 | salesforce_desktop_0.0.6_v1.1.4.json | 0.0.6           | Hotfix                     | April 2023  |
-| 7   | June 2023  | salesforce_desktop_0.0.6_v1.1.5.json | 0.0.6           | Hotfix                     | June 2023   |
-| 8   | July 2023  | salesforce_desktop_0.0.6_v1.1.6.json | 0.0.6           | New Feature sets           | July 2023   |
-| 9   | July 2023  | salesforce_desktop_0.0.6_v1.1.7.json | 0.0.6           | New Feature sets           | July 2023   |
-| 10  | Dec  2023  | salesforce_desktop_0.0.6_v1.1.8.json | 0.0.6           | Hotfix                     | Dec 2023    |
-| 11  | Feb  2023  | salesforce_desktop_0.0.6_v1.1.9.json | 0.0.6           | Hotfix                     | Feb 2023    |
-| 12  | Feb  2023  | salesforce_desktop_0.1.0_v1.1.9.json | 0.0.6           | Desktop layout update      | Feb 2023    |
+- The CTI adapter URL in the call center definition file varies by Webex Contact Center production datacenter.
+- The shipped definition file points to the US1 desktop URL by default and must be updated if your tenant is hosted elsewhere.
+- The nested IVR HTTP connector folder is kept for reference and troubleshooting but is out of scope for this README refresh.
+
+## CTI Adapter URLs by Datacenter
+
+| CTI Adapter URL | Datacenter |
+| --- | --- |
+| `https://desktop.wxcc-us1.cisco.com` | North America |
+| `https://desktop.wxcc-eu1.cisco.com` | UK |
+| `https://desktop.wxcc-eu2.cisco.com` | EU |
+| `https://desktop.wxcc-anz1.cisco.com` | APJC |
 
 ## Feature Matrix
 
 This section outlines the features available in the standard connector as well as customizations that can be enabled on the desktop layout.
 
-| #   | Feature​                                                                                    | Standard Connector |
-| --- | ------------------------------------------------------------------------------------------- | ------------------ |
-| 1   | Auto-login of Agents into Contact Center platform (SSO)​                                    | ✔️                 |
-| 2   | Call Controls embedded in CRM application                                                   | ✔️                 |
-| 3   | Screen-pop based on incoming call parameters (No Record Match)                              | ✔️                 |
-| 4   | Screen-pop based on incoming call parameters (Single record match - ANI)​                   | ✔️                 |
-| 5   | Screen-pop based on incoming call parameters (Multiple record Match - ANI)​                 | ✔️                 |
-| 6   | Advanced Screen-pop based on incoming call parameters (Other Params e.g., Case management)​ | ✔️                 |
-| 7   | Outbound Calling – Click to Call​                                                           | ✔️                 |
-| 8   | Outbound Support                                                                            | ✔️                 |
-| 9   | Automatic call (activity) logging in CRM application                                        | ✔️                 |
-| 10  | IVR Data populated within Salesforce (Caller Entered Digits captured as CAD variables)​      | ✔️                 |
-| 11  | Contact Center Reporting within the CRM​                                                     | ✔️                 |
-| 12  | Activity ownership transfer during Call Transfer​                                            | ✔️                 |
-| 13  | Screen-pop and activity logging retention during consult transfer/conference​                | ✔️                 |
-| 14  | Automated phone call activity record opening ​in edit mode on connected and/or wrap-up state | ✔️                 |
-| 15  | On demand country code removal from inbound call ANI field                                  | ✔️                 |
-| 16  | Custom screenpop settings for no record match screenpop search                              | ✔️                 |
-| 17  | Recording of call live notes update to activity record                                      | ✔️                 |
-| 18  | Dynamic activity record subject                                                             | ✔️                 |
-| 19  | Case management                                                                             | ✔️                 |
-| 20  | Omni state sync                                                                             | ✔️                 |
-| 21  | SFDC actions widget                                                                         | ✔️                 |
+| #   | Feature | Standard Connector |
+| --- | --- | --- |
+| 1   | Auto-login of agents into Contact Center platform (SSO) | ✔️ |
+| 2   | Call controls embedded in CRM application | ✔️ |
+| 3   | Screen pop based on incoming call parameters (no record match) | ✔️ |
+| 4   | Screen pop based on incoming call parameters (single record match - ANI) | ✔️ |
+| 5   | Screen pop based on incoming call parameters (multiple record match - ANI) | ✔️ |
+| 6   | Advanced screen pop based on incoming call parameters (other params such as case management) | ✔️ |
+| 7   | Outbound calling - click to call | ✔️ |
+| 8   | Outbound support | ✔️ |
+| 9   | Automatic call activity logging in CRM | ✔️ |
+| 10  | IVR data populated within Salesforce (caller-entered digits captured as CAD variables) | ✔️ |
+| 11  | Contact Center reporting within the CRM | ✔️ |
+| 12  | Activity ownership transfer during call transfer | ✔️ |
+| 13  | Screen pop and activity logging retention during consult transfer or conference | ✔️ |
+| 14  | Automatic phone call activity record opening in edit mode on connected or wrap-up state | ✔️ |
+| 15  | On-demand country code removal from inbound ANI | ✔️ |
+| 16  | Custom screen pop settings for no-record-match search | ✔️ |
+| 17  | Recording of live notes updates to the activity record | ✔️ |
+| 18  | Dynamic activity record subject | ✔️ |
+| 19  | Case management | ✔️ |
+| 20  | Omni state sync | ✔️ |
+| 21  | SFDC Actions Widget | ✔️ |
 
-## Installation Guide
+## Additional Resources
 
-The installation guide is available at **[help.webex.com](https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce)**
-
-## Lab Guides
-
-Explore the **[CRM Integrations Lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)** that covers some of these integrations along with step by step instructions on the installation.
+- [Salesforce IVR HTTP connector README](./salesforce-ivr-http-connector/README.md)
+- [CRM Integrations lab guide](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html)
 
 ## Support
 
-Need Help? **[Contact Cisco TAC](https://cisco.com/go/tac)** to open a case.
-
-Participate in discussions OR ask for help on the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
+- Open a case with [Cisco TAC](https://cisco.com/go/tac).
+- Ask questions in the [Cisco Developer Community for Webex Contact Center](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center).
