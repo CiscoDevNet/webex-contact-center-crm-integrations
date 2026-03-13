@@ -23,10 +23,6 @@ Legacy Version 1 desktop layout assets for the ServiceNow embedded Webex Contact
 | [ActionsWidget/](./ActionsWidget/) | Optional widget-enabled bundle and update set |
 | [IVR HTTP connector bundle](./servicenow-ivr-http-connector/README.md) | Sample flow, Postman collection, screenshots, and connector notes |
 
-## Preview
-
-![ServiceNow connector preview](./servicenow-ivr-http-connector/images/connector1.png)
-
 ## Configuration Notes
 
 - Update the ServiceNow system properties after installation so they point to the desktop URL for your Webex Contact Center datacenter.
